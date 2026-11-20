@@ -1,4 +1,5 @@
-import { createContext, type ReactNode, useCallback, useContext, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useMemo, useState } from "react";
+import type { ReactNode } from "react";
 import type { Repo } from "../lib/types";
 
 /** Repositórios com mais PRs que isso são "dominantes" (mochi, AGI-Alpha-Agent, gh-aw). */
