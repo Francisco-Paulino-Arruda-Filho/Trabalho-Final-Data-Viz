@@ -1,0 +1,1530 @@
+{
+  "nodes": [
+    {
+      "id": "agent:Claude Code",
+      "label": "Claude Code",
+      "type": "agent"
+    },
+    {
+      "id": "agent:Codex",
+      "label": "Codex",
+      "type": "agent"
+    },
+    {
+      "id": "agent:Copilot",
+      "label": "Copilot",
+      "type": "agent"
+    },
+    {
+      "id": "agent:Cursor",
+      "label": "Cursor",
+      "type": "agent"
+    },
+    {
+      "id": "agent:Devin",
+      "label": "Devin",
+      "type": "agent"
+    },
+    {
+      "id": "agent:Jules",
+      "label": "Jules",
+      "type": "agent"
+    },
+    {
+      "id": "repo:1011075840",
+      "label": "nagisa77/OpenIsle",
+      "type": "repository",
+      "repo_id": 1011075840
+    },
+    {
+      "id": "repo:1020008528",
+      "label": "microsoft/wassette",
+      "type": "repository",
+      "repo_id": 1020008528
+    },
+    {
+      "id": "repo:102537698",
+      "label": "epam/ketcher",
+      "type": "repository",
+      "repo_id": 102537698
+    },
+    {
+      "id": "repo:1026429198",
+      "label": "manaflow-ai/cmux",
+      "type": "repository",
+      "repo_id": 1026429198
+    },
+    {
+      "id": "repo:1028435894",
+      "label": "antiwork/gumboard",
+      "type": "repository",
+      "repo_id": 1028435894
+    },
+    {
+      "id": "repo:1029240529",
+      "label": "mfat/sshpilot",
+      "type": "repository",
+      "repo_id": 1029240529
+    },
+    {
+      "id": "repo:1036865607",
+      "label": "githubnext/gh-aw",
+      "type": "repository",
+      "repo_id": 1036865607
+    },
+    {
+      "id": "repo:10458362",
+      "label": "rsyslog/rsyslog",
+      "type": "repository",
+      "repo_id": 10458362
+    },
+    {
+      "id": "repo:1046809510",
+      "label": "vinhnx/vtcode",
+      "type": "repository",
+      "repo_id": 1046809510
+    },
+    {
+      "id": "repo:1055969442",
+      "label": "l5yth/potato-mesh",
+      "type": "repository",
+      "repo_id": 1055969442
+    },
+    {
+      "id": "repo:121814210",
+      "label": "primer/react",
+      "type": "repository",
+      "repo_id": 121814210
+    },
+    {
+      "id": "repo:12594924",
+      "label": "jdereg/json-io",
+      "type": "repository",
+      "repo_id": 12594924
+    },
+    {
+      "id": "repo:12670630",
+      "label": "jdereg/java-util",
+      "type": "repository",
+      "repo_id": 12670630
+    },
+    {
+      "id": "repo:134182879",
+      "label": "wieslawsoltes/Dock",
+      "type": "repository",
+      "repo_id": 134182879
+    },
+    {
+      "id": "repo:134777298",
+      "label": "microsoft/vscode-pull-request-github",
+      "type": "repository",
+      "repo_id": 134777298
+    },
+    {
+      "id": "repo:136202695",
+      "label": "mlflow/mlflow",
+      "type": "repository",
+      "repo_id": 136202695
+    },
+    {
+      "id": "repo:137922416",
+      "label": "kuberhealthy/kuberhealthy",
+      "type": "repository",
+      "repo_id": 137922416
+    },
+    {
+      "id": "repo:14268809",
+      "label": "FastLED/FastLED",
+      "type": "repository",
+      "repo_id": 14268809
+    },
+    {
+      "id": "repo:159556794",
+      "label": "go-vikunja/vikunja",
+      "type": "repository",
+      "repo_id": 159556794
+    },
+    {
+      "id": "repo:167801581",
+      "label": "hjyssg/ShiguReader",
+      "type": "repository",
+      "repo_id": 167801581
+    },
+    {
+      "id": "repo:17620347",
+      "label": "dotnet/aspnetcore",
+      "type": "repository",
+      "repo_id": 17620347
+    },
+    {
+      "id": "repo:210716005",
+      "label": "dotnet/runtime",
+      "type": "repository",
+      "repo_id": 210716005
+    },
+    {
+      "id": "repo:21764480",
+      "label": "hmislk/hmis",
+      "type": "repository",
+      "repo_id": 21764480
+    },
+    {
+      "id": "repo:225880766",
+      "label": "KomodoPlatform/komodo-wallet",
+      "type": "repository",
+      "repo_id": 225880766
+    },
+    {
+      "id": "repo:227265548",
+      "label": "gluesql/gluesql",
+      "type": "repository",
+      "repo_id": 227265548
+    },
+    {
+      "id": "repo:230706417",
+      "label": "DaveSkender/Stock.Indicators",
+      "type": "repository",
+      "repo_id": 230706417
+    },
+    {
+      "id": "repo:23236083",
+      "label": "CitizensFoundation/your-priorities-app",
+      "type": "repository",
+      "repo_id": 23236083
+    },
+    {
+      "id": "repo:233712297",
+      "label": "Sh0ckFR/Universal-Dear-ImGui-Hook",
+      "type": "repository",
+      "repo_id": 233712297
+    },
+    {
+      "id": "repo:262395224",
+      "label": "dotnet/maui",
+      "type": "repository",
+      "repo_id": 262395224
+    },
+    {
+      "id": "repo:265001214",
+      "label": "tokens-studio/figma-plugin",
+      "type": "repository",
+      "repo_id": 265001214
+    },
+    {
+      "id": "repo:27703983",
+      "label": "StockSharp/StockSharp",
+      "type": "repository",
+      "repo_id": 27703983
+    },
+    {
+      "id": "repo:283046497",
+      "label": "airbytehq/airbyte",
+      "type": "repository",
+      "repo_id": 283046497
+    },
+    {
+      "id": "repo:29078997",
+      "label": "dotnet/roslyn",
+      "type": "repository",
+      "repo_id": 29078997
+    },
+    {
+      "id": "repo:2928944",
+      "label": "Azure/azure-sdk-for-net",
+      "type": "repository",
+      "repo_id": 2928944
+    },
+    {
+      "id": "repo:29301872",
+      "label": "OpenHFT/Chronicle-Wire",
+      "type": "repository",
+      "repo_id": 29301872
+    },
+    {
+      "id": "repo:31261793",
+      "label": "OpenHFT/Chronicle-Core",
+      "type": "repository",
+      "repo_id": 31261793
+    },
+    {
+      "id": "repo:31261879",
+      "label": "OpenHFT/Chronicle-Values",
+      "type": "repository",
+      "repo_id": 31261879
+    },
+    {
+      "id": "repo:32973467",
+      "label": "codenameone/CodenameOne",
+      "type": "repository",
+      "repo_id": 32973467
+    },
+    {
+      "id": "repo:33837371",
+      "label": "getsentry/sentry-docs",
+      "type": "repository",
+      "repo_id": 33837371
+    },
+    {
+      "id": "repo:350360184",
+      "label": "calcom/cal.com",
+      "type": "repository",
+      "repo_id": 350360184
+    },
+    {
+      "id": "repo:352436122",
+      "label": "neondatabase/website",
+      "type": "repository",
+      "repo_id": 352436122
+    },
+    {
+      "id": "repo:357728969",
+      "label": "oven-sh/bun",
+      "type": "repository",
+      "repo_id": 357728969
+    },
+    {
+      "id": "repo:35890081",
+      "label": "dotnet/docs",
+      "type": "repository",
+      "repo_id": 35890081
+    },
+    {
+      "id": "repo:381857226",
+      "label": "microsoft/typespec",
+      "type": "repository",
+      "repo_id": 381857226
+    },
+    {
+      "id": "repo:389974684",
+      "label": "SMEWebify/WebErpMesv2",
+      "type": "repository",
+      "repo_id": 389974684
+    },
+    {
+      "id": "repo:39093389",
+      "label": "Azure/azure-rest-api-specs",
+      "type": "repository",
+      "repo_id": 39093389
+    },
+    {
+      "id": "repo:39321023",
+      "label": "prebid/Prebid.js",
+      "type": "repository",
+      "repo_id": 39321023
+    },
+    {
+      "id": "repo:400215964",
+      "label": "novuhq/novu",
+      "type": "repository",
+      "repo_id": 400215964
+    },
+    {
+      "id": "repo:4127088",
+      "label": "Azure/azure-sdk-for-python",
+      "type": "repository",
+      "repo_id": 4127088
+    },
+    {
+      "id": "repo:41881900",
+      "label": "microsoft/vscode",
+      "type": "repository",
+      "repo_id": 41881900
+    },
+    {
+      "id": "repo:422711680",
+      "label": "jaseci-labs/jaseci",
+      "type": "repository",
+      "repo_id": 422711680
+    },
+    {
+      "id": "repo:425803244",
+      "label": "pyth-network/pyth-crosschain",
+      "type": "repository",
+      "repo_id": 425803244
+    },
+    {
+      "id": "repo:496005961",
+      "label": "marin-community/levanter",
+      "type": "repository",
+      "repo_id": 496005961
+    },
+    {
+      "id": "repo:496817075",
+      "label": "GlareDB/glaredb",
+      "type": "repository",
+      "repo_id": 496817075
+    },
+    {
+      "id": "repo:50626524",
+      "label": "davidmerfield/blot",
+      "type": "repository",
+      "repo_id": 50626524
+    },
+    {
+      "id": "repo:577975610",
+      "label": "reflex-dev/reflex-web",
+      "type": "repository",
+      "repo_id": 577975610
+    },
+    {
+      "id": "repo:599431918",
+      "label": "oxc-project/oxc",
+      "type": "repository",
+      "repo_id": 599431918
+    },
+    {
+      "id": "repo:600355571",
+      "label": "MihaiCristianCondrea/Smart-Cleaner-for-Android",
+      "type": "repository",
+      "repo_id": 600355571
+    },
+    {
+      "id": "repo:607729034",
+      "label": "operately/operately",
+      "type": "repository",
+      "repo_id": 607729034
+    },
+    {
+      "id": "repo:614765452",
+      "label": "Significant-Gravitas/AutoGPT",
+      "type": "repository",
+      "repo_id": 614765452
+    },
+    {
+      "id": "repo:633927609",
+      "label": "promptfoo/promptfoo",
+      "type": "repository",
+      "repo_id": 633927609
+    },
+    {
+      "id": "repo:63984307",
+      "label": "dotnet/sdk",
+      "type": "repository",
+      "repo_id": 63984307
+    },
+    {
+      "id": "repo:642497346",
+      "label": "langfuse/langfuse",
+      "type": "repository",
+      "repo_id": 642497346
+    },
+    {
+      "id": "repo:643978507",
+      "label": "langfuse/langfuse-docs",
+      "type": "repository",
+      "repo_id": 643978507
+    },
+    {
+      "id": "repo:65080725",
+      "label": "microsoft/testfx",
+      "type": "repository",
+      "repo_id": 65080725
+    },
+    {
+      "id": "repo:663396489",
+      "label": "bionic-gpt/bionic-gpt",
+      "type": "repository",
+      "repo_id": 663396489
+    },
+    {
+      "id": "repo:669466632",
+      "label": "selfxyz/self",
+      "type": "repository",
+      "repo_id": 669466632
+    },
+    {
+      "id": "repo:679017521",
+      "label": "AgentOps-AI/agentops",
+      "type": "repository",
+      "repo_id": 679017521
+    },
+    {
+      "id": "repo:679784368",
+      "label": "microsoft/genaiscript",
+      "type": "repository",
+      "repo_id": 679784368
+    },
+    {
+      "id": "repo:685141528",
+      "label": "dcSpark/shinkai-local-ai-agents",
+      "type": "repository",
+      "repo_id": 685141528
+    },
+    {
+      "id": "repo:696529789",
+      "label": "dotnet/aspire",
+      "type": "repository",
+      "repo_id": 696529789
+    },
+    {
+      "id": "repo:710601088",
+      "label": "crewAIInc/crewAI",
+      "type": "repository",
+      "repo_id": 710601088
+    },
+    {
+      "id": "repo:747691207",
+      "label": "thomhurst/TUnit",
+      "type": "repository",
+      "repo_id": 747691207
+    },
+    {
+      "id": "repo:777230015",
+      "label": "nodetool-ai/nodetool",
+      "type": "repository",
+      "repo_id": 777230015
+    },
+    {
+      "id": "repo:77786107",
+      "label": "asynkron/protoactor-dotnet",
+      "type": "repository",
+      "repo_id": 77786107
+    },
+    {
+      "id": "repo:787076358",
+      "label": "firecrawl/firecrawl",
+      "type": "repository",
+      "repo_id": 787076358
+    },
+    {
+      "id": "repo:792160692",
+      "label": "wieslawsoltes/Xaml.Behaviors",
+      "type": "repository",
+      "repo_id": 792160692
+    },
+    {
+      "id": "repo:820087727",
+      "label": "onlook-dev/onlook",
+      "type": "repository",
+      "repo_id": 820087727
+    },
+    {
+      "id": "repo:839216423",
+      "label": "liam-hq/liam",
+      "type": "repository",
+      "repo_id": 839216423
+    },
+    {
+      "id": "repo:843988367",
+      "label": "Metta-AI/metta",
+      "type": "repository",
+      "repo_id": 843988367
+    },
+    {
+      "id": "repo:845317529",
+      "label": "giselles-ai/giselle",
+      "type": "repository",
+      "repo_id": 845317529
+    },
+    {
+      "id": "repo:860100131",
+      "label": "microsoft/typescript-go",
+      "type": "repository",
+      "repo_id": 860100131
+    },
+    {
+      "id": "repo:873328",
+      "label": "getsentry/sentry",
+      "type": "repository",
+      "repo_id": 873328
+    },
+    {
+      "id": "repo:881458615",
+      "label": "browser-use/browser-use",
+      "type": "repository",
+      "repo_id": 881458615
+    },
+    {
+      "id": "repo:883593929",
+      "label": "selcukorkmaz/fastml",
+      "type": "repository",
+      "repo_id": 883593929
+    },
+    {
+      "id": "repo:916252207",
+      "label": "carverauto/serviceradar",
+      "type": "repository",
+      "repo_id": 916252207
+    },
+    {
+      "id": "repo:922805069",
+      "label": "MontrealAI/AGI-Alpha-Agent-v0",
+      "type": "repository",
+      "repo_id": 922805069
+    },
+    {
+      "id": "repo:922867547",
+      "label": "charlesvestal/extending-move",
+      "type": "repository",
+      "repo_id": 922867547
+    },
+    {
+      "id": "repo:922873328",
+      "label": "willmiao/ComfyUI-Lora-Manager",
+      "type": "repository",
+      "repo_id": 922873328
+    },
+    {
+      "id": "repo:923332984",
+      "label": "ryokun6/ryos",
+      "type": "repository",
+      "repo_id": 923332984
+    },
+    {
+      "id": "repo:93527013",
+      "label": "SkBlaz/py3plex",
+      "type": "repository",
+      "repo_id": 93527013
+    },
+    {
+      "id": "repo:941289933",
+      "label": "antiwork/helper",
+      "type": "repository",
+      "repo_id": 941289933
+    },
+    {
+      "id": "repo:948798043",
+      "label": "DannyMac180/meta-agent",
+      "type": "repository",
+      "repo_id": 948798043
+    },
+    {
+      "id": "repo:955904085",
+      "label": "antiwork/flexile",
+      "type": "repository",
+      "repo_id": 955904085
+    },
+    {
+      "id": "repo:958026130",
+      "label": "featureform/enrichmcp",
+      "type": "repository",
+      "repo_id": 958026130
+    },
+    {
+      "id": "repo:959682770",
+      "label": "antiwork/gumroad",
+      "type": "repository",
+      "repo_id": 959682770
+    },
+    {
+      "id": "repo:965250949",
+      "label": "theopenco/llmgateway",
+      "type": "repository",
+      "repo_id": 965250949
+    },
+    {
+      "id": "repo:965415649",
+      "label": "openai/codex",
+      "type": "repository",
+      "repo_id": 965415649
+    },
+    {
+      "id": "repo:984851797",
+      "label": "jrkropp/open-webui-developer-toolkit",
+      "type": "repository",
+      "repo_id": 984851797
+    },
+    {
+      "id": "repo:985853139",
+      "label": "mochilang/mochi",
+      "type": "repository",
+      "repo_id": 985853139
+    }
+  ],
+  "edges": [
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:873328",
+      "prs": 1
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:21764480",
+      "prs": 10
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:136202695",
+      "prs": 10
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:227265548",
+      "prs": 1
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:283046497",
+      "prs": 1
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:352436122",
+      "prs": 1
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:357728969",
+      "prs": 53
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:599431918",
+      "prs": 5
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:614765452",
+      "prs": 18
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:633927609",
+      "prs": 7
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:642497346",
+      "prs": 3
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:710601088",
+      "prs": 2
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:787076358",
+      "prs": 2
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:839216423",
+      "prs": 24
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:843988367",
+      "prs": 12
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:845317529",
+      "prs": 4
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:965250949",
+      "prs": 1
+    },
+    {
+      "source": "agent:Claude Code",
+      "target": "repo:1036865607",
+      "prs": 9
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:4127088",
+      "prs": 1
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:10458362",
+      "prs": 158
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:12594924",
+      "prs": 105
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:12670630",
+      "prs": 228
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:21764480",
+      "prs": 512
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:23236083",
+      "prs": 99
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:27703983",
+      "prs": 201
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:29301872",
+      "prs": 165
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:31261793",
+      "prs": 110
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:31261879",
+      "prs": 99
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:32973467",
+      "prs": 102
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:39321023",
+      "prs": 137
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:41881900",
+      "prs": 1
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:50626524",
+      "prs": 126
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:77786107",
+      "prs": 216
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:102537698",
+      "prs": 17
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:134182879",
+      "prs": 312
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:136202695",
+      "prs": 1
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:137922416",
+      "prs": 170
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:159556794",
+      "prs": 84
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:167801581",
+      "prs": 86
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:225880766",
+      "prs": 156
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:227265548",
+      "prs": 110
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:233712297",
+      "prs": 88
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:265001214",
+      "prs": 2
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:283046497",
+      "prs": 1
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:357728969",
+      "prs": 104
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:389974684",
+      "prs": 100
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:400215964",
+      "prs": 1
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:422711680",
+      "prs": 98
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:496005961",
+      "prs": 96
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:600355571",
+      "prs": 490
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:607729034",
+      "prs": 26
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:614765452",
+      "prs": 42
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:633927609",
+      "prs": 92
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:642497346",
+      "prs": 11
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:643978507",
+      "prs": 18
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:663396489",
+      "prs": 149
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:669466632",
+      "prs": 203
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:679017521",
+      "prs": 11
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:685141528",
+      "prs": 83
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:777230015",
+      "prs": 98
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:792160692",
+      "prs": 166
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:820087727",
+      "prs": 27
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:839216423",
+      "prs": 6
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:843988367",
+      "prs": 66
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:845317529",
+      "prs": 134
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:881458615",
+      "prs": 1
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:883593929",
+      "prs": 113
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:916252207",
+      "prs": 137
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:922805069",
+      "prs": 3646
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:922867547",
+      "prs": 460
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:922873328",
+      "prs": 96
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:923332984",
+      "prs": 88
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:948798043",
+      "prs": 120
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:955904085",
+      "prs": 1
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:958026130",
+      "prs": 89
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:965250949",
+      "prs": 4
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:965415649",
+      "prs": 124
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:984851797",
+      "prs": 501
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:985853139",
+      "prs": 13461
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:1011075840",
+      "prs": 562
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:1026429198",
+      "prs": 64
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:1029240529",
+      "prs": 526
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:1046809510",
+      "prs": 283
+    },
+    {
+      "source": "agent:Codex",
+      "target": "repo:1055969442",
+      "prs": 149
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:2928944",
+      "prs": 93
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:4127088",
+      "prs": 103
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:17620347",
+      "prs": 138
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:29078997",
+      "prs": 110
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:32973467",
+      "prs": 4
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:35890081",
+      "prs": 277
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:39093389",
+      "prs": 108
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:41881900",
+      "prs": 614
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:63984307",
+      "prs": 93
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:65080725",
+      "prs": 93
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:93527013",
+      "prs": 95
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:102537698",
+      "prs": 138
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:121814210",
+      "prs": 99
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:134182879",
+      "prs": 1
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:134777298",
+      "prs": 168
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:136202695",
+      "prs": 384
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:159556794",
+      "prs": 9
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:210716005",
+      "prs": 190
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:225880766",
+      "prs": 2
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:230706417",
+      "prs": 170
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:262395224",
+      "prs": 166
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:265001214",
+      "prs": 138
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:283046497",
+      "prs": 2
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:357728969",
+      "prs": 1
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:381857226",
+      "prs": 118
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:599431918",
+      "prs": 145
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:607729034",
+      "prs": 103
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:614765452",
+      "prs": 14
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:642497346",
+      "prs": 1
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:679784368",
+      "prs": 177
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:696529789",
+      "prs": 574
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:710601088",
+      "prs": 1
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:747691207",
+      "prs": 101
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:820087727",
+      "prs": 5
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:845317529",
+      "prs": 7
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:860100131",
+      "prs": 88
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:1020008528",
+      "prs": 134
+    },
+    {
+      "source": "agent:Copilot",
+      "target": "repo:1036865607",
+      "prs": 1100
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:873328",
+      "prs": 123
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:10458362",
+      "prs": 43
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:14268809",
+      "prs": 100
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:33837371",
+      "prs": 103
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:134182879",
+      "prs": 2
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:225880766",
+      "prs": 25
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:265001214",
+      "prs": 4
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:357728969",
+      "prs": 25
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:400215964",
+      "prs": 93
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:614765452",
+      "prs": 17
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:633927609",
+      "prs": 4
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:642497346",
+      "prs": 91
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:643978507",
+      "prs": 123
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:669466632",
+      "prs": 4
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:679017521",
+      "prs": 39
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:777230015",
+      "prs": 6
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:787076358",
+      "prs": 1
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:820087727",
+      "prs": 5
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:843988367",
+      "prs": 26
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:845317529",
+      "prs": 3
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:881458615",
+      "prs": 108
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:923332984",
+      "prs": 184
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:941289933",
+      "prs": 1
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:959682770",
+      "prs": 1
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:965250949",
+      "prs": 41
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:1026429198",
+      "prs": 26
+    },
+    {
+      "source": "agent:Cursor",
+      "target": "repo:1029240529",
+      "prs": 10
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:283046497",
+      "prs": 291
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:350360184",
+      "prs": 244
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:352436122",
+      "prs": 160
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:357728969",
+      "prs": 1
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:400215964",
+      "prs": 51
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:425803244",
+      "prs": 97
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:496817075",
+      "prs": 97
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:577975610",
+      "prs": 103
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:633927609",
+      "prs": 21
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:643978507",
+      "prs": 2
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:679017521",
+      "prs": 55
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:685141528",
+      "prs": 86
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:710601088",
+      "prs": 401
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:787076358",
+      "prs": 121
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:820087727",
+      "prs": 169
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:839216423",
+      "prs": 615
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:843988367",
+      "prs": 3
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:845317529",
+      "prs": 2
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:923332984",
+      "prs": 20
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:941289933",
+      "prs": 200
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:948798043",
+      "prs": 2
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:955904085",
+      "prs": 297
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:959682770",
+      "prs": 242
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:965250949",
+      "prs": 104
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:1026429198",
+      "prs": 1
+    },
+    {
+      "source": "agent:Devin",
+      "target": "repo:1028435894",
+      "prs": 94
+    },
+    {
+      "source": "agent:Jules",
+      "target": "repo:167801581",
+      "prs": 2
+    },
+    {
+      "source": "agent:Jules",
+      "target": "repo:227265548",
+      "prs": 1
+    },
+    {
+      "source": "agent:Jules",
+      "target": "repo:1046809510",
+      "prs": 1
+    }
+  ],
+  "config": {
+    "top_repositories": 100,
+    "description": "Rede bipartida entre agentes e repositórios. O peso da aresta representa a quantidade de PRs."
+  }
+}

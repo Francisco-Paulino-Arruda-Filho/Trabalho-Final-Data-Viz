@@ -1,0 +1,8987 @@
+{
+  "summary": [
+    {
+      "agent": "Claude Code",
+      "n": 1271,
+      "min": 0.001,
+      "q1": 0.2895,
+      "median": 2.112,
+      "q3": 22.259,
+      "p90": 98.037,
+      "p95": 237.072,
+      "max": 2731.037
+    },
+    {
+      "agent": "Codex",
+      "n": 29435,
+      "min": 0.001,
+      "q1": 0.004,
+      "median": 0.021,
+      "q3": 0.17,
+      "p90": 3.1576000000000133,
+      "p95": 21.5426,
+      "max": 3361.353
+    },
+    {
+      "agent": "Copilot",
+      "n": 11935,
+      "min": 0.004,
+      "q1": 1.009,
+      "median": 7.233,
+      "q3": 48.5945,
+      "p90": 181.78640000000001,
+      "p95": 362.0915,
+      "max": 3009.129
+    },
+    {
+      "agent": "Cursor",
+      "n": 2127,
+      "min": 0.001,
+      "q1": 0.149,
+      "median": 1.228,
+      "q3": 19.11,
+      "p90": 92.397,
+      "p95": 194.4199999999999,
+      "max": 2036.259
+    },
+    {
+      "agent": "Devin",
+      "n": 3400,
+      "min": 0.002,
+      "q1": 0.392,
+      "median": 2.271,
+      "q3": 22.12825,
+      "p90": 94.66639999999992,
+      "p95": 164.56494999999998,
+      "max": 2278.876
+    },
+    {
+      "agent": "Jules",
+      "n": 283,
+      "min": 0.004,
+      "q1": 0.112,
+      "median": 0.826,
+      "q3": 13.6235,
+      "p90": 64.68920000000004,
+      "p95": 116.17539999999995,
+      "max": 983.282
+    }
+  ],
+  "ecdf": [
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.001,
+      "probability": 0.0007867820613690008
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.002,
+      "probability": 0.003933910306845004
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.003,
+      "probability": 0.007081038552321007
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.003,
+      "probability": 0.011014948859166011
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.004,
+      "probability": 0.014162077104642014
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.005,
+      "probability": 0.01730920535011802
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.006,
+      "probability": 0.020456333595594022
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.006,
+      "probability": 0.024390243902439025
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.006,
+      "probability": 0.02753737214791503
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.007,
+      "probability": 0.03068450039339103
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.008,
+      "probability": 0.03383162863886703
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.011,
+      "probability": 0.03776553894571204
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.013,
+      "probability": 0.040912667191188044
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.014,
+      "probability": 0.044059795436664044
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.015,
+      "probability": 0.04720692368214005
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.017,
+      "probability": 0.05114083398898505
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.02,
+      "probability": 0.05428796223446106
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.022,
+      "probability": 0.057435090479937057
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.024,
+      "probability": 0.06058221872541306
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.026,
+      "probability": 0.06451612903225806
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.028,
+      "probability": 0.06766325727773406
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.031,
+      "probability": 0.07081038552321008
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.032,
+      "probability": 0.07395751376868608
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.034,
+      "probability": 0.07789142407553108
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.035,
+      "probability": 0.08103855232100708
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.037,
+      "probability": 0.08418568056648308
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.039,
+      "probability": 0.08733280881195908
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.045,
+      "probability": 0.09126671911880409
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.049,
+      "probability": 0.0944138473642801
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.05,
+      "probability": 0.0975609756097561
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.052,
+      "probability": 0.1007081038552321
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.056,
+      "probability": 0.10464201416207711
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.058,
+      "probability": 0.1077891424075531
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.059,
+      "probability": 0.1109362706530291
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.061,
+      "probability": 0.11408339889850512
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.068,
+      "probability": 0.11801730920535011
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.069,
+      "probability": 0.12116443745082613
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.072,
+      "probability": 0.12431156569630213
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.075,
+      "probability": 0.12745869394177814
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.082,
+      "probability": 0.13139260424862312
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.083,
+      "probability": 0.13453973249409915
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.088,
+      "probability": 0.13768686073957515
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.092,
+      "probability": 0.14083398898505115
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.095,
+      "probability": 0.14476789929189615
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.1,
+      "probability": 0.14791502753737215
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.104,
+      "probability": 0.15106215578284815
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.112,
+      "probability": 0.15420928402832415
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.121,
+      "probability": 0.15814319433516916
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.123,
+      "probability": 0.16129032258064516
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.127,
+      "probability": 0.16443745082612116
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.129,
+      "probability": 0.16758457907159716
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.137,
+      "probability": 0.17151848937844216
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.138,
+      "probability": 0.17466561762391816
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.141,
+      "probability": 0.1778127458693942
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.145,
+      "probability": 0.1809598741148702
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.155,
+      "probability": 0.1848937844217152
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.159,
+      "probability": 0.1880409126671912
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.165,
+      "probability": 0.1911880409126672
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.174,
+      "probability": 0.1943351691581432
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.178,
+      "probability": 0.1982690794649882
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.191,
+      "probability": 0.2014162077104642
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.194,
+      "probability": 0.2045633359559402
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.206,
+      "probability": 0.2077104642014162
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.211,
+      "probability": 0.2116443745082612
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.215,
+      "probability": 0.2147915027537372
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.222,
+      "probability": 0.2179386309992132
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.226,
+      "probability": 0.22108575924468923
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.235,
+      "probability": 0.2250196695515342
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.242,
+      "probability": 0.22816679779701024
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.246,
+      "probability": 0.23131392604248624
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.249,
+      "probability": 0.23446105428796224
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.255,
+      "probability": 0.23839496459480725
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.267,
+      "probability": 0.24154209284028325
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.274,
+      "probability": 0.24468922108575925
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.282,
+      "probability": 0.24783634933123525
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.291,
+      "probability": 0.25177025963808025
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.307,
+      "probability": 0.2549173878835563
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.311,
+      "probability": 0.25806451612903225
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.312,
+      "probability": 0.2612116443745083
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.327,
+      "probability": 0.26514555468135326
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.331,
+      "probability": 0.2682926829268293
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.339,
+      "probability": 0.27143981117230526
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.344,
+      "probability": 0.2745869394177813
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.352,
+      "probability": 0.27852084972462626
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.359,
+      "probability": 0.2816679779701023
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.374,
+      "probability": 0.28481510621557826
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.378,
+      "probability": 0.2879622344610543
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.386,
+      "probability": 0.29189614476789927
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.398,
+      "probability": 0.2950432730133753
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.415,
+      "probability": 0.2981904012588513
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.429,
+      "probability": 0.3013375295043273
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.443,
+      "probability": 0.30527143981117233
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.451,
+      "probability": 0.3084185680566483
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.467,
+      "probability": 0.31156569630212433
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.478,
+      "probability": 0.3147128245476003
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.489,
+      "probability": 0.31864673485444533
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.496,
+      "probability": 0.3217938630999213
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.508,
+      "probability": 0.32494099134539733
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.519,
+      "probability": 0.3280881195908733
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.544,
+      "probability": 0.33202202989771834
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.549,
+      "probability": 0.3351691581431943
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.556,
+      "probability": 0.33831628638867034
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.566,
+      "probability": 0.34146341463414637
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.588,
+      "probability": 0.34461054287962234
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.624,
+      "probability": 0.3485444531864674
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.643,
+      "probability": 0.35169158143194335
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.653,
+      "probability": 0.3548387096774194
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.658,
+      "probability": 0.35798583792289534
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.691,
+      "probability": 0.3619197482297404
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.711,
+      "probability": 0.36506687647521635
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.719,
+      "probability": 0.3682140047206924
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.727,
+      "probability": 0.37136113296616835
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.757,
+      "probability": 0.3752950432730134
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.77,
+      "probability": 0.37844217151848936
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.779,
+      "probability": 0.3815892997639654
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.802,
+      "probability": 0.3847364280094414
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.829,
+      "probability": 0.3886703383162864
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.859,
+      "probability": 0.3918174665617624
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.878,
+      "probability": 0.3949645948072384
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.9,
+      "probability": 0.3981117230527144
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.921,
+      "probability": 0.4020456333595594
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.949,
+      "probability": 0.4051927616050354
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.957,
+      "probability": 0.4083398898505114
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 0.985,
+      "probability": 0.4114870180959874
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.008,
+      "probability": 0.4154209284028324
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.016,
+      "probability": 0.41856805664830843
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.04,
+      "probability": 0.4217151848937844
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.054,
+      "probability": 0.42486231313926043
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.096,
+      "probability": 0.4287962234461054
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.129,
+      "probability": 0.43194335169158143
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.171,
+      "probability": 0.43509047993705746
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.205,
+      "probability": 0.43823760818253343
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.243,
+      "probability": 0.44217151848937847
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.304,
+      "probability": 0.44531864673485444
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.324,
+      "probability": 0.44846577498033047
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.412,
+      "probability": 0.45161290322580644
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.506,
+      "probability": 0.4555468135326515
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.524,
+      "probability": 0.45869394177812745
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.551,
+      "probability": 0.4618410700236035
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.568,
+      "probability": 0.46498819826907944
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.599,
+      "probability": 0.4689221085759245
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.646,
+      "probability": 0.47206923682140045
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.694,
+      "probability": 0.4752163650668765
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.809,
+      "probability": 0.4783634933123525
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.859,
+      "probability": 0.4822974036191975
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.93,
+      "probability": 0.4854445318646735
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.963,
+      "probability": 0.4885916601101495
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1.996,
+      "probability": 0.4917387883556255
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.02,
+      "probability": 0.4956726986624705
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.075,
+      "probability": 0.4988198269079465
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.123,
+      "probability": 0.5019669551534225
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.186,
+      "probability": 0.5051140833988985
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.346,
+      "probability": 0.5090479937057435
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.366,
+      "probability": 0.5121951219512195
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.428,
+      "probability": 0.5153422501966956
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.505,
+      "probability": 0.5184893784421715
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.603,
+      "probability": 0.5224232887490166
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.676,
+      "probability": 0.5255704169944925
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.718,
+      "probability": 0.5287175452399685
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.766,
+      "probability": 0.5318646734854445
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2.922,
+      "probability": 0.5357985837922895
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 3.046,
+      "probability": 0.5389457120377655
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 3.143,
+      "probability": 0.5420928402832416
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 3.184,
+      "probability": 0.5452399685287176
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 3.315,
+      "probability": 0.5491738788355626
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 3.601,
+      "probability": 0.5523210070810386
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 3.712,
+      "probability": 0.5554681353265145
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 3.937,
+      "probability": 0.5586152635719905
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 4.013,
+      "probability": 0.5625491738788355
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 4.215,
+      "probability": 0.5656963021243115
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 4.305,
+      "probability": 0.5688434303697876
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 4.467,
+      "probability": 0.5719905586152636
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 4.685,
+      "probability": 0.5759244689221086
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 4.831,
+      "probability": 0.5790715971675846
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 5.035,
+      "probability": 0.5822187254130606
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 5.174,
+      "probability": 0.5853658536585366
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 5.387,
+      "probability": 0.5892997639653816
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 5.474,
+      "probability": 0.5924468922108576
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 5.823,
+      "probability": 0.5955940204563336
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 6.101,
+      "probability": 0.5987411487018096
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 6.255,
+      "probability": 0.6026750590086546
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 6.457,
+      "probability": 0.6058221872541306
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 6.788,
+      "probability": 0.6089693154996066
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 7.161,
+      "probability": 0.6121164437450826
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 7.33,
+      "probability": 0.6160503540519277
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 7.504,
+      "probability": 0.6191974822974036
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 7.746,
+      "probability": 0.6223446105428796
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 7.96,
+      "probability": 0.6254917387883556
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 8.295,
+      "probability": 0.6294256490952006
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 8.358,
+      "probability": 0.6325727773406766
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 8.752,
+      "probability": 0.6357199055861527
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 9.245,
+      "probability": 0.6388670338316287
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 9.499,
+      "probability": 0.6428009441384737
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 9.764,
+      "probability": 0.6459480723839497
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 10.155,
+      "probability": 0.6490952006294256
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 11.029,
+      "probability": 0.6522423288749016
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 11.343,
+      "probability": 0.6561762391817466
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 11.569,
+      "probability": 0.6593233674272226
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 11.983,
+      "probability": 0.6624704956726987
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 12.47,
+      "probability": 0.6656176239181747
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 12.643,
+      "probability": 0.6687647521636507
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 13.239,
+      "probability": 0.6726986624704957
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 13.572,
+      "probability": 0.6758457907159717
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 13.977,
+      "probability": 0.6789929189614476
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 14.657,
+      "probability": 0.6821400472069237
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 15.146,
+      "probability": 0.6860739575137687
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 15.604,
+      "probability": 0.6892210857592447
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 15.902,
+      "probability": 0.6923682140047207
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 16.242,
+      "probability": 0.6955153422501967
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 16.694,
+      "probability": 0.6994492525570417
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 16.907,
+      "probability": 0.7025963808025177
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 17.258,
+      "probability": 0.7057435090479937
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 17.441,
+      "probability": 0.7088906372934697
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 18.435,
+      "probability": 0.7128245476003147
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 18.765,
+      "probability": 0.7159716758457907
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 19.158,
+      "probability": 0.7191188040912667
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 19.562,
+      "probability": 0.7222659323367427
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 19.756,
+      "probability": 0.7261998426435877
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 19.921,
+      "probability": 0.7293469708890638
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 20.068,
+      "probability": 0.7324940991345398
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 20.562,
+      "probability": 0.7356412273800157
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 20.953,
+      "probability": 0.7395751376868608
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 21.187,
+      "probability": 0.7427222659323367
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 21.642,
+      "probability": 0.7458693941778127
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 22.12,
+      "probability": 0.7490165224232888
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 22.832,
+      "probability": 0.7529504327301337
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 23.362,
+      "probability": 0.7560975609756098
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 23.57,
+      "probability": 0.7592446892210858
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 23.813,
+      "probability": 0.7623918174665618
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 24.388,
+      "probability": 0.7663257277734068
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 24.955,
+      "probability": 0.7694728560188828
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 25.187,
+      "probability": 0.7726199842643587
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 25.597,
+      "probability": 0.7757671125098348
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 26.487,
+      "probability": 0.7797010228166797
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 26.961,
+      "probability": 0.7828481510621558
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 28.124,
+      "probability": 0.7859952793076318
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 28.989,
+      "probability": 0.7891424075531078
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 30.488,
+      "probability": 0.7930763178599528
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 31.706,
+      "probability": 0.7962234461054288
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 32.569,
+      "probability": 0.7993705743509048
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 33.484,
+      "probability": 0.8025177025963808
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 35.249,
+      "probability": 0.8064516129032258
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 38.399,
+      "probability": 0.8095987411487018
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 39.722,
+      "probability": 0.8127458693941778
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 40.924,
+      "probability": 0.8158929976396538
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 43.315,
+      "probability": 0.8198269079464988
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 44.175,
+      "probability": 0.8229740361919748
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 44.99,
+      "probability": 0.8261211644374509
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 46.862,
+      "probability": 0.8292682926829268
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 48.094,
+      "probability": 0.8332022029897719
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 49.806,
+      "probability": 0.8363493312352478
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 51.09,
+      "probability": 0.8394964594807238
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 53.523,
+      "probability": 0.8426435877261998
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 58.02,
+      "probability": 0.8465774980330448
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 61.546,
+      "probability": 0.8497246262785209
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 62.722,
+      "probability": 0.8528717545239969
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 64.377,
+      "probability": 0.8560188827694729
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 66.211,
+      "probability": 0.8599527930763179
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 66.719,
+      "probability": 0.8630999213217939
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 68.817,
+      "probability": 0.8662470495672698
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 69.947,
+      "probability": 0.8693941778127459
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 72.437,
+      "probability": 0.8733280881195908
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 74.556,
+      "probability": 0.8764752163650669
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 76.898,
+      "probability": 0.8796223446105429
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 78.954,
+      "probability": 0.8827694728560189
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 87.721,
+      "probability": 0.8867033831628639
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 91.837,
+      "probability": 0.8898505114083399
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 94.232,
+      "probability": 0.8929976396538158
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 96.365,
+      "probability": 0.8961447678992919
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 98.037,
+      "probability": 0.9000786782061369
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 111.263,
+      "probability": 0.9032258064516129
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 112.108,
+      "probability": 0.9063729346970889
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 117.794,
+      "probability": 0.9095200629425649
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 119.755,
+      "probability": 0.9134539732494099
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 123.704,
+      "probability": 0.9166011014948859
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 127.934,
+      "probability": 0.919748229740362
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 137.174,
+      "probability": 0.9228953579858379
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 143.912,
+      "probability": 0.926829268292683
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 147.981,
+      "probability": 0.9299763965381589
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 159.569,
+      "probability": 0.9331235247836349
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 167.165,
+      "probability": 0.9362706530291109
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 182.733,
+      "probability": 0.9402045633359559
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 203.482,
+      "probability": 0.943351691581432
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 224.208,
+      "probability": 0.946498819826908
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 233.043,
+      "probability": 0.9496459480723839
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 257.978,
+      "probability": 0.953579858379229
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 282.039,
+      "probability": 0.956726986624705
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 310.496,
+      "probability": 0.9598741148701809
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 336.262,
+      "probability": 0.963021243115657
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 380.972,
+      "probability": 0.9669551534225019
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 421.236,
+      "probability": 0.970102281667978
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 473.53,
+      "probability": 0.973249409913454
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 551.59,
+      "probability": 0.97639653815893
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 600.822,
+      "probability": 0.980330448465775
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 667.814,
+      "probability": 0.983477576711251
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 861.536,
+      "probability": 0.9866247049567269
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1072.992,
+      "probability": 0.989771833202203
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1306.882,
+      "probability": 0.993705743509048
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 1443.947,
+      "probability": 0.996852871754524
+    },
+    {
+      "agent": "Claude Code",
+      "ttm_hours": 2731.037,
+      "probability": 1.0
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.001,
+      "probability": 3.3973161202649904e-05
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.003363342959062341
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.006726685918124682
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.010056055715984372
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.013419398675046714
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.016748768472906402
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.020112111431968744
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.023441481229828434
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.026804824188890776
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.030134193986750466
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.033463563784610156
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.0368269067436725
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.04015627654153219
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.043519619500594534
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.002,
+      "probability": 0.04684898929845422
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.05021233225751656
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.053541702055376256
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.05690504501443859
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.060234414812298284
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.06356378461015798
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.06692712756922031
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.07025649736708
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.07361984032614234
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.07694921012400203
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.08031255308306438
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.08364192288092406
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.08697129267878376
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.0903346356378461
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.09366400543570579
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.09702734839476813
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.10035671819262783
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.10372006115169016
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.10704943094954986
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.11041277390861219
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.11374214370647188
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.11707151350433158
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.12043485646339391
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.12376422626125361
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.12712756922031596
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.13045693901817565
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.13382028197723797
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.003,
+      "probability": 0.13714965177509766
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.14051299473416
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.1438423645320197
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.1471717343298794
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.15053507728894175
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.15386444708680141
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.15722779004586376
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.16055715984372346
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.1639205028027858
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.1672498726006455
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.17061321555970782
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.17394258535756751
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.1772719551554272
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.18063529811448956
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.18396466791234925
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.18732801087141157
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.19065738066927126
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.1940207236283336
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.1973500934261933
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.200679463224053
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.20404280618311535
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.20737217598097504
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.21073551894003736
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.21406488873789706
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.2174282316969594
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.2207576014948191
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.22412094445388142
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.22745031425174111
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.2307796840496008
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.23414302700866316
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.23747239680652285
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.2408357397655852
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.24416510956344487
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.24752845252250721
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.2508578223203669
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.004,
+      "probability": 0.25422116527942923
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2575505350772889
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2608799048751486
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.264243247834211
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2675726176320707
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.270935960591133
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2742653303889927
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.277628673348055
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2809580431459147
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2843213861049771
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2876507559028368
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2909801257006964
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2943434686597588
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.005,
+      "probability": 0.2976728384576185
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3010361814166808
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3043655512145405
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.30772889417360283
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3110582639714625
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3143876337693222
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3177509767283846
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3210803465262443
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3244436894853066
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3277730592831663
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3311364022422286
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.006,
+      "probability": 0.3344657720400883
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.007,
+      "probability": 0.3378291149991507
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.007,
+      "probability": 0.3411584847970104
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.007,
+      "probability": 0.3444878545948701
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.007,
+      "probability": 0.3478511975539324
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.007,
+      "probability": 0.3511805673517921
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.007,
+      "probability": 0.3545439103108544
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.007,
+      "probability": 0.3578732801087141
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.008,
+      "probability": 0.36123662306777643
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.008,
+      "probability": 0.3645659928656361
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.008,
+      "probability": 0.3679293358246985
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.008,
+      "probability": 0.3712587056225582
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.008,
+      "probability": 0.3745880754204179
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.008,
+      "probability": 0.3779514183794802
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.008,
+      "probability": 0.3812807881773399
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.009,
+      "probability": 0.3846441311364022
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.009,
+      "probability": 0.3879735009342619
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.009,
+      "probability": 0.3913368438933243
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.009,
+      "probability": 0.394666213691184
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.009,
+      "probability": 0.3980295566502463
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.01,
+      "probability": 0.401358926448106
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.01,
+      "probability": 0.4046882962459657
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.01,
+      "probability": 0.408051639205028
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.01,
+      "probability": 0.4113810090028877
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.011,
+      "probability": 0.4147443519619501
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.011,
+      "probability": 0.4180737217598097
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.011,
+      "probability": 0.4214370647188721
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.011,
+      "probability": 0.4247664345167318
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.012,
+      "probability": 0.4281297774757941
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.012,
+      "probability": 0.4314591472736538
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.012,
+      "probability": 0.4347885170715135
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.013,
+      "probability": 0.4381518600305758
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.013,
+      "probability": 0.4414812298284355
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.013,
+      "probability": 0.4448445727874979
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.014,
+      "probability": 0.4481739425853576
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.014,
+      "probability": 0.4515372855444199
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.015,
+      "probability": 0.4548666553422796
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.015,
+      "probability": 0.4581960251401393
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.015,
+      "probability": 0.4615593680992016
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.016,
+      "probability": 0.4648887378970613
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.016,
+      "probability": 0.4682520808561237
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.017,
+      "probability": 0.4715814506539834
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.017,
+      "probability": 0.4749447936130457
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.018,
+      "probability": 0.4782741634109054
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.018,
+      "probability": 0.4816375063699677
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.019,
+      "probability": 0.4849668761678274
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.019,
+      "probability": 0.4882962459656871
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.02,
+      "probability": 0.4916595889247494
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.02,
+      "probability": 0.4949889587226091
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.021,
+      "probability": 0.4983523016816715
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.022,
+      "probability": 0.5016816714795311
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.022,
+      "probability": 0.5050450144385935
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.023,
+      "probability": 0.5083743842364532
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.023,
+      "probability": 0.5117377271955156
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.024,
+      "probability": 0.5150670969933753
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.025,
+      "probability": 0.518396466791235
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.025,
+      "probability": 0.5217598097502972
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.026,
+      "probability": 0.5250891795481569
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.027,
+      "probability": 0.5284525225072193
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.027,
+      "probability": 0.531781892305079
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.028,
+      "probability": 0.5351452352641414
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.029,
+      "probability": 0.5384746050620011
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.029,
+      "probability": 0.5418379480210633
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.03,
+      "probability": 0.545167317818923
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.031,
+      "probability": 0.5484966876167827
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.032,
+      "probability": 0.5518600305758451
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.033,
+      "probability": 0.5551894003737048
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.034,
+      "probability": 0.5585527433327672
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.034,
+      "probability": 0.5618821131306269
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.036,
+      "probability": 0.5652454560896891
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.036,
+      "probability": 0.5685748258875488
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.038,
+      "probability": 0.5719041956854085
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.038,
+      "probability": 0.5752675386444709
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.039,
+      "probability": 0.5785969084423306
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.041,
+      "probability": 0.5819602514013928
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.042,
+      "probability": 0.5852896211992525
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.042,
+      "probability": 0.5886529641583149
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.043,
+      "probability": 0.5919823339561746
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.045,
+      "probability": 0.595345676915237
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.046,
+      "probability": 0.5986750467130967
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.047,
+      "probability": 0.6020044165109564
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.048,
+      "probability": 0.6053677594700186
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.049,
+      "probability": 0.6086971292678783
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.051,
+      "probability": 0.6120604722269407
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.052,
+      "probability": 0.6153898420248004
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.053,
+      "probability": 0.6187531849838628
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.054,
+      "probability": 0.6220825547817225
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.056,
+      "probability": 0.6254458977407847
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.057,
+      "probability": 0.6287752675386444
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.059,
+      "probability": 0.6321046373365041
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.061,
+      "probability": 0.6354679802955665
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.063,
+      "probability": 0.6387973500934262
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.065,
+      "probability": 0.6421606930524886
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.066,
+      "probability": 0.6454900628503483
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.068,
+      "probability": 0.6488534058094105
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.07,
+      "probability": 0.6521827756072702
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.071,
+      "probability": 0.6555461185663326
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.073,
+      "probability": 0.6588754883641923
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.075,
+      "probability": 0.662204858162052
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.078,
+      "probability": 0.6655682011211144
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.079,
+      "probability": 0.6688975709189741
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.082,
+      "probability": 0.6722609138780363
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.084,
+      "probability": 0.675590283675896
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.086,
+      "probability": 0.6789536266349584
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.089,
+      "probability": 0.6822829964328181
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.091,
+      "probability": 0.6856463393918805
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.094,
+      "probability": 0.6889757091897402
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.097,
+      "probability": 0.6923050789875997
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.099,
+      "probability": 0.6956684219466621
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.102,
+      "probability": 0.6989977917445218
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.105,
+      "probability": 0.7023611347035842
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.109,
+      "probability": 0.7056905045014439
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.113,
+      "probability": 0.7090538474605061
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.116,
+      "probability": 0.7123832172583658
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.12,
+      "probability": 0.7157125870562255
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.124,
+      "probability": 0.7190759300152879
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.128,
+      "probability": 0.7224052998131476
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.134,
+      "probability": 0.72576864277221
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.138,
+      "probability": 0.7290980125700697
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.143,
+      "probability": 0.7324613555291319
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.148,
+      "probability": 0.7357907253269916
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.154,
+      "probability": 0.739154068286054
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.158,
+      "probability": 0.7424834380839137
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.164,
+      "probability": 0.7458128078817734
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.169,
+      "probability": 0.7491761508408358
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.175,
+      "probability": 0.7525055206386955
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.182,
+      "probability": 0.7558688635977577
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.19,
+      "probability": 0.7591982333956174
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.198,
+      "probability": 0.7625615763546798
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.204,
+      "probability": 0.7658909461525395
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.212,
+      "probability": 0.7692542891116019
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.221,
+      "probability": 0.7725836589094616
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.229,
+      "probability": 0.7759130287073213
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.237,
+      "probability": 0.7792763716663835
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.25,
+      "probability": 0.7826057414642432
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.262,
+      "probability": 0.7859690844233056
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.272,
+      "probability": 0.7892984542211653
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.285,
+      "probability": 0.7926617971802277
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.299,
+      "probability": 0.7959911669780874
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.316,
+      "probability": 0.7993545099371496
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.336,
+      "probability": 0.8026838797350093
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.355,
+      "probability": 0.806013249532869
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.378,
+      "probability": 0.8093765924919314
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.404,
+      "probability": 0.8127059622897911
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.428,
+      "probability": 0.8160693052488535
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.453,
+      "probability": 0.819398675046713
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.482,
+      "probability": 0.8227620180057754
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.515,
+      "probability": 0.8260913878036351
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.558,
+      "probability": 0.8294207576014948
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.599,
+      "probability": 0.8327841005605572
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.638,
+      "probability": 0.8361134703584169
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.684,
+      "probability": 0.8394768133174791
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.738,
+      "probability": 0.8428061831153388
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.778,
+      "probability": 0.8461695260744012
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.838,
+      "probability": 0.8494988958722609
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.902,
+      "probability": 0.8528622388313233
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 0.96,
+      "probability": 0.856191608629183
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.032,
+      "probability": 0.8595209784270427
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.118,
+      "probability": 0.8628843213861049
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.204,
+      "probability": 0.8662136911839646
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.29,
+      "probability": 0.869577034143027
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.426,
+      "probability": 0.8729064039408867
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.555,
+      "probability": 0.8762697468999491
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.684,
+      "probability": 0.8795991166978088
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.81,
+      "probability": 0.882962459656871
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 1.994,
+      "probability": 0.8862918294547307
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 2.206,
+      "probability": 0.8896211992525904
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 2.456,
+      "probability": 0.8929845422116528
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 2.684,
+      "probability": 0.8963139120095125
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 3.088,
+      "probability": 0.8996772549685749
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 3.63,
+      "probability": 0.9030066247664346
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 4.261,
+      "probability": 0.9063699677254968
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 4.97,
+      "probability": 0.9096993375233565
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 5.559,
+      "probability": 0.9130626804824189
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 5.937,
+      "probability": 0.9163920502802786
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 7.163,
+      "probability": 0.9197214200781383
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 8.508,
+      "probability": 0.9230847630372007
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 9.304,
+      "probability": 0.9264141328350604
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 10.397,
+      "probability": 0.9297774757941226
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 11.742,
+      "probability": 0.9331068455919823
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 13.018,
+      "probability": 0.9364701885510447
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 14.79,
+      "probability": 0.9397995583489044
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 16.88,
+      "probability": 0.9431289281467641
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 18.898,
+      "probability": 0.9464922711058263
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 21.38,
+      "probability": 0.949821640903686
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 23.731,
+      "probability": 0.9531849838627484
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 26.722,
+      "probability": 0.9565143536606081
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 34.184,
+      "probability": 0.9598776966196705
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 41.169,
+      "probability": 0.9632070664175302
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 47.727,
+      "probability": 0.9665704093765924
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 60.885,
+      "probability": 0.9698997791744521
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 73.092,
+      "probability": 0.9732291489723118
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 81.906,
+      "probability": 0.9765924919313742
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 98.701,
+      "probability": 0.9799218617292339
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 123.76,
+      "probability": 0.9832852046882963
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 169.061,
+      "probability": 0.986614574486156
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 256.759,
+      "probability": 0.9899779174452182
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 368.766,
+      "probability": 0.9933072872430779
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 650.222,
+      "probability": 0.9966706302021403
+    },
+    {
+      "agent": "Codex",
+      "ttm_hours": 3361.353,
+      "probability": 1.0
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.004,
+      "probability": 8.378718056137411e-05
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.081,
+      "probability": 0.0034352744030163385
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.104,
+      "probability": 0.006786761625471303
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.12,
+      "probability": 0.010138248847926268
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.131,
+      "probability": 0.013489736070381233
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.142,
+      "probability": 0.016841223292836195
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.152,
+      "probability": 0.020108923334729786
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.164,
+      "probability": 0.02346041055718475
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.173,
+      "probability": 0.026811897779639715
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.184,
+      "probability": 0.03016338500209468
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.195,
+      "probability": 0.033514872224549644
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.204,
+      "probability": 0.03686635944700461
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.211,
+      "probability": 0.04021784666945957
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.22,
+      "probability": 0.04356933389191454
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.228,
+      "probability": 0.0469208211143695
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.235,
+      "probability": 0.050272308336824466
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.245,
+      "probability": 0.05362379555927943
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.254,
+      "probability": 0.056975282781734395
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.263,
+      "probability": 0.060242982823627986
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.27,
+      "probability": 0.06359447004608294
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.277,
+      "probability": 0.06694595726853791
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.289,
+      "probability": 0.07029744449099287
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.296,
+      "probability": 0.07364893171344784
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.306,
+      "probability": 0.0770004189359028
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.314,
+      "probability": 0.08035190615835777
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.323,
+      "probability": 0.08370339338081273
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.331,
+      "probability": 0.0870548806032677
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.34,
+      "probability": 0.09040636782572266
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.347,
+      "probability": 0.09375785504817763
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.355,
+      "probability": 0.09702555509007121
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.363,
+      "probability": 0.10037704231252619
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.372,
+      "probability": 0.10372852953498114
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.379,
+      "probability": 0.10708001675743611
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.387,
+      "probability": 0.11043150397989107
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.399,
+      "probability": 0.11378299120234604
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.408,
+      "probability": 0.117134478424801
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.417,
+      "probability": 0.12048596564725597
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.429,
+      "probability": 0.12383745286971093
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.439,
+      "probability": 0.1271889400921659
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.449,
+      "probability": 0.13054042731462087
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.459,
+      "probability": 0.13389191453707583
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.472,
+      "probability": 0.1371596145789694
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.481,
+      "probability": 0.14051110180142437
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.492,
+      "probability": 0.14386258902387936
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.507,
+      "probability": 0.1472140762463343
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.517,
+      "probability": 0.15056556346878927
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.529,
+      "probability": 0.15391705069124423
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.54,
+      "probability": 0.1572685379136992
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.556,
+      "probability": 0.16062002513615417
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.569,
+      "probability": 0.16397151235860913
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.582,
+      "probability": 0.16732299958106409
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.597,
+      "probability": 0.17067448680351907
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.608,
+      "probability": 0.17394218684541266
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.621,
+      "probability": 0.1772936740678676
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.634,
+      "probability": 0.18064516129032257
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.644,
+      "probability": 0.18399664851277756
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.659,
+      "probability": 0.1873481357352325
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.674,
+      "probability": 0.19069962295768747
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.688,
+      "probability": 0.19405111018014243
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.701,
+      "probability": 0.1974025974025974
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.719,
+      "probability": 0.20075408462505237
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.739,
+      "probability": 0.20410557184750733
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.758,
+      "probability": 0.20745705906996229
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.778,
+      "probability": 0.21080854629241727
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.795,
+      "probability": 0.21407624633431085
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.813,
+      "probability": 0.2174277335567658
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.831,
+      "probability": 0.22077922077922077
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.852,
+      "probability": 0.22413070800167575
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.874,
+      "probability": 0.2274821952241307
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.898,
+      "probability": 0.23083368244658567
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.917,
+      "probability": 0.23418516966904063
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.933,
+      "probability": 0.2375366568914956
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.955,
+      "probability": 0.24088814411395057
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.97,
+      "probability": 0.24423963133640553
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 0.993,
+      "probability": 0.24759111855886048
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.012,
+      "probability": 0.2508588186007541
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.03,
+      "probability": 0.254210305823209
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.055,
+      "probability": 0.257561793045664
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.08,
+      "probability": 0.260913280268119
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.108,
+      "probability": 0.2642647674905739
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.129,
+      "probability": 0.2676162547130289
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.151,
+      "probability": 0.2709677419354839
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.172,
+      "probability": 0.2743192291579388
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.2,
+      "probability": 0.2776707163803938
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.221,
+      "probability": 0.28102220360284874
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.25,
+      "probability": 0.2843736908253037
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.278,
+      "probability": 0.2877251780477587
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.309,
+      "probability": 0.2909928780896523
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.335,
+      "probability": 0.2943443653121072
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.367,
+      "probability": 0.2976958525345622
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.394,
+      "probability": 0.3010473397570172
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.426,
+      "probability": 0.3043988269794721
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.458,
+      "probability": 0.3077503142019271
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.492,
+      "probability": 0.3111018014243821
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.534,
+      "probability": 0.314453288646837
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.565,
+      "probability": 0.317804775869292
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.601,
+      "probability": 0.32115626309174694
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.636,
+      "probability": 0.3245077503142019
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.669,
+      "probability": 0.3277754503560955
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.717,
+      "probability": 0.3311269375785505
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.768,
+      "probability": 0.3344784248010054
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.809,
+      "probability": 0.3378299120234604
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.851,
+      "probability": 0.3411813992459154
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.888,
+      "probability": 0.3445328864683703
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.944,
+      "probability": 0.3478843736908253
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1.993,
+      "probability": 0.3512358609132803
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.05,
+      "probability": 0.3545873481357352
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.108,
+      "probability": 0.3579388353581902
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.161,
+      "probability": 0.36129032258064514
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.23,
+      "probability": 0.3646418098031001
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.284,
+      "probability": 0.3679095098449937
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.352,
+      "probability": 0.3712609970674487
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.415,
+      "probability": 0.3746124842899036
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.495,
+      "probability": 0.3779639715123586
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.564,
+      "probability": 0.3813154587348136
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.622,
+      "probability": 0.3846669459572685
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.689,
+      "probability": 0.3880184331797235
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.77,
+      "probability": 0.39136992040217844
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.842,
+      "probability": 0.3947214076246334
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 2.937,
+      "probability": 0.3980728948470884
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.001,
+      "probability": 0.40142438206954334
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.085,
+      "probability": 0.4046920821114369
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.183,
+      "probability": 0.4080435693338919
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.255,
+      "probability": 0.4113950565563469
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.359,
+      "probability": 0.4147465437788018
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.468,
+      "probability": 0.4180980310012568
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.551,
+      "probability": 0.4214495182237118
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.629,
+      "probability": 0.4248010054461667
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.721,
+      "probability": 0.4281524926686217
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.812,
+      "probability": 0.43150397989107664
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3.928,
+      "probability": 0.4348554671135316
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 4.044,
+      "probability": 0.4382069543359866
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 4.161,
+      "probability": 0.44155844155844154
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 4.252,
+      "probability": 0.4448261416003351
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 4.363,
+      "probability": 0.4481776288227901
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 4.481,
+      "probability": 0.4515291160452451
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 4.652,
+      "probability": 0.4548806032677
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 4.796,
+      "probability": 0.458232090490155
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 4.929,
+      "probability": 0.46158357771261
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 5.096,
+      "probability": 0.4649350649350649
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 5.231,
+      "probability": 0.4682865521575199
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 5.39,
+      "probability": 0.47163803937997484
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 5.535,
+      "probability": 0.4749895266024298
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 5.722,
+      "probability": 0.4783410138248848
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 5.92,
+      "probability": 0.4816087138667784
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 6.076,
+      "probability": 0.4849602010892333
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 6.343,
+      "probability": 0.4883116883116883
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 6.646,
+      "probability": 0.4916631755341433
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 6.851,
+      "probability": 0.4950146627565982
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 7.087,
+      "probability": 0.4983661499790532
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 7.331,
+      "probability": 0.5017176372015082
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 7.656,
+      "probability": 0.5050691244239631
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 7.864,
+      "probability": 0.508420611646418
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 8.129,
+      "probability": 0.5117720988688731
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 8.435,
+      "probability": 0.515123586091328
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 8.726,
+      "probability": 0.518475073313783
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 9.029,
+      "probability": 0.5217427733556765
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 9.432,
+      "probability": 0.5250942605781316
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 9.698,
+      "probability": 0.5284457478005865
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 10.04,
+      "probability": 0.5317972350230414
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 10.352,
+      "probability": 0.5351487222454965
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 10.728,
+      "probability": 0.5385002094679514
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 11.133,
+      "probability": 0.5418516966904063
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 11.596,
+      "probability": 0.5452031839128614
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 11.898,
+      "probability": 0.5485546711353163
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 12.249,
+      "probability": 0.5519061583577712
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 12.574,
+      "probability": 0.5552576455802263
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 12.952,
+      "probability": 0.5585253456221199
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 13.319,
+      "probability": 0.5618768328445748
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 13.748,
+      "probability": 0.5652283200670297
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 14.098,
+      "probability": 0.5685798072894848
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 14.593,
+      "probability": 0.5719312945119397
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 15.048,
+      "probability": 0.5752827817343946
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 15.417,
+      "probability": 0.5786342689568496
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 15.888,
+      "probability": 0.5819857561793046
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 16.357,
+      "probability": 0.5853372434017595
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 16.679,
+      "probability": 0.5886887306242145
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 17.106,
+      "probability": 0.5920402178466695
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 17.441,
+      "probability": 0.5953917050691244
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 17.798,
+      "probability": 0.598659405111018
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 18.177,
+      "probability": 0.6020108923334729
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 18.494,
+      "probability": 0.605362379555928
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 18.851,
+      "probability": 0.6087138667783829
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 19.251,
+      "probability": 0.6120653540008378
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 19.604,
+      "probability": 0.6154168412232929
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 19.943,
+      "probability": 0.6187683284457478
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 20.302,
+      "probability": 0.6221198156682027
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 20.596,
+      "probability": 0.6254713028906578
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 20.915,
+      "probability": 0.6288227901131127
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 21.212,
+      "probability": 0.6321742773355676
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 21.494,
+      "probability": 0.6354419773774612
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 21.824,
+      "probability": 0.6387934645999163
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 22.068,
+      "probability": 0.6421449518223712
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 22.403,
+      "probability": 0.6454964390448261
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 22.703,
+      "probability": 0.6488479262672812
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 22.982,
+      "probability": 0.6521994134897361
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 23.389,
+      "probability": 0.655550900712191
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 23.713,
+      "probability": 0.658902387934646
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 23.905,
+      "probability": 0.662253875157101
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 24.202,
+      "probability": 0.6656053623795559
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 24.476,
+      "probability": 0.6689568496020109
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 24.862,
+      "probability": 0.6723083368244659
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 25.346,
+      "probability": 0.6755760368663595
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 25.716,
+      "probability": 0.6789275240888144
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 26.304,
+      "probability": 0.6822790113112693
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 26.821,
+      "probability": 0.6856304985337244
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 27.49,
+      "probability": 0.6889819857561793
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 28.16,
+      "probability": 0.6923334729786342
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 28.84,
+      "probability": 0.6956849602010893
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 29.65,
+      "probability": 0.6990364474235442
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 30.849,
+      "probability": 0.7023879346459991
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 32.263,
+      "probability": 0.7057394218684542
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 34.516,
+      "probability": 0.7090909090909091
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 36.474,
+      "probability": 0.7123586091328027
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 38.235,
+      "probability": 0.7157100963552576
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 39.806,
+      "probability": 0.7190615835777127
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 40.943,
+      "probability": 0.7224130708001676
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 42.382,
+      "probability": 0.7257645580226225
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 43.218,
+      "probability": 0.7291160452450774
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 43.988,
+      "probability": 0.7324675324675325
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 45.067,
+      "probability": 0.7358190196899874
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 45.994,
+      "probability": 0.7391705069124423
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 47.11,
+      "probability": 0.7425219941348974
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 47.813,
+      "probability": 0.7458734813573523
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 48.508,
+      "probability": 0.7492249685798072
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 49.243,
+      "probability": 0.7524926686217008
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 50.338,
+      "probability": 0.7558441558441559
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 51.905,
+      "probability": 0.7591956430666108
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 53.57,
+      "probability": 0.7625471302890657
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 55.944,
+      "probability": 0.7658986175115208
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 59.952,
+      "probability": 0.7692501047339757
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 62.517,
+      "probability": 0.7726015919564306
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 64.865,
+      "probability": 0.7759530791788857
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 66.736,
+      "probability": 0.7793045664013406
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 68.105,
+      "probability": 0.7826560536237955
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 69.469,
+      "probability": 0.7860075408462506
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 70.565,
+      "probability": 0.7892752408881442
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 71.71,
+      "probability": 0.7926267281105991
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 72.885,
+      "probability": 0.795978215333054
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 73.896,
+      "probability": 0.7993297025555091
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 75.318,
+      "probability": 0.802681189777964
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 77.916,
+      "probability": 0.8060326770004189
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 81.923,
+      "probability": 0.8093841642228738
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 87.502,
+      "probability": 0.8127356514453289
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 90.505,
+      "probability": 0.8160871386677838
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 92.114,
+      "probability": 0.8194386258902387
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 94.137,
+      "probability": 0.8227901131126938
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 95.428,
+      "probability": 0.8261416003351487
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 97.559,
+      "probability": 0.8294093003770423
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 99.907,
+      "probability": 0.8327607875994972
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 103.33,
+      "probability": 0.8361122748219523
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 107.413,
+      "probability": 0.8394637620444072
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 112.157,
+      "probability": 0.8428152492668621
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 115.057,
+      "probability": 0.8461667364893172
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 117.949,
+      "probability": 0.8495182237117721
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 119.935,
+      "probability": 0.852869710934227
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 122.019,
+      "probability": 0.8562211981566821
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 125.171,
+      "probability": 0.859572685379137
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 131.998,
+      "probability": 0.8629241726015919
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 138.253,
+      "probability": 0.8661918726434855
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 141.74,
+      "probability": 0.8695433598659406
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 144.642,
+      "probability": 0.8728948470883955
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 146.967,
+      "probability": 0.8762463343108504
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 152.513,
+      "probability": 0.8795978215333055
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 160.75,
+      "probability": 0.8829493087557604
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 164.589,
+      "probability": 0.8863007959782153
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 166.982,
+      "probability": 0.8896522832006702
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 169.459,
+      "probability": 0.8930037704231253
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 172.46,
+      "probability": 0.8963552576455802
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 180.435,
+      "probability": 0.8997067448680351
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 189.103,
+      "probability": 0.9030582320904902
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 192.735,
+      "probability": 0.9063259321323838
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 200.312,
+      "probability": 0.9096774193548387
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 209.879,
+      "probability": 0.9130289065772936
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 219.796,
+      "probability": 0.9163803937997487
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 236.002,
+      "probability": 0.9197318810222036
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 242.982,
+      "probability": 0.9230833682446585
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 258.723,
+      "probability": 0.9264348554671136
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 270.641,
+      "probability": 0.9297863426895685
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 288.712,
+      "probability": 0.9331378299120234
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 300.129,
+      "probability": 0.9364893171344785
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 311.444,
+      "probability": 0.9398408043569334
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 328.708,
+      "probability": 0.943108504398827
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 339.294,
+      "probability": 0.9464599916212819
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 361.531,
+      "probability": 0.949811478843737
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 391.21,
+      "probability": 0.9531629660661919
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 425.859,
+      "probability": 0.9565144532886468
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 460.84,
+      "probability": 0.9598659405111019
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 482.484,
+      "probability": 0.9632174277335568
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 514.918,
+      "probability": 0.9665689149560117
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 574.681,
+      "probability": 0.9699204021784666
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 617.274,
+      "probability": 0.9732718894009217
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 665.135,
+      "probability": 0.9766233766233766
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 738.524,
+      "probability": 0.9799748638458315
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 826.894,
+      "probability": 0.9832425638877251
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 951.181,
+      "probability": 0.9865940511101802
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1055.856,
+      "probability": 0.9899455383326351
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1256.428,
+      "probability": 0.99329702555509
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 1694.964,
+      "probability": 0.9966485127775451
+    },
+    {
+      "agent": "Copilot",
+      "ttm_hours": 3009.129,
+      "probability": 1.0
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.001,
+      "probability": 0.0004701457451810061
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.001,
+      "probability": 0.0037611659614480487
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.002,
+      "probability": 0.007052186177715092
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.002,
+      "probability": 0.010343206393982134
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.002,
+      "probability": 0.013634226610249177
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.002,
+      "probability": 0.017395392571697227
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.002,
+      "probability": 0.020686412787964268
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.003,
+      "probability": 0.023977433004231313
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.003,
+      "probability": 0.027268453220498354
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.003,
+      "probability": 0.0305594734367654
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.004,
+      "probability": 0.03385049365303244
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.004,
+      "probability": 0.03714151386929948
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.005,
+      "probability": 0.040432534085566525
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.006,
+      "probability": 0.04372355430183357
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.006,
+      "probability": 0.04748472026328162
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.007,
+      "probability": 0.05077574047954866
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.008,
+      "probability": 0.0540667606958157
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.008,
+      "probability": 0.05735778091208275
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.009,
+      "probability": 0.06064880112834979
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.011,
+      "probability": 0.06393982134461683
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.011,
+      "probability": 0.06723084156088388
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.012,
+      "probability": 0.07052186177715092
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.013,
+      "probability": 0.07381288199341796
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.014,
+      "probability": 0.07757404795486601
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.015,
+      "probability": 0.08086506817113305
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.015,
+      "probability": 0.08415608838740009
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.016,
+      "probability": 0.08744710860366714
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.017,
+      "probability": 0.09073812881993418
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.018,
+      "probability": 0.09402914903620123
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.019,
+      "probability": 0.09732016925246827
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.019,
+      "probability": 0.1006111894687353
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.02,
+      "probability": 0.10390220968500236
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.021,
+      "probability": 0.1076633756464504
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.022,
+      "probability": 0.11095439586271744
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.024,
+      "probability": 0.11424541607898449
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.025,
+      "probability": 0.11753643629525153
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.025,
+      "probability": 0.12082745651151858
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.027,
+      "probability": 0.12411847672778561
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.029,
+      "probability": 0.12740949694405265
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.031,
+      "probability": 0.1307005171603197
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.032,
+      "probability": 0.13399153737658676
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.034,
+      "probability": 0.1377527033380348
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.036,
+      "probability": 0.14104372355430184
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.038,
+      "probability": 0.14433474377056887
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.04,
+      "probability": 0.1476257639868359
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.043,
+      "probability": 0.15091678420310295
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.044,
+      "probability": 0.15420780441937001
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.047,
+      "probability": 0.15749882463563705
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.049,
+      "probability": 0.1607898448519041
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.051,
+      "probability": 0.16408086506817113
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.054,
+      "probability": 0.16784203102961917
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.055,
+      "probability": 0.17113305124588624
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.058,
+      "probability": 0.17442407146215327
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.061,
+      "probability": 0.1777150916784203
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.064,
+      "probability": 0.18100611189468735
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.067,
+      "probability": 0.1842971321109544
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.071,
+      "probability": 0.18758815232722145
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.075,
+      "probability": 0.1908791725434885
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.078,
+      "probability": 0.19417019275975553
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.082,
+      "probability": 0.19793135872120357
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.084,
+      "probability": 0.2012223789374706
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.088,
+      "probability": 0.20451339915373765
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.093,
+      "probability": 0.2078044193700047
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.098,
+      "probability": 0.21109543958627175
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.101,
+      "probability": 0.2143864598025388
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.104,
+      "probability": 0.21767748001880582
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.11,
+      "probability": 0.22096850023507286
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.116,
+      "probability": 0.22425952045133993
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.121,
+      "probability": 0.22802068641278797
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.127,
+      "probability": 0.231311706629055
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.131,
+      "probability": 0.23460272684532205
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.136,
+      "probability": 0.23789374706158908
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.14,
+      "probability": 0.24118476727785615
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.142,
+      "probability": 0.2444757874941232
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.147,
+      "probability": 0.24776680771039022
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.149,
+      "probability": 0.25105782792665726
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.157,
+      "probability": 0.2543488481429243
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.159,
+      "probability": 0.25763986835919134
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.17,
+      "probability": 0.2614010343206394
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.174,
+      "probability": 0.2646920545369064
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.18,
+      "probability": 0.2679830747531735
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.189,
+      "probability": 0.27127409496944055
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.199,
+      "probability": 0.2745651151857076
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.202,
+      "probability": 0.2778561354019746
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.205,
+      "probability": 0.28114715561824166
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.213,
+      "probability": 0.2844381758345087
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.219,
+      "probability": 0.28772919605077574
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.222,
+      "probability": 0.2914903620122238
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.228,
+      "probability": 0.2947813822284908
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.232,
+      "probability": 0.29807240244475786
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.238,
+      "probability": 0.3013634226610249
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.243,
+      "probability": 0.304654442877292
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.249,
+      "probability": 0.307945463093559
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.255,
+      "probability": 0.31123648330982606
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.259,
+      "probability": 0.3145275035260931
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.269,
+      "probability": 0.31781852374236014
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.275,
+      "probability": 0.3215796897038082
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.281,
+      "probability": 0.3248707099200752
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.291,
+      "probability": 0.32816173013634226
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.306,
+      "probability": 0.3314527503526093
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.32,
+      "probability": 0.33474377056887633
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.327,
+      "probability": 0.33803479078514337
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.333,
+      "probability": 0.34132581100141046
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.342,
+      "probability": 0.3446168312176775
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.348,
+      "probability": 0.34790785143394454
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.358,
+      "probability": 0.3516690173953926
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.364,
+      "probability": 0.3549600376116596
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.377,
+      "probability": 0.35825105782792666
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.389,
+      "probability": 0.3615420780441937
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.396,
+      "probability": 0.36483309826046073
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.407,
+      "probability": 0.36812411847672777
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.42,
+      "probability": 0.3714151386929948
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.431,
+      "probability": 0.37470615890926184
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.444,
+      "probability": 0.37799717912552894
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.459,
+      "probability": 0.381758345086977
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.471,
+      "probability": 0.385049365303244
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.479,
+      "probability": 0.38834038551951106
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.516,
+      "probability": 0.3916314057357781
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.529,
+      "probability": 0.39492242595204513
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.541,
+      "probability": 0.39821344616831217
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.551,
+      "probability": 0.4015044663845792
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.563,
+      "probability": 0.40479548660084624
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.574,
+      "probability": 0.4080865068171133
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.594,
+      "probability": 0.4118476727785614
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.606,
+      "probability": 0.4151386929948284
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.639,
+      "probability": 0.41842971321109546
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.651,
+      "probability": 0.4217207334273625
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.666,
+      "probability": 0.42501175364362953
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.688,
+      "probability": 0.42830277385989657
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.712,
+      "probability": 0.4315937940761636
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.737,
+      "probability": 0.43488481429243064
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.763,
+      "probability": 0.4381758345086977
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.783,
+      "probability": 0.4419370004701457
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.793,
+      "probability": 0.44522802068641276
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.815,
+      "probability": 0.44851904090267986
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.824,
+      "probability": 0.4518100611189469
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.842,
+      "probability": 0.45510108133521393
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.868,
+      "probability": 0.45839210155148097
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.897,
+      "probability": 0.461683121767748
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.912,
+      "probability": 0.46497414198401504
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.929,
+      "probability": 0.4682651622002821
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.966,
+      "probability": 0.4720263281617301
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 0.994,
+      "probability": 0.47531734837799716
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.013,
+      "probability": 0.4786083685942642
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.038,
+      "probability": 0.48189938881053124
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.066,
+      "probability": 0.48519040902679833
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.089,
+      "probability": 0.48848142924306537
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.134,
+      "probability": 0.4917724494593324
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.174,
+      "probability": 0.49506346967559944
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.212,
+      "probability": 0.4983544898918665
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.272,
+      "probability": 0.5021156558533145
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.337,
+      "probability": 0.5054066760695816
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.376,
+      "probability": 0.5086976962858486
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.437,
+      "probability": 0.5119887165021156
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.491,
+      "probability": 0.5152797367183827
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.55,
+      "probability": 0.5185707569346497
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.624,
+      "probability": 0.5218617771509168
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.664,
+      "probability": 0.5251527973671838
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.716,
+      "probability": 0.5284438175834508
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.748,
+      "probability": 0.5322049835448989
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.844,
+      "probability": 0.5354960037611659
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.89,
+      "probability": 0.538787023977433
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.924,
+      "probability": 0.5420780441937001
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1.985,
+      "probability": 0.5453690644099671
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.047,
+      "probability": 0.5486600846262342
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.131,
+      "probability": 0.5519511048425012
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.223,
+      "probability": 0.5552421250587682
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.316,
+      "probability": 0.5585331452750353
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.39,
+      "probability": 0.5622943112364833
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.434,
+      "probability": 0.5655853314527504
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.484,
+      "probability": 0.5688763516690174
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.557,
+      "probability": 0.5721673718852844
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.684,
+      "probability": 0.5754583921015515
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.794,
+      "probability": 0.5787494123178185
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2.872,
+      "probability": 0.5820404325340856
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 3.003,
+      "probability": 0.5853314527503526
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 3.089,
+      "probability": 0.5886224729666196
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 3.255,
+      "probability": 0.5923836389280677
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 3.428,
+      "probability": 0.5956746591443347
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 3.591,
+      "probability": 0.5989656793606017
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 3.714,
+      "probability": 0.6022566995768688
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 3.883,
+      "probability": 0.6055477197931358
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 4.002,
+      "probability": 0.608838740009403
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 4.22,
+      "probability": 0.61212976022567
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 4.458,
+      "probability": 0.615420780441937
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 4.593,
+      "probability": 0.6187118006582041
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 4.86,
+      "probability": 0.6224729666196521
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 5.041,
+      "probability": 0.6257639868359192
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 5.29,
+      "probability": 0.6290550070521862
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 5.424,
+      "probability": 0.6323460272684532
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 5.791,
+      "probability": 0.6356370474847203
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 6.119,
+      "probability": 0.6389280677009873
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 6.363,
+      "probability": 0.6422190879172543
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 6.572,
+      "probability": 0.6455101081335214
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 6.798,
+      "probability": 0.6488011283497884
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 7.083,
+      "probability": 0.6525622943112365
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 7.373,
+      "probability": 0.6558533145275035
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 7.979,
+      "probability": 0.6591443347437705
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 8.249,
+      "probability": 0.6624353549600376
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 8.431,
+      "probability": 0.6657263751763046
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 9.053,
+      "probability": 0.6690173953925717
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 9.228,
+      "probability": 0.6723084156088387
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 9.902,
+      "probability": 0.6755994358251057
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 10.291,
+      "probability": 0.6788904560413729
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 10.899,
+      "probability": 0.6826516220028209
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 11.402,
+      "probability": 0.685942642219088
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 11.747,
+      "probability": 0.689233662435355
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 12.108,
+      "probability": 0.692524682651622
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 12.481,
+      "probability": 0.6958157028678891
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 13.388,
+      "probability": 0.6991067230841561
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 13.948,
+      "probability": 0.7023977433004231
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 14.169,
+      "probability": 0.7056887635166902
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 14.469,
+      "probability": 0.7089797837329572
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 14.641,
+      "probability": 0.7127409496944053
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 15.342,
+      "probability": 0.7160319699106723
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 15.656,
+      "probability": 0.7193229901269393
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 16.194,
+      "probability": 0.7226140103432064
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 16.459,
+      "probability": 0.7259050305594734
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 16.811,
+      "probability": 0.7291960507757405
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 17.184,
+      "probability": 0.7324870709920075
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 17.765,
+      "probability": 0.7357780912082745
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 18.138,
+      "probability": 0.7390691114245416
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 18.452,
+      "probability": 0.7428302773859896
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 18.781,
+      "probability": 0.7461212976022567
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 19.067,
+      "probability": 0.7494123178185237
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 19.271,
+      "probability": 0.7527033380347908
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 19.55,
+      "probability": 0.7559943582510579
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 19.864,
+      "probability": 0.7592853784673249
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 20.411,
+      "probability": 0.762576398683592
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 20.969,
+      "probability": 0.765867418899859
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 21.571,
+      "probability": 0.769158439116126
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 21.992,
+      "probability": 0.7724494593323931
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 22.521,
+      "probability": 0.7762106252938411
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 22.878,
+      "probability": 0.7795016455101081
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 23.156,
+      "probability": 0.7827926657263752
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 23.479,
+      "probability": 0.7860836859426422
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 23.871,
+      "probability": 0.7893747061589093
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 24.213,
+      "probability": 0.7926657263751763
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 24.4,
+      "probability": 0.7959567465914433
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 24.573,
+      "probability": 0.7992477668077104
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 25.051,
+      "probability": 0.8025387870239774
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 25.634,
+      "probability": 0.8062999529854254
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 26.623,
+      "probability": 0.8095909732016925
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 27.284,
+      "probability": 0.8128819934179595
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 28.474,
+      "probability": 0.8161730136342266
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 30.463,
+      "probability": 0.8194640338504936
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 32.322,
+      "probability": 0.8227550540667607
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 33.096,
+      "probability": 0.8260460742830278
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 37.728,
+      "probability": 0.8293370944992948
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 40.378,
+      "probability": 0.8326281147155619
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 41.643,
+      "probability": 0.8363892806770099
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 42.826,
+      "probability": 0.8396803008932769
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 43.973,
+      "probability": 0.842971321109544
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 45.505,
+      "probability": 0.846262341325811
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 47.224,
+      "probability": 0.8495533615420781
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 48.092,
+      "probability": 0.8528443817583451
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 49.518,
+      "probability": 0.8561354019746121
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 53.381,
+      "probability": 0.8594264221908792
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 56.428,
+      "probability": 0.8627174424071462
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 65.787,
+      "probability": 0.8664786083685942
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 67.792,
+      "probability": 0.8697696285848613
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 70.279,
+      "probability": 0.8730606488011283
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 71.264,
+      "probability": 0.8763516690173954
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 72.975,
+      "probability": 0.8796426892336624
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 74.98,
+      "probability": 0.8829337094499294
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 77.277,
+      "probability": 0.8862247296661965
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 80.09,
+      "probability": 0.8895157498824635
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 83.667,
+      "probability": 0.8928067700987306
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 88.824,
+      "probability": 0.8965679360601787
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 92.383,
+      "probability": 0.8998589562764457
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 94.159,
+      "probability": 0.9031499764927128
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 95.829,
+      "probability": 0.9064409967089798
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 99.618,
+      "probability": 0.9097320169252469
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 103.692,
+      "probability": 0.9130230371415139
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 114.789,
+      "probability": 0.9163140573577809
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 117.168,
+      "probability": 0.919605077574048
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 118.735,
+      "probability": 0.922896097790315
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 123.752,
+      "probability": 0.926657263751763
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 131.493,
+      "probability": 0.9299482839680301
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 142.248,
+      "probability": 0.9332393041842971
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 143.358,
+      "probability": 0.9365303244005642
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 147.551,
+      "probability": 0.9398213446168312
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 162.477,
+      "probability": 0.9431123648330982
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 175.407,
+      "probability": 0.9464033850493653
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 194.042,
+      "probability": 0.9496944052656323
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 202.121,
+      "probability": 0.9529854254818994
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 218.703,
+      "probability": 0.9567465914433474
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 239.686,
+      "probability": 0.9600376116596144
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 271.663,
+      "probability": 0.9633286318758815
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 288.447,
+      "probability": 0.9666196520921486
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 310.9,
+      "probability": 0.9699106723084157
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 336.424,
+      "probability": 0.9732016925246827
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 359.99,
+      "probability": 0.9764927127409497
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 402.719,
+      "probability": 0.9797837329572168
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 434.307,
+      "probability": 0.9830747531734838
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 509.326,
+      "probability": 0.9868359191349318
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 597.604,
+      "probability": 0.9901269393511989
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 885.855,
+      "probability": 0.9934179595674659
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 1263.921,
+      "probability": 0.996708979783733
+    },
+    {
+      "agent": "Cursor",
+      "ttm_hours": 2036.259,
+      "probability": 1.0
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.002,
+      "probability": 0.0002941176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.004,
+      "probability": 0.0035294117647058825
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.006,
+      "probability": 0.007058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.006,
+      "probability": 0.010294117647058823
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.008,
+      "probability": 0.013529411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.01,
+      "probability": 0.017058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.011,
+      "probability": 0.020294117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.013,
+      "probability": 0.023823529411764705
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.015,
+      "probability": 0.027058823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.017,
+      "probability": 0.030294117647058822
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.019,
+      "probability": 0.033823529411764704
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.021,
+      "probability": 0.03705882352941176
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.024,
+      "probability": 0.04029411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.026,
+      "probability": 0.043823529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.029,
+      "probability": 0.047058823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.031,
+      "probability": 0.05058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.033,
+      "probability": 0.05382352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.036,
+      "probability": 0.057058823529411766
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.041,
+      "probability": 0.060588235294117644
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.042,
+      "probability": 0.06382352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.046,
+      "probability": 0.06705882352941177
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.05,
+      "probability": 0.07058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.053,
+      "probability": 0.0738235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.057,
+      "probability": 0.07705882352941176
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.062,
+      "probability": 0.08058823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.066,
+      "probability": 0.0838235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.07,
+      "probability": 0.08735294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.074,
+      "probability": 0.09058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.076,
+      "probability": 0.09382352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.081,
+      "probability": 0.09735294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.087,
+      "probability": 0.10058823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.092,
+      "probability": 0.1038235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.097,
+      "probability": 0.10735294117647058
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.102,
+      "probability": 0.11058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.107,
+      "probability": 0.11411764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.111,
+      "probability": 0.11735294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.116,
+      "probability": 0.12058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.12,
+      "probability": 0.12411764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.124,
+      "probability": 0.12735294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.127,
+      "probability": 0.13058823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.134,
+      "probability": 0.13411764705882354
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.141,
+      "probability": 0.1373529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.146,
+      "probability": 0.14058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.15,
+      "probability": 0.14411764705882352
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.156,
+      "probability": 0.14735294117647058
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.163,
+      "probability": 0.15088235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.168,
+      "probability": 0.15411764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.174,
+      "probability": 0.15735294117647058
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.18,
+      "probability": 0.16088235294117648
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.185,
+      "probability": 0.16411764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.19,
+      "probability": 0.1673529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.196,
+      "probability": 0.17088235294117646
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.201,
+      "probability": 0.17411764705882352
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.211,
+      "probability": 0.1773529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.223,
+      "probability": 0.18088235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.227,
+      "probability": 0.18411764705882352
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.235,
+      "probability": 0.18764705882352942
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.243,
+      "probability": 0.19088235294117648
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.251,
+      "probability": 0.19411764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.261,
+      "probability": 0.1976470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.267,
+      "probability": 0.20088235294117648
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.272,
+      "probability": 0.20411764705882354
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.282,
+      "probability": 0.2076470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.291,
+      "probability": 0.21088235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.299,
+      "probability": 0.21441176470588236
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.306,
+      "probability": 0.21764705882352942
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.312,
+      "probability": 0.22088235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.319,
+      "probability": 0.22441176470588237
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.326,
+      "probability": 0.22764705882352942
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.333,
+      "probability": 0.23088235294117648
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.342,
+      "probability": 0.23441176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.349,
+      "probability": 0.2376470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.358,
+      "probability": 0.24088235294117646
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.373,
+      "probability": 0.24441176470588236
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.386,
+      "probability": 0.24764705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.394,
+      "probability": 0.2511764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.403,
+      "probability": 0.25441176470588234
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.412,
+      "probability": 0.2576470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.419,
+      "probability": 0.2611764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.427,
+      "probability": 0.26441176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.44,
+      "probability": 0.2676470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.447,
+      "probability": 0.2711764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.455,
+      "probability": 0.27441176470588236
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.464,
+      "probability": 0.27794117647058825
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.471,
+      "probability": 0.2811764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.481,
+      "probability": 0.28441176470588236
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.493,
+      "probability": 0.28794117647058826
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.504,
+      "probability": 0.2911764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.513,
+      "probability": 0.2944117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.526,
+      "probability": 0.2979411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.539,
+      "probability": 0.30117647058823527
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.548,
+      "probability": 0.3044117647058823
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.561,
+      "probability": 0.3079411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.566,
+      "probability": 0.3111764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.574,
+      "probability": 0.31470588235294117
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.587,
+      "probability": 0.3179411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.603,
+      "probability": 0.3211764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.612,
+      "probability": 0.3247058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.621,
+      "probability": 0.32794117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.645,
+      "probability": 0.3311764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.656,
+      "probability": 0.3347058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.668,
+      "probability": 0.33794117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.683,
+      "probability": 0.34147058823529414
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.692,
+      "probability": 0.3447058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.711,
+      "probability": 0.34794117647058825
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.734,
+      "probability": 0.3514705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.754,
+      "probability": 0.3547058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.766,
+      "probability": 0.35794117647058826
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.787,
+      "probability": 0.3614705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.805,
+      "probability": 0.36470588235294116
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.828,
+      "probability": 0.3679411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.838,
+      "probability": 0.3714705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.86,
+      "probability": 0.37470588235294117
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.877,
+      "probability": 0.37823529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.901,
+      "probability": 0.3814705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.925,
+      "probability": 0.3847058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.947,
+      "probability": 0.38823529411764707
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.964,
+      "probability": 0.3914705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 0.989,
+      "probability": 0.3947058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.015,
+      "probability": 0.3982352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.042,
+      "probability": 0.40147058823529413
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.079,
+      "probability": 0.405
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.107,
+      "probability": 0.4082352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.141,
+      "probability": 0.41147058823529414
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.17,
+      "probability": 0.415
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.218,
+      "probability": 0.41823529411764704
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.235,
+      "probability": 0.4214705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.264,
+      "probability": 0.425
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.289,
+      "probability": 0.42823529411764705
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.317,
+      "probability": 0.4314705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.353,
+      "probability": 0.435
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.398,
+      "probability": 0.43823529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.436,
+      "probability": 0.44176470588235295
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.468,
+      "probability": 0.445
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.512,
+      "probability": 0.44823529411764707
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.571,
+      "probability": 0.45176470588235296
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.608,
+      "probability": 0.455
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.651,
+      "probability": 0.4582352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.701,
+      "probability": 0.46176470588235297
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.739,
+      "probability": 0.465
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.817,
+      "probability": 0.46852941176470586
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.85,
+      "probability": 0.4717647058823529
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.896,
+      "probability": 0.475
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1.985,
+      "probability": 0.47852941176470587
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.027,
+      "probability": 0.48176470588235293
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.101,
+      "probability": 0.485
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.138,
+      "probability": 0.4885294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.17,
+      "probability": 0.49176470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.223,
+      "probability": 0.495
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.256,
+      "probability": 0.4985294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.299,
+      "probability": 0.5017647058823529
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.332,
+      "probability": 0.5052941176470588
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.387,
+      "probability": 0.5085294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.446,
+      "probability": 0.5117647058823529
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.503,
+      "probability": 0.5152941176470588
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.546,
+      "probability": 0.5185294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.637,
+      "probability": 0.5217647058823529
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.721,
+      "probability": 0.5252941176470588
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.807,
+      "probability": 0.5285294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.891,
+      "probability": 0.5317647058823529
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2.992,
+      "probability": 0.5352941176470588
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.078,
+      "probability": 0.5385294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.182,
+      "probability": 0.5420588235294118
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.251,
+      "probability": 0.5452941176470588
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.316,
+      "probability": 0.5485294117647059
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.416,
+      "probability": 0.5520588235294117
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.484,
+      "probability": 0.5552941176470588
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.693,
+      "probability": 0.5585294117647058
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.827,
+      "probability": 0.5620588235294117
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.918,
+      "probability": 0.5652941176470588
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 3.982,
+      "probability": 0.5688235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 4.057,
+      "probability": 0.5720588235294117
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 4.145,
+      "probability": 0.5752941176470588
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 4.228,
+      "probability": 0.5788235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 4.342,
+      "probability": 0.5820588235294117
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 4.474,
+      "probability": 0.5852941176470589
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 4.704,
+      "probability": 0.5888235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 4.856,
+      "probability": 0.5920588235294117
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 5.129,
+      "probability": 0.5952941176470589
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 5.223,
+      "probability": 0.5988235294117648
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 5.475,
+      "probability": 0.6020588235294118
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 5.646,
+      "probability": 0.6055882352941176
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 5.977,
+      "probability": 0.6088235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 6.269,
+      "probability": 0.6120588235294118
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 6.532,
+      "probability": 0.6155882352941177
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 6.742,
+      "probability": 0.6188235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 7.099,
+      "probability": 0.6220588235294118
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 7.477,
+      "probability": 0.6255882352941177
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 7.692,
+      "probability": 0.6288235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 8.226,
+      "probability": 0.6323529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 8.658,
+      "probability": 0.6355882352941177
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 8.911,
+      "probability": 0.6388235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 9.245,
+      "probability": 0.6423529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 9.669,
+      "probability": 0.6455882352941177
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 10.484,
+      "probability": 0.6488235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 10.881,
+      "probability": 0.6523529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 11.364,
+      "probability": 0.6555882352941177
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 11.581,
+      "probability": 0.6588235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 12.511,
+      "probability": 0.6623529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 13.031,
+      "probability": 0.6655882352941176
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 13.695,
+      "probability": 0.6691176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 14.352,
+      "probability": 0.6723529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 14.776,
+      "probability": 0.6755882352941176
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 15.1,
+      "probability": 0.6791176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 15.556,
+      "probability": 0.6823529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 15.936,
+      "probability": 0.6855882352941176
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 16.571,
+      "probability": 0.6891176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 17.096,
+      "probability": 0.6923529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 17.551,
+      "probability": 0.6958823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 17.826,
+      "probability": 0.6991176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 18.008,
+      "probability": 0.7023529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 18.259,
+      "probability": 0.7058823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 18.562,
+      "probability": 0.7091176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 18.894,
+      "probability": 0.7123529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 19.201,
+      "probability": 0.7158823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 19.351,
+      "probability": 0.7191176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 19.611,
+      "probability": 0.7223529411764706
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 20.058,
+      "probability": 0.7258823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 20.19,
+      "probability": 0.7291176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 20.442,
+      "probability": 0.7326470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 20.738,
+      "probability": 0.7358823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 21.098,
+      "probability": 0.7391176470588235
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 21.583,
+      "probability": 0.7426470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 21.785,
+      "probability": 0.7458823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 22.069,
+      "probability": 0.7491176470588236
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 22.367,
+      "probability": 0.7526470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 22.611,
+      "probability": 0.7558823529411764
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 22.885,
+      "probability": 0.7594117647058823
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 23.336,
+      "probability": 0.7626470588235295
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 23.513,
+      "probability": 0.7658823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 23.863,
+      "probability": 0.7694117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 24.133,
+      "probability": 0.7726470588235295
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 24.754,
+      "probability": 0.7758823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 25.141,
+      "probability": 0.7794117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 25.413,
+      "probability": 0.7826470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 25.73,
+      "probability": 0.7858823529411765
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 26.342,
+      "probability": 0.7894117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 27.289,
+      "probability": 0.7926470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 28.475,
+      "probability": 0.7961764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 29.739,
+      "probability": 0.7994117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 31.259,
+      "probability": 0.8026470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 33.901,
+      "probability": 0.8061764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 35.836,
+      "probability": 0.8094117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 38.735,
+      "probability": 0.8126470588235294
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 40.861,
+      "probability": 0.8161764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 41.815,
+      "probability": 0.8194117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 42.936,
+      "probability": 0.8229411764705883
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 44.006,
+      "probability": 0.8261764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 45.649,
+      "probability": 0.8294117647058824
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 46.251,
+      "probability": 0.8329411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 47.797,
+      "probability": 0.8361764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 48.464,
+      "probability": 0.8394117647058823
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 50.28,
+      "probability": 0.8429411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 51.496,
+      "probability": 0.8461764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 53.532,
+      "probability": 0.8494117647058823
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 55.432,
+      "probability": 0.8529411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 57.66,
+      "probability": 0.8561764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 62.053,
+      "probability": 0.8597058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 64.396,
+      "probability": 0.8629411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 66.086,
+      "probability": 0.8661764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 67.802,
+      "probability": 0.8697058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 69.63,
+      "probability": 0.8729411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 71.084,
+      "probability": 0.8761764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 72.65,
+      "probability": 0.8797058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 74.727,
+      "probability": 0.8829411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 78.205,
+      "probability": 0.8861764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 83.972,
+      "probability": 0.8897058823529411
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 89.093,
+      "probability": 0.8929411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 92.116,
+      "probability": 0.8964705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 94.578,
+      "probability": 0.8997058823529411
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 96.462,
+      "probability": 0.9029411764705882
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 98.84,
+      "probability": 0.9064705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 103.993,
+      "probability": 0.9097058823529411
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 108.839,
+      "probability": 0.9129411764705883
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 114.841,
+      "probability": 0.9164705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 117.398,
+      "probability": 0.9197058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 120.547,
+      "probability": 0.923235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 122.765,
+      "probability": 0.9264705882352942
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 124.581,
+      "probability": 0.9297058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 132.211,
+      "probability": 0.933235294117647
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 137.785,
+      "probability": 0.9364705882352942
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 141.468,
+      "probability": 0.9397058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 145.122,
+      "probability": 0.9432352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 149.928,
+      "probability": 0.9464705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 162.964,
+      "probability": 0.9497058823529412
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 167.986,
+      "probability": 0.9532352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 177.738,
+      "probability": 0.9564705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 190.874,
+      "probability": 0.96
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 209.126,
+      "probability": 0.9632352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 220.326,
+      "probability": 0.9664705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 241.865,
+      "probability": 0.97
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 268.742,
+      "probability": 0.9732352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 326.093,
+      "probability": 0.9764705882352941
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 357.776,
+      "probability": 0.98
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 417.489,
+      "probability": 0.9832352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 506.992,
+      "probability": 0.986764705882353
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 827.588,
+      "probability": 0.99
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1125.684,
+      "probability": 0.9932352941176471
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 1502.615,
+      "probability": 0.9967647058823529
+    },
+    {
+      "agent": "Devin",
+      "ttm_hours": 2278.876,
+      "probability": 1.0
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.004,
+      "probability": 0.0035335689045936395
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.004,
+      "probability": 0.007067137809187279
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.004,
+      "probability": 0.01060070671378092
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.004,
+      "probability": 0.014134275618374558
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.005,
+      "probability": 0.0176678445229682
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.005,
+      "probability": 0.02120141342756184
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.005,
+      "probability": 0.024734982332155476
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.005,
+      "probability": 0.028268551236749116
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.005,
+      "probability": 0.03180212014134275
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.006,
+      "probability": 0.0353356890459364
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.006,
+      "probability": 0.038869257950530034
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.007,
+      "probability": 0.04240282685512368
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.008,
+      "probability": 0.045936395759717315
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.008,
+      "probability": 0.04946996466431095
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.009,
+      "probability": 0.053003533568904596
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.009,
+      "probability": 0.05653710247349823
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.009,
+      "probability": 0.06007067137809187
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.01,
+      "probability": 0.0636042402826855
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.011,
+      "probability": 0.06713780918727916
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.011,
+      "probability": 0.0706713780918728
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.011,
+      "probability": 0.07420494699646643
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.011,
+      "probability": 0.07773851590106007
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.012,
+      "probability": 0.0812720848056537
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.012,
+      "probability": 0.08480565371024736
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.012,
+      "probability": 0.08833922261484099
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.013,
+      "probability": 0.09187279151943463
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.013,
+      "probability": 0.09540636042402827
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.014,
+      "probability": 0.0989399293286219
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.015,
+      "probability": 0.10247349823321555
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.017,
+      "probability": 0.10600706713780919
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.017,
+      "probability": 0.10954063604240283
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.017,
+      "probability": 0.11307420494699646
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.017,
+      "probability": 0.1166077738515901
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.018,
+      "probability": 0.12014134275618374
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.022,
+      "probability": 0.12367491166077739
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.023,
+      "probability": 0.127208480565371
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.023,
+      "probability": 0.13074204946996468
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.025,
+      "probability": 0.13427561837455831
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.025,
+      "probability": 0.13780918727915195
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.026,
+      "probability": 0.1413427561837456
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.026,
+      "probability": 0.14487632508833923
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.029,
+      "probability": 0.14840989399293286
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.03,
+      "probability": 0.1519434628975265
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.03,
+      "probability": 0.15547703180212014
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.03,
+      "probability": 0.15901060070671377
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.032,
+      "probability": 0.1625441696113074
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.033,
+      "probability": 0.16607773851590105
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.036,
+      "probability": 0.1696113074204947
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.037,
+      "probability": 0.17314487632508835
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.04,
+      "probability": 0.17667844522968199
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.042,
+      "probability": 0.18021201413427562
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.052,
+      "probability": 0.18374558303886926
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.053,
+      "probability": 0.1872791519434629
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.054,
+      "probability": 0.19081272084805653
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.055,
+      "probability": 0.19434628975265017
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.055,
+      "probability": 0.1978798586572438
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.059,
+      "probability": 0.20141342756183744
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.062,
+      "probability": 0.2049469964664311
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.064,
+      "probability": 0.20848056537102475
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.071,
+      "probability": 0.21201413427561838
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.072,
+      "probability": 0.21554770318021202
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.073,
+      "probability": 0.21908127208480566
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.084,
+      "probability": 0.2226148409893993
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.091,
+      "probability": 0.22614840989399293
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.097,
+      "probability": 0.22968197879858657
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.097,
+      "probability": 0.2332155477031802
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.1,
+      "probability": 0.23674911660777384
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.101,
+      "probability": 0.24028268551236748
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.102,
+      "probability": 0.24381625441696114
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.109,
+      "probability": 0.24734982332155478
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.111,
+      "probability": 0.2508833922261484
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.113,
+      "probability": 0.254416961130742
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.113,
+      "probability": 0.2579505300353357
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.123,
+      "probability": 0.26148409893992935
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.124,
+      "probability": 0.26501766784452296
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.13,
+      "probability": 0.26855123674911663
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.132,
+      "probability": 0.27208480565371024
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.138,
+      "probability": 0.2756183745583039
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.143,
+      "probability": 0.2791519434628975
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.154,
+      "probability": 0.2826855123674912
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.156,
+      "probability": 0.2862190812720848
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.166,
+      "probability": 0.28975265017667845
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.172,
+      "probability": 0.29328621908127206
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.174,
+      "probability": 0.2968197879858657
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.177,
+      "probability": 0.3003533568904594
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.178,
+      "probability": 0.303886925795053
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.18,
+      "probability": 0.30742049469964666
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.193,
+      "probability": 0.31095406360424027
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.205,
+      "probability": 0.31448763250883394
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.236,
+      "probability": 0.31802120141342755
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.243,
+      "probability": 0.3215547703180212
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.255,
+      "probability": 0.3250883392226148
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.279,
+      "probability": 0.3286219081272085
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.281,
+      "probability": 0.3321554770318021
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.286,
+      "probability": 0.33568904593639576
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.308,
+      "probability": 0.3392226148409894
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.308,
+      "probability": 0.34275618374558303
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.309,
+      "probability": 0.3462897526501767
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.315,
+      "probability": 0.3498233215547703
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.322,
+      "probability": 0.35335689045936397
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.335,
+      "probability": 0.3568904593639576
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.34,
+      "probability": 0.36042402826855124
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.344,
+      "probability": 0.36395759717314485
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.363,
+      "probability": 0.3674911660777385
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.366,
+      "probability": 0.3710247349823322
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.38,
+      "probability": 0.3745583038869258
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.383,
+      "probability": 0.37809187279151946
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.385,
+      "probability": 0.38162544169611307
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.41,
+      "probability": 0.38515901060070673
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.41,
+      "probability": 0.38869257950530034
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.423,
+      "probability": 0.392226148409894
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.429,
+      "probability": 0.3957597173144876
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.431,
+      "probability": 0.3992932862190813
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.432,
+      "probability": 0.4028268551236749
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.437,
+      "probability": 0.40636042402826855
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.442,
+      "probability": 0.4098939929328622
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.478,
+      "probability": 0.4134275618374558
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.503,
+      "probability": 0.4169611307420495
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.507,
+      "probability": 0.4204946996466431
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.53,
+      "probability": 0.42402826855123676
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.538,
+      "probability": 0.4275618374558304
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.543,
+      "probability": 0.43109540636042404
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.543,
+      "probability": 0.43462897526501765
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.554,
+      "probability": 0.4381625441696113
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.574,
+      "probability": 0.4416961130742049
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.588,
+      "probability": 0.4452296819787986
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.59,
+      "probability": 0.44876325088339225
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.612,
+      "probability": 0.45229681978798586
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.645,
+      "probability": 0.4558303886925795
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.648,
+      "probability": 0.45936395759717313
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.65,
+      "probability": 0.4628975265017668
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.655,
+      "probability": 0.4664310954063604
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.661,
+      "probability": 0.46996466431095407
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.672,
+      "probability": 0.4734982332155477
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.697,
+      "probability": 0.47703180212014135
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.698,
+      "probability": 0.48056537102473496
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.707,
+      "probability": 0.4840989399293286
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.718,
+      "probability": 0.4876325088339223
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.761,
+      "probability": 0.4911660777385159
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.782,
+      "probability": 0.49469964664310956
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.799,
+      "probability": 0.49823321554770317
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.826,
+      "probability": 0.5017667844522968
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.829,
+      "probability": 0.5053003533568905
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.838,
+      "probability": 0.508833922261484
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.855,
+      "probability": 0.5123674911660777
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.867,
+      "probability": 0.5159010600706714
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.873,
+      "probability": 0.519434628975265
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.88,
+      "probability": 0.5229681978798587
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.896,
+      "probability": 0.5265017667844523
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.93,
+      "probability": 0.5300353356890459
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.954,
+      "probability": 0.5335689045936396
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 0.99,
+      "probability": 0.5371024734982333
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.062,
+      "probability": 0.5406360424028268
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.107,
+      "probability": 0.5441696113074205
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.108,
+      "probability": 0.5477031802120141
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.135,
+      "probability": 0.5512367491166078
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.198,
+      "probability": 0.5547703180212014
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.216,
+      "probability": 0.558303886925795
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.245,
+      "probability": 0.5618374558303887
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.354,
+      "probability": 0.5653710247349824
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.362,
+      "probability": 0.568904593639576
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.371,
+      "probability": 0.5724381625441696
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.472,
+      "probability": 0.5759717314487632
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.619,
+      "probability": 0.5795053003533569
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.657,
+      "probability": 0.5830388692579506
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.689,
+      "probability": 0.5865724381625441
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 1.811,
+      "probability": 0.5901060070671378
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.034,
+      "probability": 0.5936395759717314
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.116,
+      "probability": 0.5971731448763251
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.2,
+      "probability": 0.6007067137809188
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.291,
+      "probability": 0.6042402826855123
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.323,
+      "probability": 0.607773851590106
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.434,
+      "probability": 0.6113074204946997
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.638,
+      "probability": 0.6148409893992933
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.644,
+      "probability": 0.6183745583038869
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.671,
+      "probability": 0.6219081272084805
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.745,
+      "probability": 0.6254416961130742
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 2.902,
+      "probability": 0.6289752650176679
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.015,
+      "probability": 0.6325088339222615
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.465,
+      "probability": 0.6360424028268551
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.514,
+      "probability": 0.6395759717314488
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.608,
+      "probability": 0.6431095406360424
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.719,
+      "probability": 0.6466431095406361
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.771,
+      "probability": 0.6501766784452296
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.83,
+      "probability": 0.6537102473498233
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.843,
+      "probability": 0.657243816254417
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.912,
+      "probability": 0.6607773851590106
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 3.971,
+      "probability": 0.6643109540636042
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 4.177,
+      "probability": 0.6678445229681979
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 4.292,
+      "probability": 0.6713780918727915
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 4.34,
+      "probability": 0.6749116607773852
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 4.586,
+      "probability": 0.6784452296819788
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 4.879,
+      "probability": 0.6819787985865724
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 5.017,
+      "probability": 0.6855123674911661
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 5.177,
+      "probability": 0.6890459363957597
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 5.266,
+      "probability": 0.6925795053003534
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 5.49,
+      "probability": 0.696113074204947
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 6.004,
+      "probability": 0.6996466431095406
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 6.843,
+      "probability": 0.7031802120141343
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 7.352,
+      "probability": 0.7067137809187279
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 7.889,
+      "probability": 0.7102473498233216
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 7.942,
+      "probability": 0.7137809187279152
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 8.108,
+      "probability": 0.7173144876325088
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 9.862,
+      "probability": 0.7208480565371025
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 9.877,
+      "probability": 0.7243816254416962
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 9.979,
+      "probability": 0.7279151943462897
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 10.16,
+      "probability": 0.7314487632508834
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 10.282,
+      "probability": 0.734982332155477
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 11.198,
+      "probability": 0.7385159010600707
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 11.554,
+      "probability": 0.7420494699646644
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 11.89,
+      "probability": 0.7455830388692579
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 13.121,
+      "probability": 0.7491166077738516
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 14.126,
+      "probability": 0.7526501766784452
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 16.576,
+      "probability": 0.7561837455830389
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 17.128,
+      "probability": 0.7597173144876325
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 18.268,
+      "probability": 0.7632508833922261
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 19.07,
+      "probability": 0.7667844522968198
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 19.082,
+      "probability": 0.7703180212014135
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 19.377,
+      "probability": 0.773851590106007
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 20.448,
+      "probability": 0.7773851590106007
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 21.777,
+      "probability": 0.7809187279151943
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 24.148,
+      "probability": 0.784452296819788
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 24.344,
+      "probability": 0.7879858657243817
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 24.472,
+      "probability": 0.7915194346289752
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 24.553,
+      "probability": 0.7950530035335689
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 24.601,
+      "probability": 0.7985865724381626
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 24.646,
+      "probability": 0.8021201413427562
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 25.826,
+      "probability": 0.8056537102473498
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 26.18,
+      "probability": 0.8091872791519434
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 27.039,
+      "probability": 0.8127208480565371
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 28.516,
+      "probability": 0.8162544169611308
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 29.363,
+      "probability": 0.8197879858657244
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 29.922,
+      "probability": 0.823321554770318
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 32.763,
+      "probability": 0.8268551236749117
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 32.777,
+      "probability": 0.8303886925795053
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 34.77,
+      "probability": 0.833922261484099
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 35.539,
+      "probability": 0.8374558303886925
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 35.842,
+      "probability": 0.8409893992932862
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 36.82,
+      "probability": 0.8445229681978799
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 37.004,
+      "probability": 0.8480565371024735
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 39.415,
+      "probability": 0.8515901060070671
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 39.961,
+      "probability": 0.8551236749116607
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 40.933,
+      "probability": 0.8586572438162544
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 41.342,
+      "probability": 0.8621908127208481
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 45.448,
+      "probability": 0.8657243816254417
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 47.768,
+      "probability": 0.8692579505300353
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 50.606,
+      "probability": 0.872791519434629
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 52.436,
+      "probability": 0.8763250883392226
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 52.666,
+      "probability": 0.8798586572438163
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 56.519,
+      "probability": 0.8833922261484098
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 57.485,
+      "probability": 0.8869257950530035
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 61.008,
+      "probability": 0.8904593639575972
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 61.161,
+      "probability": 0.8939929328621908
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 61.282,
+      "probability": 0.8975265017667845
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 65.541,
+      "probability": 0.901060070671378
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 68.351,
+      "probability": 0.9045936395759717
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 69.684,
+      "probability": 0.9081272084805654
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 70.189,
+      "probability": 0.911660777385159
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 70.813,
+      "probability": 0.9151943462897526
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 73.281,
+      "probability": 0.9187279151943463
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 79.68,
+      "probability": 0.9222614840989399
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 86.982,
+      "probability": 0.9257950530035336
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 92.594,
+      "probability": 0.9293286219081273
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 95.877,
+      "probability": 0.9328621908127208
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 102.126,
+      "probability": 0.9363957597173145
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 103.585,
+      "probability": 0.9399293286219081
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 107.172,
+      "probability": 0.9434628975265018
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 114.604,
+      "probability": 0.9469964664310954
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 116.35,
+      "probability": 0.950530035335689
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 129.113,
+      "probability": 0.9540636042402827
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 168.864,
+      "probability": 0.9575971731448764
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 180.938,
+      "probability": 0.9611307420494699
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 224.344,
+      "probability": 0.9646643109540636
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 231.178,
+      "probability": 0.9681978798586572
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 319.783,
+      "probability": 0.9717314487632509
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 324.707,
+      "probability": 0.9752650176678446
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 325.083,
+      "probability": 0.9787985865724381
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 325.66,
+      "probability": 0.9823321554770318
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 379.522,
+      "probability": 0.9858657243816255
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 435.744,
+      "probability": 0.9893992932862191
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 449.688,
+      "probability": 0.9929328621908127
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 576.174,
+      "probability": 0.9964664310954063
+    },
+    {
+      "agent": "Jules",
+      "ttm_hours": 983.282,
+      "probability": 1.0
+    }
+  ]
+}

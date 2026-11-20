@@ -1,0 +1,232 @@
+[
+  {
+    "month": "2024-12",
+    "agent": "Devin",
+    "prs": 66
+  },
+  {
+    "month": "2025-01",
+    "agent": "Devin",
+    "prs": 423
+  },
+  {
+    "month": "2025-02",
+    "agent": "Claude Code",
+    "prs": 8
+  },
+  {
+    "month": "2025-02",
+    "agent": "Cursor",
+    "prs": 1
+  },
+  {
+    "month": "2025-02",
+    "agent": "Devin",
+    "prs": 526
+  },
+  {
+    "month": "2025-03",
+    "agent": "Claude Code",
+    "prs": 30
+  },
+  {
+    "month": "2025-03",
+    "agent": "Copilot",
+    "prs": 1
+  },
+  {
+    "month": "2025-03",
+    "agent": "Devin",
+    "prs": 717
+  },
+  {
+    "month": "2025-04",
+    "agent": "Claude Code",
+    "prs": 15
+  },
+  {
+    "month": "2025-04",
+    "agent": "Cursor",
+    "prs": 1
+  },
+  {
+    "month": "2025-04",
+    "agent": "Devin",
+    "prs": 811
+  },
+  {
+    "month": "2025-05",
+    "agent": "Claude Code",
+    "prs": 23
+  },
+  {
+    "month": "2025-05",
+    "agent": "Codex",
+    "prs": 4463
+  },
+  {
+    "month": "2025-05",
+    "agent": "Copilot",
+    "prs": 938
+  },
+  {
+    "month": "2025-05",
+    "agent": "Cursor",
+    "prs": 14
+  },
+  {
+    "month": "2025-05",
+    "agent": "Devin",
+    "prs": 959
+  },
+  {
+    "month": "2025-06",
+    "agent": "Claude Code",
+    "prs": 142
+  },
+  {
+    "month": "2025-06",
+    "agent": "Codex",
+    "prs": 9748
+  },
+  {
+    "month": "2025-06",
+    "agent": "Copilot",
+    "prs": 1982
+  },
+  {
+    "month": "2025-06",
+    "agent": "Cursor",
+    "prs": 515
+  },
+  {
+    "month": "2025-06",
+    "agent": "Devin",
+    "prs": 675
+  },
+  {
+    "month": "2025-06",
+    "agent": "Jules",
+    "prs": 23
+  },
+  {
+    "month": "2025-07",
+    "agent": "Claude Code",
+    "prs": 285
+  },
+  {
+    "month": "2025-07",
+    "agent": "Codex",
+    "prs": 9747
+  },
+  {
+    "month": "2025-07",
+    "agent": "Copilot",
+    "prs": 3572
+  },
+  {
+    "month": "2025-07",
+    "agent": "Cursor",
+    "prs": 1285
+  },
+  {
+    "month": "2025-07",
+    "agent": "Devin",
+    "prs": 700
+  },
+  {
+    "month": "2025-07",
+    "agent": "Jules",
+    "prs": 60
+  },
+  {
+    "month": "2025-08",
+    "agent": "Claude Code",
+    "prs": 427
+  },
+  {
+    "month": "2025-08",
+    "agent": "Codex",
+    "prs": 6823
+  },
+  {
+    "month": "2025-08",
+    "agent": "Copilot",
+    "prs": 5340
+  },
+  {
+    "month": "2025-08",
+    "agent": "Cursor",
+    "prs": 1057
+  },
+  {
+    "month": "2025-08",
+    "agent": "Devin",
+    "prs": 576
+  },
+  {
+    "month": "2025-08",
+    "agent": "Jules",
+    "prs": 170
+  },
+  {
+    "month": "2025-09",
+    "agent": "Claude Code",
+    "prs": 357
+  },
+  {
+    "month": "2025-09",
+    "agent": "Codex",
+    "prs": 2640
+  },
+  {
+    "month": "2025-09",
+    "agent": "Copilot",
+    "prs": 5528
+  },
+  {
+    "month": "2025-09",
+    "agent": "Cursor",
+    "prs": 723
+  },
+  {
+    "month": "2025-09",
+    "agent": "Devin",
+    "prs": 318
+  },
+  {
+    "month": "2025-09",
+    "agent": "Jules",
+    "prs": 157
+  },
+  {
+    "month": "2025-10",
+    "agent": "Claude Code",
+    "prs": 655
+  },
+  {
+    "month": "2025-10",
+    "agent": "Codex",
+    "prs": 2100
+  },
+  {
+    "month": "2025-10",
+    "agent": "Copilot",
+    "prs": 6135
+  },
+  {
+    "month": "2025-10",
+    "agent": "Cursor",
+    "prs": 463
+  },
+  {
+    "month": "2025-10",
+    "agent": "Devin",
+    "prs": 401
+  },
+  {
+    "month": "2025-10",
+    "agent": "Jules",
+    "prs": 77
+  }
+]

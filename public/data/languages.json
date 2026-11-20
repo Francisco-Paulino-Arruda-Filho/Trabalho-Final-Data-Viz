@@ -1,0 +1,1850 @@
+[
+  {
+    "language": "C",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 1,
+    "total": 708,
+    "percentage": 0.14124293785310735
+  },
+  {
+    "language": "C",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 4,
+    "total": 708,
+    "percentage": 0.5649717514124294
+  },
+  {
+    "language": "C",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 5,
+    "total": 708,
+    "percentage": 0.7062146892655368
+  },
+  {
+    "language": "C",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 68,
+    "total": 708,
+    "percentage": 9.6045197740113
+  },
+  {
+    "language": "C",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 207,
+    "total": 708,
+    "percentage": 29.23728813559322
+  },
+  {
+    "language": "C",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 19,
+    "total": 708,
+    "percentage": 2.6836158192090394
+  },
+  {
+    "language": "C",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 99,
+    "total": 708,
+    "percentage": 13.983050847457626
+  },
+  {
+    "language": "C",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 132,
+    "total": 708,
+    "percentage": 18.64406779661017
+  },
+  {
+    "language": "C",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 63,
+    "total": 708,
+    "percentage": 8.898305084745763
+  },
+  {
+    "language": "C",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 29,
+    "total": 708,
+    "percentage": 4.096045197740112
+  },
+  {
+    "language": "C",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 29,
+    "total": 708,
+    "percentage": 4.096045197740112
+  },
+  {
+    "language": "C",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 2,
+    "total": 708,
+    "percentage": 0.2824858757062147
+  },
+  {
+    "language": "C",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 37,
+    "total": 708,
+    "percentage": 5.2259887005649714
+  },
+  {
+    "language": "C",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 11,
+    "total": 708,
+    "percentage": 1.5536723163841808
+  },
+  {
+    "language": "C",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 1,
+    "total": 708,
+    "percentage": 0.14124293785310735
+  },
+  {
+    "language": "C",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 1,
+    "total": 708,
+    "percentage": 0.14124293785310735
+  },
+  {
+    "language": "C#",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 12,
+    "total": 5838,
+    "percentage": 0.20554984583761562
+  },
+  {
+    "language": "C#",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 371,
+    "total": 5838,
+    "percentage": 6.3549160671462825
+  },
+  {
+    "language": "C#",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 1109,
+    "total": 5838,
+    "percentage": 18.99623158615964
+  },
+  {
+    "language": "C#",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 19,
+    "total": 5838,
+    "percentage": 0.32545392257622474
+  },
+  {
+    "language": "C#",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 1193,
+    "total": 5838,
+    "percentage": 20.435080507022953
+  },
+  {
+    "language": "C#",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 2429,
+    "total": 5838,
+    "percentage": 41.60671462829736
+  },
+  {
+    "language": "C#",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 671,
+    "total": 5838,
+    "percentage": 11.493662213086674
+  },
+  {
+    "language": "C#",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 9,
+    "total": 5838,
+    "percentage": 0.1541623843782117
+  },
+  {
+    "language": "C#",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 11,
+    "total": 5838,
+    "percentage": 0.1884206920178143
+  },
+  {
+    "language": "C#",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 3,
+    "total": 5838,
+    "percentage": 0.051387461459403906
+  },
+  {
+    "language": "C#",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 1,
+    "total": 5838,
+    "percentage": 0.0171291538198013
+  },
+  {
+    "language": "C#",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 9,
+    "total": 5838,
+    "percentage": 0.1541623843782117
+  },
+  {
+    "language": "C#",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 1,
+    "total": 5838,
+    "percentage": 0.0171291538198013
+  },
+  {
+    "language": "C++",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 3,
+    "total": 1610,
+    "percentage": 0.18633540372670807
+  },
+  {
+    "language": "C++",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 6,
+    "total": 1610,
+    "percentage": 0.37267080745341613
+  },
+  {
+    "language": "C++",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 8,
+    "total": 1610,
+    "percentage": 0.4968944099378882
+  },
+  {
+    "language": "C++",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 84,
+    "total": 1610,
+    "percentage": 5.217391304347826
+  },
+  {
+    "language": "C++",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 334,
+    "total": 1610,
+    "percentage": 20.74534161490683
+  },
+  {
+    "language": "C++",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 21,
+    "total": 1610,
+    "percentage": 1.3043478260869565
+  },
+  {
+    "language": "C++",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 362,
+    "total": 1610,
+    "percentage": 22.48447204968944
+  },
+  {
+    "language": "C++",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 434,
+    "total": 1610,
+    "percentage": 26.956521739130434
+  },
+  {
+    "language": "C++",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 213,
+    "total": 1610,
+    "percentage": 13.229813664596273
+  },
+  {
+    "language": "C++",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 105,
+    "total": 1610,
+    "percentage": 6.521739130434782
+  },
+  {
+    "language": "C++",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 29,
+    "total": 1610,
+    "percentage": 1.8012422360248446
+  },
+  {
+    "language": "C++",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 4,
+    "total": 1610,
+    "percentage": 0.2484472049689441
+  },
+  {
+    "language": "C++",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 2,
+    "total": 1610,
+    "percentage": 0.12422360248447205
+  },
+  {
+    "language": "C++",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 2,
+    "total": 1610,
+    "percentage": 0.12422360248447205
+  },
+  {
+    "language": "C++",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 2,
+    "total": 1610,
+    "percentage": 0.12422360248447205
+  },
+  {
+    "language": "C++",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 1,
+    "total": 1610,
+    "percentage": 0.062111801242236024
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 1,
+    "total": 581,
+    "percentage": 0.17211703958691912
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 1,
+    "total": 581,
+    "percentage": 0.17211703958691912
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 4,
+    "total": 581,
+    "percentage": 0.6884681583476765
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 2,
+    "total": 581,
+    "percentage": 0.34423407917383825
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 36,
+    "total": 581,
+    "percentage": 6.196213425129088
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 3,
+    "total": 581,
+    "percentage": 0.5163511187607573
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 84,
+    "total": 581,
+    "percentage": 14.457831325301203
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 394,
+    "total": 581,
+    "percentage": 67.81411359724613
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 44,
+    "total": 581,
+    "percentage": 7.573149741824441
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 2,
+    "total": 581,
+    "percentage": 0.34423407917383825
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 1,
+    "total": 581,
+    "percentage": 0.17211703958691912
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 3,
+    "total": 581,
+    "percentage": 0.5163511187607573
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 3,
+    "total": 581,
+    "percentage": 0.5163511187607573
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 2,
+    "total": 581,
+    "percentage": 0.34423407917383825
+  },
+  {
+    "language": "Desconhecida",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 1,
+    "total": 581,
+    "percentage": 0.17211703958691912
+  },
+  {
+    "language": "Go",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 39,
+    "total": 4492,
+    "percentage": 0.8682101513802316
+  },
+  {
+    "language": "Go",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 175,
+    "total": 4492,
+    "percentage": 3.8958147818343725
+  },
+  {
+    "language": "Go",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 47,
+    "total": 4492,
+    "percentage": 1.0463045414069456
+  },
+  {
+    "language": "Go",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 187,
+    "total": 4492,
+    "percentage": 4.162956366874444
+  },
+  {
+    "language": "Go",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 864,
+    "total": 4492,
+    "percentage": 19.23419412288513
+  },
+  {
+    "language": "Go",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 56,
+    "total": 4492,
+    "percentage": 1.2466607301869992
+  },
+  {
+    "language": "Go",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 881,
+    "total": 4492,
+    "percentage": 19.6126447016919
+  },
+  {
+    "language": "Go",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 1564,
+    "total": 4492,
+    "percentage": 34.81745325022262
+  },
+  {
+    "language": "Go",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 283,
+    "total": 4492,
+    "percentage": 6.300089047195014
+  },
+  {
+    "language": "Go",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 82,
+    "total": 4492,
+    "percentage": 1.8254674977738201
+  },
+  {
+    "language": "Go",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 106,
+    "total": 4492,
+    "percentage": 2.3597506678539624
+  },
+  {
+    "language": "Go",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 31,
+    "total": 4492,
+    "percentage": 0.6901157613535174
+  },
+  {
+    "language": "Go",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 65,
+    "total": 4492,
+    "percentage": 1.4470169189670525
+  },
+  {
+    "language": "Go",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 58,
+    "total": 4492,
+    "percentage": 1.2911843276936776
+  },
+  {
+    "language": "Go",
+    "agent": "Devin",
+    "outcome": "open",
+    "count": 19,
+    "total": 4492,
+    "percentage": 0.42297417631344614
+  },
+  {
+    "language": "Go",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 6,
+    "total": 4492,
+    "percentage": 0.13357079252003562
+  },
+  {
+    "language": "Go",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 21,
+    "total": 4492,
+    "percentage": 0.4674977738201247
+  },
+  {
+    "language": "Go",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 8,
+    "total": 4492,
+    "percentage": 0.17809439002671415
+  },
+  {
+    "language": "Java",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 14,
+    "total": 2871,
+    "percentage": 0.48763497039359105
+  },
+  {
+    "language": "Java",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 18,
+    "total": 2871,
+    "percentage": 0.6269592476489028
+  },
+  {
+    "language": "Java",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 5,
+    "total": 2871,
+    "percentage": 0.17415534656913967
+  },
+  {
+    "language": "Java",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 173,
+    "total": 2871,
+    "percentage": 6.0257749912922325
+  },
+  {
+    "language": "Java",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 1564,
+    "total": 2871,
+    "percentage": 54.4757924068269
+  },
+  {
+    "language": "Java",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 44,
+    "total": 2871,
+    "percentage": 1.532567049808429
+  },
+  {
+    "language": "Java",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 334,
+    "total": 2871,
+    "percentage": 11.63357715081853
+  },
+  {
+    "language": "Java",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 442,
+    "total": 2871,
+    "percentage": 15.395332636711947
+  },
+  {
+    "language": "Java",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 153,
+    "total": 2871,
+    "percentage": 5.329153605015674
+  },
+  {
+    "language": "Java",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 40,
+    "total": 2871,
+    "percentage": 1.3932427725531173
+  },
+  {
+    "language": "Java",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 54,
+    "total": 2871,
+    "percentage": 1.8808777429467085
+  },
+  {
+    "language": "Java",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 10,
+    "total": 2871,
+    "percentage": 0.34831069313827934
+  },
+  {
+    "language": "Java",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 5,
+    "total": 2871,
+    "percentage": 0.17415534656913967
+  },
+  {
+    "language": "Java",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 5,
+    "total": 2871,
+    "percentage": 0.17415534656913967
+  },
+  {
+    "language": "Java",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 1,
+    "total": 2871,
+    "percentage": 0.034831069313827935
+  },
+  {
+    "language": "Java",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 7,
+    "total": 2871,
+    "percentage": 0.24381748519679552
+  },
+  {
+    "language": "Java",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 2,
+    "total": 2871,
+    "percentage": 0.06966213862765587
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 37,
+    "total": 2257,
+    "percentage": 1.639344262295082
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 64,
+    "total": 2257,
+    "percentage": 2.8356225077536554
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 15,
+    "total": 2257,
+    "percentage": 0.664599025254763
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 161,
+    "total": 2257,
+    "percentage": 7.1333628710677885
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 678,
+    "total": 2257,
+    "percentage": 30.039875941515287
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 47,
+    "total": 2257,
+    "percentage": 2.0824102791315906
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 240,
+    "total": 2257,
+    "percentage": 10.633584404076208
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 435,
+    "total": 2257,
+    "percentage": 19.273371732388124
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 142,
+    "total": 2257,
+    "percentage": 6.2915374390784224
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 37,
+    "total": 2257,
+    "percentage": 1.639344262295082
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 38,
+    "total": 2257,
+    "percentage": 1.6836508639787326
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 11,
+    "total": 2257,
+    "percentage": 0.48737261852015945
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 125,
+    "total": 2257,
+    "percentage": 5.5383252104563585
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 173,
+    "total": 2257,
+    "percentage": 7.6650420912716
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Devin",
+    "outcome": "open",
+    "count": 11,
+    "total": 2257,
+    "percentage": 0.48737261852015945
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 10,
+    "total": 2257,
+    "percentage": 0.4430660168365086
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 26,
+    "total": 2257,
+    "percentage": 1.1519716437749226
+  },
+  {
+    "language": "JavaScript",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 7,
+    "total": 2257,
+    "percentage": 0.31014621178555607
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 4,
+    "total": 1123,
+    "percentage": 0.3561887800534283
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 12,
+    "total": 1123,
+    "percentage": 1.068566340160285
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 49,
+    "total": 1123,
+    "percentage": 4.363312555654497
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 555,
+    "total": 1123,
+    "percentage": 49.42119323241318
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 18,
+    "total": 1123,
+    "percentage": 1.6028495102404272
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 119,
+    "total": 1123,
+    "percentage": 10.596616206589493
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 167,
+    "total": 1123,
+    "percentage": 14.870881567230631
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 50,
+    "total": 1123,
+    "percentage": 4.452359750667854
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 41,
+    "total": 1123,
+    "percentage": 3.6509349955476402
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 11,
+    "total": 1123,
+    "percentage": 0.9795191451469278
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 5,
+    "total": 1123,
+    "percentage": 0.44523597506678536
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 14,
+    "total": 1123,
+    "percentage": 1.2466607301869992
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 62,
+    "total": 1123,
+    "percentage": 5.520926090828139
+  },
+  {
+    "language": "Kotlin",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 16,
+    "total": 1123,
+    "percentage": 1.4247551202137132
+  },
+  {
+    "language": "Outras",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 65,
+    "total": 19843,
+    "percentage": 0.32757143577080083
+  },
+  {
+    "language": "Outras",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 191,
+    "total": 19843,
+    "percentage": 0.9625560651111222
+  },
+  {
+    "language": "Outras",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 54,
+    "total": 19843,
+    "percentage": 0.27213626971728067
+  },
+  {
+    "language": "Outras",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 1878,
+    "total": 19843,
+    "percentage": 9.464294713500983
+  },
+  {
+    "language": "Outras",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 13920,
+    "total": 19843,
+    "percentage": 70.15068286045457
+  },
+  {
+    "language": "Outras",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 404,
+    "total": 19843,
+    "percentage": 2.035982462329285
+  },
+  {
+    "language": "Outras",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 930,
+    "total": 19843,
+    "percentage": 4.686791311797611
+  },
+  {
+    "language": "Outras",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 1193,
+    "total": 19843,
+    "percentage": 6.012195736531774
+  },
+  {
+    "language": "Outras",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 502,
+    "total": 19843,
+    "percentage": 2.529859396260646
+  },
+  {
+    "language": "Outras",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 148,
+    "total": 19843,
+    "percentage": 0.7458549614473617
+  },
+  {
+    "language": "Outras",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 350,
+    "total": 19843,
+    "percentage": 1.7638461926120044
+  },
+  {
+    "language": "Outras",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 55,
+    "total": 19843,
+    "percentage": 0.2771758302676007
+  },
+  {
+    "language": "Outras",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 25,
+    "total": 19843,
+    "percentage": 0.1259890137580003
+  },
+  {
+    "language": "Outras",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 46,
+    "total": 19843,
+    "percentage": 0.23181978531472053
+  },
+  {
+    "language": "Outras",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 26,
+    "total": 19843,
+    "percentage": 0.1310285743083203
+  },
+  {
+    "language": "Outras",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 49,
+    "total": 19843,
+    "percentage": 0.2469384669656806
+  },
+  {
+    "language": "Outras",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 7,
+    "total": 19843,
+    "percentage": 0.035276923852240086
+  },
+  {
+    "language": "PHP",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 2,
+    "total": 784,
+    "percentage": 0.25510204081632654
+  },
+  {
+    "language": "PHP",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 38,
+    "total": 784,
+    "percentage": 4.846938775510204
+  },
+  {
+    "language": "PHP",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 1,
+    "total": 784,
+    "percentage": 0.12755102040816327
+  },
+  {
+    "language": "PHP",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 56,
+    "total": 784,
+    "percentage": 7.142857142857142
+  },
+  {
+    "language": "PHP",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 252,
+    "total": 784,
+    "percentage": 32.142857142857146
+  },
+  {
+    "language": "PHP",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 14,
+    "total": 784,
+    "percentage": 1.7857142857142856
+  },
+  {
+    "language": "PHP",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 113,
+    "total": 784,
+    "percentage": 14.41326530612245
+  },
+  {
+    "language": "PHP",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 186,
+    "total": 784,
+    "percentage": 23.72448979591837
+  },
+  {
+    "language": "PHP",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 55,
+    "total": 784,
+    "percentage": 7.015306122448979
+  },
+  {
+    "language": "PHP",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 26,
+    "total": 784,
+    "percentage": 3.316326530612245
+  },
+  {
+    "language": "PHP",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 18,
+    "total": 784,
+    "percentage": 2.295918367346939
+  },
+  {
+    "language": "PHP",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 7,
+    "total": 784,
+    "percentage": 0.8928571428571428
+  },
+  {
+    "language": "PHP",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 3,
+    "total": 784,
+    "percentage": 0.3826530612244898
+  },
+  {
+    "language": "PHP",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 5,
+    "total": 784,
+    "percentage": 0.6377551020408163
+  },
+  {
+    "language": "PHP",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 4,
+    "total": 784,
+    "percentage": 0.5102040816326531
+  },
+  {
+    "language": "PHP",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 3,
+    "total": 784,
+    "percentage": 0.3826530612244898
+  },
+  {
+    "language": "PHP",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 1,
+    "total": 784,
+    "percentage": 0.12755102040816327
+  },
+  {
+    "language": "Python",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 96,
+    "total": 13256,
+    "percentage": 0.724200362100181
+  },
+  {
+    "language": "Python",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 254,
+    "total": 13256,
+    "percentage": 1.9161134580567292
+  },
+  {
+    "language": "Python",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 52,
+    "total": 13256,
+    "percentage": 0.3922751961375981
+  },
+  {
+    "language": "Python",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 847,
+    "total": 13256,
+    "percentage": 6.389559444779723
+  },
+  {
+    "language": "Python",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 6836,
+    "total": 13256,
+    "percentage": 51.56910078455039
+  },
+  {
+    "language": "Python",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 288,
+    "total": 13256,
+    "percentage": 2.172601086300543
+  },
+  {
+    "language": "Python",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 770,
+    "total": 13256,
+    "percentage": 5.808690404345202
+  },
+  {
+    "language": "Python",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 1497,
+    "total": 13256,
+    "percentage": 11.292999396499697
+  },
+  {
+    "language": "Python",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 428,
+    "total": 13256,
+    "percentage": 3.2287266143633073
+  },
+  {
+    "language": "Python",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 337,
+    "total": 13256,
+    "percentage": 2.5422450211225107
+  },
+  {
+    "language": "Python",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 339,
+    "total": 13256,
+    "percentage": 2.5573325286662643
+  },
+  {
+    "language": "Python",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 114,
+    "total": 13256,
+    "percentage": 0.8599879299939651
+  },
+  {
+    "language": "Python",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 811,
+    "total": 13256,
+    "percentage": 6.117984308992154
+  },
+  {
+    "language": "Python",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 487,
+    "total": 13256,
+    "percentage": 3.6738080869040437
+  },
+  {
+    "language": "Python",
+    "agent": "Devin",
+    "outcome": "open",
+    "count": 48,
+    "total": 13256,
+    "percentage": 0.3621001810500905
+  },
+  {
+    "language": "Python",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 16,
+    "total": 13256,
+    "percentage": 0.12070006035003018
+  },
+  {
+    "language": "Python",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 29,
+    "total": 13256,
+    "percentage": 0.2187688593844297
+  },
+  {
+    "language": "Python",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 7,
+    "total": 13256,
+    "percentage": 0.0528062764031382
+  },
+  {
+    "language": "Ruby",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 11,
+    "total": 1362,
+    "percentage": 0.8076358296622614
+  },
+  {
+    "language": "Ruby",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 32,
+    "total": 1362,
+    "percentage": 2.3494860499265786
+  },
+  {
+    "language": "Ruby",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 5,
+    "total": 1362,
+    "percentage": 0.36710719530102787
+  },
+  {
+    "language": "Ruby",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 45,
+    "total": 1362,
+    "percentage": 3.303964757709251
+  },
+  {
+    "language": "Ruby",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 205,
+    "total": 1362,
+    "percentage": 15.051395007342144
+  },
+  {
+    "language": "Ruby",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 24,
+    "total": 1362,
+    "percentage": 1.762114537444934
+  },
+  {
+    "language": "Ruby",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 106,
+    "total": 1362,
+    "percentage": 7.782672540381791
+  },
+  {
+    "language": "Ruby",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 181,
+    "total": 1362,
+    "percentage": 13.28928046989721
+  },
+  {
+    "language": "Ruby",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 117,
+    "total": 1362,
+    "percentage": 8.590308370044053
+  },
+  {
+    "language": "Ruby",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 7,
+    "total": 1362,
+    "percentage": 0.5139500734214391
+  },
+  {
+    "language": "Ruby",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 9,
+    "total": 1362,
+    "percentage": 0.6607929515418502
+  },
+  {
+    "language": "Ruby",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 7,
+    "total": 1362,
+    "percentage": 0.5139500734214391
+  },
+  {
+    "language": "Ruby",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 124,
+    "total": 1362,
+    "percentage": 9.104258443465492
+  },
+  {
+    "language": "Ruby",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 443,
+    "total": 1362,
+    "percentage": 32.52569750367107
+  },
+  {
+    "language": "Ruby",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 3,
+    "total": 1362,
+    "percentage": 0.22026431718061676
+  },
+  {
+    "language": "Ruby",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 30,
+    "total": 1362,
+    "percentage": 2.2026431718061676
+  },
+  {
+    "language": "Ruby",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 13,
+    "total": 1362,
+    "percentage": 0.9544787077826725
+  },
+  {
+    "language": "Rust",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 31,
+    "total": 3220,
+    "percentage": 0.9627329192546583
+  },
+  {
+    "language": "Rust",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 117,
+    "total": 3220,
+    "percentage": 3.633540372670808
+  },
+  {
+    "language": "Rust",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 21,
+    "total": 3220,
+    "percentage": 0.6521739130434783
+  },
+  {
+    "language": "Rust",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 273,
+    "total": 3220,
+    "percentage": 8.478260869565217
+  },
+  {
+    "language": "Rust",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 859,
+    "total": 3220,
+    "percentage": 26.67701863354037
+  },
+  {
+    "language": "Rust",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 67,
+    "total": 3220,
+    "percentage": 2.080745341614907
+  },
+  {
+    "language": "Rust",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 486,
+    "total": 3220,
+    "percentage": 15.093167701863356
+  },
+  {
+    "language": "Rust",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 701,
+    "total": 3220,
+    "percentage": 21.770186335403725
+  },
+  {
+    "language": "Rust",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 119,
+    "total": 3220,
+    "percentage": 3.6956521739130435
+  },
+  {
+    "language": "Rust",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 110,
+    "total": 3220,
+    "percentage": 3.4161490683229814
+  },
+  {
+    "language": "Rust",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 151,
+    "total": 3220,
+    "percentage": 4.6894409937888195
+  },
+  {
+    "language": "Rust",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 34,
+    "total": 3220,
+    "percentage": 1.0559006211180124
+  },
+  {
+    "language": "Rust",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 62,
+    "total": 3220,
+    "percentage": 1.9254658385093166
+  },
+  {
+    "language": "Rust",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 163,
+    "total": 3220,
+    "percentage": 5.062111801242236
+  },
+  {
+    "language": "Rust",
+    "agent": "Devin",
+    "outcome": "open",
+    "count": 5,
+    "total": 3220,
+    "percentage": 0.15527950310559005
+  },
+  {
+    "language": "Rust",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 12,
+    "total": 3220,
+    "percentage": 0.37267080745341613
+  },
+  {
+    "language": "Rust",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 9,
+    "total": 3220,
+    "percentage": 0.27950310559006214
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 102,
+    "total": 13732,
+    "percentage": 0.7427905621905039
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 347,
+    "total": 13732,
+    "percentage": 2.52694436353044
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 48,
+    "total": 13732,
+    "percentage": 0.34954849985435477
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 713,
+    "total": 13732,
+    "percentage": 5.192251674919896
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 2016,
+    "total": 13732,
+    "percentage": 14.681036993882902
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 155,
+    "total": 13732,
+    "percentage": 1.1287503641130208
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 2086,
+    "total": 13732,
+    "percentage": 15.190795222837169
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 2180,
+    "total": 13732,
+    "percentage": 15.875327701718614
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 918,
+    "total": 13732,
+    "percentage": 6.685115059714536
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 472,
+    "total": 13732,
+    "percentage": 3.437226915234489
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 981,
+    "total": 13732,
+    "percentage": 7.143897465773376
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 201,
+    "total": 13732,
+    "percentage": 1.4637343431401106
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 1341,
+    "total": 13732,
+    "percentage": 9.765511214681037
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 1998,
+    "total": 13732,
+    "percentage": 14.549956306437517
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Devin",
+    "outcome": "open",
+    "count": 85,
+    "total": 13732,
+    "percentage": 0.6189921351587533
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 34,
+    "total": 13732,
+    "percentage": 0.24759685406350132
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 43,
+    "total": 13732,
+    "percentage": 0.3131371977861928
+  },
+  {
+    "language": "TypeScript",
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 12,
+    "total": 13732,
+    "percentage": 0.08738712496358869
+  }
+]

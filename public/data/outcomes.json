@@ -1,0 +1,128 @@
+[
+  {
+    "agent": "Claude Code",
+    "outcome": "closed",
+    "count": 406,
+    "total_agent": 1942,
+    "percentage": 20.90628218331617
+  },
+  {
+    "agent": "Claude Code",
+    "outcome": "merged",
+    "count": 1271,
+    "total_agent": 1942,
+    "percentage": 65.44799176107105
+  },
+  {
+    "agent": "Claude Code",
+    "outcome": "open",
+    "count": 265,
+    "total_agent": 1942,
+    "percentage": 13.64572605561277
+  },
+  {
+    "agent": "Codex",
+    "outcome": "closed",
+    "count": 4907,
+    "total_agent": 35521,
+    "percentage": 13.814363334365588
+  },
+  {
+    "agent": "Codex",
+    "outcome": "merged",
+    "count": 29435,
+    "total_agent": 35521,
+    "percentage": 82.86647335379071
+  },
+  {
+    "agent": "Codex",
+    "outcome": "open",
+    "count": 1179,
+    "total_agent": 35521,
+    "percentage": 3.319163311843698
+  },
+  {
+    "agent": "Copilot",
+    "outcome": "closed",
+    "count": 7803,
+    "total_agent": 23496,
+    "percentage": 33.209908069458635
+  },
+  {
+    "agent": "Copilot",
+    "outcome": "merged",
+    "count": 11935,
+    "total_agent": 23496,
+    "percentage": 50.79588014981273
+  },
+  {
+    "agent": "Copilot",
+    "outcome": "open",
+    "count": 3758,
+    "total_agent": 23496,
+    "percentage": 15.994211780728634
+  },
+  {
+    "agent": "Cursor",
+    "outcome": "closed",
+    "count": 1445,
+    "total_agent": 4059,
+    "percentage": 35.59990145355999
+  },
+  {
+    "agent": "Cursor",
+    "outcome": "merged",
+    "count": 2127,
+    "total_agent": 4059,
+    "percentage": 52.40206947524021
+  },
+  {
+    "agent": "Cursor",
+    "outcome": "open",
+    "count": 487,
+    "total_agent": 4059,
+    "percentage": 11.998029071199804
+  },
+  {
+    "agent": "Devin",
+    "outcome": "closed",
+    "count": 2604,
+    "total_agent": 6172,
+    "percentage": 42.19053791315619
+  },
+  {
+    "agent": "Devin",
+    "outcome": "merged",
+    "count": 3400,
+    "total_agent": 6172,
+    "percentage": 55.08749189889826
+  },
+  {
+    "agent": "Devin",
+    "outcome": "open",
+    "count": 168,
+    "total_agent": 6172,
+    "percentage": 2.7219701879455602
+  },
+  {
+    "agent": "Jules",
+    "outcome": "closed",
+    "count": 129,
+    "total_agent": 487,
+    "percentage": 26.488706365503077
+  },
+  {
+    "agent": "Jules",
+    "outcome": "merged",
+    "count": 283,
+    "total_agent": 487,
+    "percentage": 58.110882956878854
+  },
+  {
+    "agent": "Jules",
+    "outcome": "open",
+    "count": 75,
+    "total_agent": 487,
+    "percentage": 15.400410677618071
+  }
+]
