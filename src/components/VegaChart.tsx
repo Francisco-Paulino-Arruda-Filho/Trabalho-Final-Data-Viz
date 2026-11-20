@@ -61,11 +61,12 @@ export default function VegaChart({ spec, renderer = "svg", onClick, signals }: 
   }, []);
 
   return (
-    <VegaEmbed
-      spec={fullSpec}
-      options={options}
-      onNewView={handleNewView}
-      style={{ width: "100%" }}
-    />
+    <div style={{ width: "100%" }}>
+      <VegaEmbed
+        spec={fullSpec}
+        options={options}
+        onEmbed={(result: any) => handleNewView(result.view)}
+      />
+    </div>
   );
 }
