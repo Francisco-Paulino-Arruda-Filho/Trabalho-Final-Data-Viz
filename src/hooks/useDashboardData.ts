@@ -38,9 +38,10 @@ export function useDashboardData() {
           "agent_repository_network.json"
         ];
 
+        const base = import.meta.env.BASE_URL; // "/Trabalho-Final-Data-Viz/" em produção, "/" no dev
         const responses = await Promise.all(
           files.map(file =>
-            fetch(`/data/${file}`)
+            fetch(`${base}data/${file}`)
           )
         );
 
