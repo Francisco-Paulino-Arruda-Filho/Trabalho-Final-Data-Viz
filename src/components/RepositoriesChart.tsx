@@ -28,6 +28,8 @@ export default function RepositoriesChart({ data }: { data: Repo[] }) {
     return {
       width: "container",
       height: { step: 22 },
+      autosize: { type: "fit-x", contains: "padding" },   // (1) conta rótulos e legenda dentro da largura
+      padding: { right: 44, left: 5, top: 5, bottom: 5 },  // (2) folga para o rótulo "13,481"
       data: { values: top },
       encoding: {
         y: {
@@ -37,8 +39,19 @@ export default function RepositoriesChart({ data }: { data: Repo[] }) {
           title: null,
           axis: { labelLimit: 260 },
         },
-        x: { field: "n_pr", type: "quantitative", title: "Pull requests", axis: { format: "~s" } },
-        color: { field: "main_agent", type: "nominal", title: "Agente principal", scale: agentColorScale },
+        x: {
+          field: "n_pr",
+          type: "quantitative",
+          title: "Pull requests",
+          axis: { labels: false, ticks: false, grid: false, domain: false }, // (3) tira 0k/5k/10k
+        },
+        color: {
+          field: "main_agent",
+          type: "nominal",
+          title: "Agente principal",
+          scale: agentColorScale,
+          legend: { orient: "bottom", direction: "horizontal", columns: 3 }, // (4) legenda sai de cima do rótulo
+        },
         opacity,
       },
       layer: [
