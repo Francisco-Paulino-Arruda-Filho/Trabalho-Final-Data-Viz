@@ -92,3 +92,20 @@ export interface Meta {
   date_min: string;
   date_max: string;
 }
+
+
+export interface ReviewTypeRow {
+  agent: string;
+  review_type: string;
+  count: number;
+  total_agent: number;
+  percentage: number;
+}
+
+export interface HourlyActivityRow {
+  date: string;
+  dow: number;
+  hour: number;
+  agent: string;
+  count: number;
+}
