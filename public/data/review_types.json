@@ -1,0 +1,170 @@
+[
+  {
+    "agent": "Claude Code",
+    "review_type": "bot_only",
+    "count": 379,
+    "total_agent": 1942,
+    "percentage": 19.5159629248
+  },
+  {
+    "agent": "Claude Code",
+    "review_type": "human",
+    "count": 547,
+    "total_agent": 1942,
+    "percentage": 28.166838311
+  },
+  {
+    "agent": "Claude Code",
+    "review_type": "human_changes",
+    "count": 58,
+    "total_agent": 1942,
+    "percentage": 2.9866117405
+  },
+  {
+    "agent": "Claude Code",
+    "review_type": "none",
+    "count": 958,
+    "total_agent": 1942,
+    "percentage": 49.3305870237
+  },
+  {
+    "agent": "Codex",
+    "review_type": "bot_only",
+    "count": 2469,
+    "total_agent": 35521,
+    "percentage": 6.9508178261
+  },
+  {
+    "agent": "Codex",
+    "review_type": "human",
+    "count": 1898,
+    "total_agent": 35521,
+    "percentage": 5.3433180372
+  },
+  {
+    "agent": "Codex",
+    "review_type": "human_changes",
+    "count": 102,
+    "total_agent": 35521,
+    "percentage": 0.2871540779
+  },
+  {
+    "agent": "Codex",
+    "review_type": "none",
+    "count": 31052,
+    "total_agent": 35521,
+    "percentage": 87.4187100588
+  },
+  {
+    "agent": "Copilot",
+    "review_type": "bot_only",
+    "count": 839,
+    "total_agent": 23496,
+    "percentage": 3.5708205652
+  },
+  {
+    "agent": "Copilot",
+    "review_type": "human",
+    "count": 9076,
+    "total_agent": 23496,
+    "percentage": 38.6278515492
+  },
+  {
+    "agent": "Copilot",
+    "review_type": "human_changes",
+    "count": 2377,
+    "total_agent": 23496,
+    "percentage": 10.1166155941
+  },
+  {
+    "agent": "Copilot",
+    "review_type": "none",
+    "count": 11204,
+    "total_agent": 23496,
+    "percentage": 47.6847122915
+  },
+  {
+    "agent": "Cursor",
+    "review_type": "bot_only",
+    "count": 689,
+    "total_agent": 4059,
+    "percentage": 16.9746242917
+  },
+  {
+    "agent": "Cursor",
+    "review_type": "human",
+    "count": 810,
+    "total_agent": 4059,
+    "percentage": 19.955654102
+  },
+  {
+    "agent": "Cursor",
+    "review_type": "human_changes",
+    "count": 47,
+    "total_agent": 4059,
+    "percentage": 1.1579206701
+  },
+  {
+    "agent": "Cursor",
+    "review_type": "none",
+    "count": 2513,
+    "total_agent": 4059,
+    "percentage": 61.9118009362
+  },
+  {
+    "agent": "Devin",
+    "review_type": "bot_only",
+    "count": 429,
+    "total_agent": 6172,
+    "percentage": 6.9507453014
+  },
+  {
+    "agent": "Devin",
+    "review_type": "human",
+    "count": 2056,
+    "total_agent": 6172,
+    "percentage": 33.3117303953
+  },
+  {
+    "agent": "Devin",
+    "review_type": "human_changes",
+    "count": 255,
+    "total_agent": 6172,
+    "percentage": 4.1315618924
+  },
+  {
+    "agent": "Devin",
+    "review_type": "none",
+    "count": 3432,
+    "total_agent": 6172,
+    "percentage": 55.6059624109
+  },
+  {
+    "agent": "Jules",
+    "review_type": "bot_only",
+    "count": 45,
+    "total_agent": 487,
+    "percentage": 9.2402464066
+  },
+  {
+    "agent": "Jules",
+    "review_type": "human",
+    "count": 121,
+    "total_agent": 487,
+    "percentage": 24.8459958932
+  },
+  {
+    "agent": "Jules",
+    "review_type": "human_changes",
+    "count": 10,
+    "total_agent": 487,
+    "percentage": 2.0533880903
+  },
+  {
+    "agent": "Jules",
+    "review_type": "none",
+    "count": 311,
+    "total_agent": 487,
+    "percentage": 63.8603696099
+  }
+]

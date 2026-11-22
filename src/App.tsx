@@ -16,6 +16,8 @@ import ScatterChart from "./components/ScatterChart";
 import NetworkChart from "./components/NetworkChart";
 
 // Novas visualizações
+import ReviewTypesChart from "./components/ReviewTypesChart";
+import HourlyActivityChart from "./components/HourlyActivityChart";
 import ParetoChart from "./components/ParetoChart";
 import MergeBoxplotChart from "./components/MergeBoxplotChart";
 
@@ -28,6 +30,8 @@ import type {
   NetworkData,
   OutcomeRow,
   Repo,
+  ReviewTypeRow,
+  HourlyActivityRow,
 } from "./lib/types";
 
 import { fmtInt } from "./lib/vegaHelpers";
@@ -68,6 +72,10 @@ export default function App() {
   const repos = useJson<Repo[]>("repositories.json");
   const network = useJson<NetworkData>("agent_repository_network.json");
 
+  // Novos dados
+  const reviewTypes = useJson<ReviewTypeRow[]>("review_types.json");
+  const hourlyActivity = useJson<HourlyActivityRow[]>("hourly_activity.json");
+
   // Todos os carregamentos são acompanhados
   const all = [
     meta,
@@ -78,6 +86,8 @@ export default function App() {
     languages,
     repos,
     network,
+    reviewTypes,
+    hourlyActivity,
   ];
 
   const error = all.find((item) => item.error)?.error;
@@ -147,6 +157,20 @@ export default function App() {
             <MonthlyChart data={monthly.data!} />
           </ChartCard>
 
+
+          {/* NOVA VISUALIZAÇÃO: DIA DA SEMANA X HORA */}
+
+          <ChartCard
+            wide
+            title="Atividade por dia e horário"
+            question="Em quais dias da semana e horários os PRs são mais frequentes?"
+            encoding="Posição horizontal = hora; posição vertical = dia da semana; intensidade da cor = quantidade de PRs."
+            why="O heatmap facilita comparar padrões horários e semanais de uma só vez. A seleção de agente e período permite observar mudanças no padrão."
+            reactsTo={["agente", "período"]}
+          >
+            <HourlyActivityChart data={hourlyActivity.data!} />
+          </ChartCard>
+
         </div>
 
 
@@ -177,6 +201,20 @@ export default function App() {
             reactsTo={["agente"]}
           >
             <MergeTimesChart data={mergeTimes.data!} />
+          </ChartCard>
+
+
+          {/* NOVA VISUALIZAÇÃO: TIPOS DE REVISÃO */}
+
+          <ChartCard
+            wide
+            title="Tipos de revisão por agente"
+            question="Como a participação humana e de bots varia entre os agentes?"
+            encoding="Comprimento = proporção ou contagem; cor = categoria de revisão."
+            why="Barras empilhadas normalizadas comparam a composição das revisões mesmo quando os agentes têm volumes muito diferentes. Permite investigar a participação humana no processo."
+            reactsTo={["agente"]}
+          >
+            <ReviewTypesChart data={reviewTypes.data!} />
           </ChartCard>
 
 
