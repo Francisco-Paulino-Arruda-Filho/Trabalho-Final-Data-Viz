@@ -138,7 +138,7 @@ export default function App() {
             wide
             title="Atividade diária"
             question="Em que dias cada agente esteve mais ativo?"
-            encoding="Posição em grade (semana × dia da semana) identifica o dia; cor sequencial em escala raiz/log codifica a contagem."
+            encoding="Posição em grade (semana x dia da semana) identifica o dia; cor sequencial em escala raiz/log codifica a contagem."
             why="O calendário expõe ritmo semanal e lacunas, que uma linha esconderia. A escala não linear impede que os picos do Codex apaguem o restante."
             reactsTo={["agente", "(define) período"]}
           >
@@ -196,7 +196,7 @@ export default function App() {
           <ChartCard
             title="Tempo até o merge"
             question="Quanto tempo leva para um PR ser aceito e isso varia entre agentes?"
-            encoding="Posição = tempo (escala log) × fração acumulada; cor = agente; ponto = mediana."
+            encoding="Posição = tempo (escala log) x fração acumulada; cor = agente; ponto = mediana."
             why="A distribuição acumulada mostra a cauda inteira sem escolher faixas de histograma. Uma média esconderia diferenças na distribuição dos tempos."
             reactsTo={["agente"]}
           >
@@ -236,7 +236,7 @@ export default function App() {
             wide
             title="Aceitação por linguagem"
             question="A taxa de aceitação muda conforme a linguagem?"
-            encoding="Posição em grade (linguagem × agente); intensidade de cor = taxa de merge; número na célula = valor exato."
+            encoding="Posição em grade (linguagem x agente); intensidade de cor = taxa de merge; número na célula = valor exato."
             why="Com 14 linguagens e seis agentes, o heatmap permite comparar diversas combinações de uma só vez e identificar diferenças entre os agentes."
             reactsTo={["agente", "(define) linguagem"]}
           >
@@ -272,7 +272,7 @@ export default function App() {
 
 
           <ChartCard
-            title="Popularidade × aceitação"
+            title="Popularidade x aceitação"
             question="A taxa de aceitação muda conforme a popularidade (estrelas) do repositório?"
             encoding="Posição x = estrelas (log); posição y = taxa de merge; tamanho = PRs; cor = agente principal."
             why="O scatterplot relaciona popularidade e taxa de aceitação, permitindo identificar agrupamentos, correlações e possíveis exceções."

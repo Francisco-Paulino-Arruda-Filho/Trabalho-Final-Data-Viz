@@ -47,7 +47,7 @@ export default function FilterBar() {
           <button key={c.key} className="chip" onClick={c.onClear} title="Remover filtro">
             {c.color && <span className="dot" style={{ background: c.color }} />}
             {c.label}
-            <span aria-hidden="true"> ×</span>
+            <span aria-hidden="true"> x</span>
           </button>
         ))}
       </div>

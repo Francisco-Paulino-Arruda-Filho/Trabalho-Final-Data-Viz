@@ -1,5 +1,6 @@
 
 import VegaChart from "./VegaChart";
+import { agentColorScale } from "../lib/colors";
 
 interface Props {
   data: {
@@ -37,7 +38,8 @@ export default function MergeTimesChart({ data }: Props) {
       color: {
         field: "agent",
         type: "nominal",
-        title: "Agente"
+        title: "Agente",
+        scale: agentColorScale
       },
       tooltip: [
         { field: "agent", title: "Agente" },
