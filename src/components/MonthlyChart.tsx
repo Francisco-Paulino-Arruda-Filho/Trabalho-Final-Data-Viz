@@ -12,7 +12,7 @@ const MODES: { id: Mode; label: string }[] = [
   { id: "share", label: "Participação (%)" },
 ];
 const MONTH_EXPR =
-  "['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'][utcMonth(datum.value)] + ' ' + utcFormat(datum.value,'%y')";
+  "['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'][utcmonth(datum.value)] + ' ' + utcFormat(datum.value,'%y')";
 
 export default function MonthlyChart({ data }: { data: MonthlyRow[] }) {
   const { filters, toggleAgent } = useFilters();

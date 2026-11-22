@@ -1,12 +1,11 @@
-import { useCallback, useMemo, useRef } from "react";
+
+import { useCallback, useMemo, useRef, useState } from "react";
 import { VegaEmbed } from "react-vega";
 
 interface Props {
   spec: any;
   renderer?: "svg" | "canvas";
-  /** Clique em qualquer marca ou item de legenda. `datum` é null se clicou no fundo. */
   onClick?: (datum: any | null, item: any | null) => void;
-  /** Ouvintes de sinais do Vega (ex.: { brush: (valor) => ... }). */
   signals?: Record<string, (value: any) => void>;
 }
 
@@ -22,50 +21,102 @@ const BASE_CONFIG = {
     domainColor: "#9aa5b1",
     tickColor: "#9aa5b1",
   },
-  legend: { labelFontSize: 11, titleFontSize: 12, symbolType: "circle" },
+  legend: {
+    labelFontSize: 11,
+    titleFontSize: 12,
+    symbolType: "circle",
+  },
 };
 
-export default function VegaChart({ spec, renderer = "svg", onClick, signals }: Props) {
-  // Refs evitam recriar a view (e perder brush/hover) quando só os callbacks mudam.
+export default function VegaChart({
+  spec,
+  renderer = "svg",
+  onClick,
+  signals,
+}: Props) {
   const clickRef = useRef(onClick);
-  clickRef.current = onClick;
   const signalsRef = useRef(signals);
+
+  const [embedError, setEmbedError] = useState<string | null>(null);
+
+  clickRef.current = onClick;
   signalsRef.current = signals;
 
   const fullSpec = useMemo(
     () => ({
-      $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-      autosize: { type: "fit", contains: "padding" },
+      $schema: "https://vega.github.io/schema/vega-lite/v6.json",
+      autosize: {
+        type: "fit",
+        contains: "padding",
+      },
       ...spec,
-      config: { ...BASE_CONFIG, ...(spec.config ?? {}) },
+      config: {
+        ...BASE_CONFIG,
+        ...(spec.config ?? {}),
+      },
     }),
     [spec]
   );
 
   const options = useMemo(
-    () => ({ actions: false, renderer, mode: "vega-lite" as const }),
+    () => ({
+      actions: false,
+      renderer,
+      mode: "vega-lite" as const,
+    }),
     [renderer]
   );
 
-  const handleNewView = useCallback((view: any) => {
-    view.addEventListener("click", (_e: any, item: any) => {
+  const handleNewView = useCallback((result: any) => {
+    const view = result?.view;
+
+    if (!view) {
+      setEmbedError("O Vega não retornou uma visualização válida.");
+      return;
+    }
+
+    setEmbedError(null);
+
+    view.addEventListener("click", (_event: any, item: any) => {
       clickRef.current?.(item?.datum ?? null, item ?? null);
     });
+
     Object.keys(signalsRef.current ?? {}).forEach((name) => {
       try {
-        view.addSignalListener(name, (_n: string, value: any) => signalsRef.current?.[name]?.(value));
+        view.addSignalListener(name, (_name: string, value: any) => {
+          signalsRef.current?.[name]?.(value);
+        });
       } catch {
-        /* sinal inexistente neste spec */
+        console.warn(`Não foi possível registrar o sinal: ${name}`);
       }
     });
   }, []);
 
+  const handleError = useCallback((error: unknown) => {
+    console.error("Erro ao renderizar gráfico Vega-Lite:", error);
+
+    setEmbedError(
+      error instanceof Error
+        ? error.message
+        : String(error)
+    );
+  }, []);
+
   return (
-    <div style={{ width: "100%" }}>
+    <div className="vega-chart-container">
+      {embedError && (
+        <div className="chart-error">
+          <strong>Não foi possível renderizar o gráfico.</strong>
+          <p>{embedError}</p>
+          <small>Consulte o console do navegador para mais detalhes.</small>
+        </div>
+      )}
+
       <VegaEmbed
         spec={fullSpec}
         options={options}
-        onEmbed={(result: any) => handleNewView(result.view)}
+        onEmbed={handleNewView}
+        onError={handleError}
       />
     </div>
   );
