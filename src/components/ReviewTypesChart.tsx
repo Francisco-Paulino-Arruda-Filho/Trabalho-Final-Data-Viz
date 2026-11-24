@@ -13,11 +13,13 @@ import {
 } from "../lib/colors";
 
 import {
+  AGENT_FOCUS_PARAMS,
   agentFromClick,
   agentOpacity,
 } from "../lib/vegaHelpers";
 
 import { useFilters } from "../context/FilterContext";
+import { setHoveredAgent } from "../context/hoverStore";
 
 // ======================================================
 // 1. MODOS DE VISUALIZAÇÃO
@@ -35,14 +37,9 @@ export default function ReviewTypesChart({
   data: ReviewTypeRow[];
 }) {
   const {
-    filters,
+    focusAgents,
     toggleAgent,
-    compareAgents,
-    hovered,
-    setHovered,
   } = useFilters();
-
-  const { agents } = filters;
 
   const [mode, setMode] = useState<Mode>("percent");
 
@@ -62,21 +59,6 @@ export default function ReviewTypesChart({
   );
 
   // ====================================================
-  // 4. OPACIDADE
-  // ====================================================
-
-  const opacity = useMemo(
-    () =>
-      agentOpacity(
-        agents,
-        "agent",
-        compareAgents,
-        hovered
-      ),
-    [agents, compareAgents, hovered]
-  );
-
-  // ====================================================
   // 5. ESPECIFICAÇÃO VEGA-LITE
   // ====================================================
 
@@ -93,6 +75,8 @@ export default function ReviewTypesChart({
       data: {
         values: rows,
       },
+
+      params: [...AGENT_FOCUS_PARAMS],
 
       encoding: {
         y: {
@@ -136,7 +120,8 @@ export default function ReviewTypesChart({
           type: "quantitative",
         },
 
-        opacity,
+        // Dirigida pelos params focusAgents / hoverAgent.
+        opacity: agentOpacity(),
       },
 
       layer: [
@@ -179,23 +164,14 @@ export default function ReviewTypesChart({
         },
       ],
     };
-  }, [rows, mode, opacity]);
+  }, [rows, mode]);
 
   // ====================================================
   // 6. EVENTOS
   // ====================================================
 
-  function handleAgentHover(datum: any, item: any) {
-    const agent = agentFromClick(datum, item);
-
-    setHovered(
-      agent
-        ? {
-            kind: "agent",
-            value: agent,
-          }
-        : null
-    );
+  function handleAgentHover(datum: unknown, item: unknown) {
+    setHoveredAgent(agentFromClick(datum, item));
   }
 
   // ====================================================
@@ -228,6 +204,8 @@ export default function ReviewTypesChart({
 
       <VegaChart
         spec={spec}
+        signalValues={{ focusAgents }}
+        hoverSignal="hoverAgent"
         onClick={(datum, item) => {
           const agent = agentFromClick(datum, item);
 

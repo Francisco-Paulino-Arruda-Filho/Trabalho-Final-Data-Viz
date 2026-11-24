@@ -4,12 +4,19 @@
 
 import {
   useCallback,
+  useEffect,
   useMemo,
   useRef,
   useState,
 } from "react";
 
 import { VegaEmbed } from "react-vega";
+import type { View } from "vega";
+
+import {
+  getHoveredAgent,
+  subscribeHoveredAgent,
+} from "../context/hoverStore";
 
 // ======================================================
 // 1. PROPRIEDADES
@@ -32,11 +39,24 @@ interface Props {
     item: any | null
   ) => void;
 
-  // Comunicação de sinais do Vega
+  // Sinais do Vega que o gráfico emite (ex.: brush)
   signals?: Record<
     string,
     (value: any) => void
   >;
+
+  /**
+   * Valores empurrados PARA dentro do Vega (ex.: focusAgents).
+   * Aplicados com view.signal(...), sem recriar o gráfico.
+   * O spec precisa declarar um param com o mesmo nome.
+   */
+  signalValues?: Record<string, unknown>;
+
+  /**
+   * Nome do param do spec que recebe o agente sob o mouse
+   * (store global de hover). Ex.: "hoverAgent".
+   */
+  hoverSignal?: string;
 }
 
 // ======================================================
@@ -69,7 +89,41 @@ const BASE_CONFIG = {
 };
 
 // ======================================================
-// 3. COMPONENTE
+// 3. APLICAÇÃO DE SINAIS
+// ======================================================
+
+/**
+ * Atualiza sinais de uma view já criada.
+ * Ignora (com aviso) sinais que o spec não declara.
+ */
+function applySignals(
+  view: View,
+  values: Record<string, unknown>
+) {
+  let changed = false;
+
+  Object.entries(values).forEach(([name, value]) => {
+    try {
+      view.signal(name, value);
+      changed = true;
+    } catch {
+      console.warn(
+        `O spec não declara o sinal: ${name}`
+      );
+    }
+  });
+
+  if (!changed) return;
+
+  try {
+    view.run();
+  } catch {
+    // A view pode ter sido finalizada durante a troca de spec.
+  }
+}
+
+// ======================================================
+// 4. COMPONENTE
 // ======================================================
 
 export default function VegaChart({
@@ -78,15 +132,22 @@ export default function VegaChart({
   onClick,
   onHover,
   signals,
+  signalValues,
+  hoverSignal,
 }: Props) {
 
   // ====================================================
-  // 3.1. REFERÊNCIAS DOS CALLBACKS
+  // 4.1. REFERÊNCIAS
   // ====================================================
 
   const clickRef = useRef(onClick);
   const hoverRef = useRef(onHover);
   const signalsRef = useRef(signals);
+  const signalValuesRef = useRef(signalValues);
+  const hoverSignalRef = useRef(hoverSignal);
+
+  // View atual do Vega (null enquanto não foi criada).
+  const viewRef = useRef<View | null>(null);
 
   const [embedError, setEmbedError] =
     useState<string | null>(null);
@@ -97,9 +158,11 @@ export default function VegaChart({
   clickRef.current = onClick;
   hoverRef.current = onHover;
   signalsRef.current = signals;
+  signalValuesRef.current = signalValues;
+  hoverSignalRef.current = hoverSignal;
 
   // ====================================================
-  // 3.2. ESPECIFICAÇÃO VEGA-LITE
+  // 4.2. ESPECIFICAÇÃO VEGA-LITE
   // ====================================================
 
   const fullSpec = useMemo(
@@ -123,7 +186,7 @@ export default function VegaChart({
   );
 
   // ====================================================
-  // 3.3. OPÇÕES DE INCORPORAÇÃO
+  // 4.3. OPÇÕES DE INCORPORAÇÃO
   // ====================================================
 
   const options = useMemo(
@@ -136,22 +199,80 @@ export default function VegaChart({
   );
 
   // ====================================================
-  // 3.4. REGISTRO DOS EVENTOS
+  // 4.4. SINAIS DE ENTRADA (React -> Vega)
+  // ====================================================
+
+  /** Valores de entrada atuais, incluindo o hover global. */
+  const currentInputs = useCallback(() => {
+    const inputs: Record<string, unknown> = {
+      ...(signalValuesRef.current ?? {}),
+    };
+
+    if (hoverSignalRef.current) {
+      inputs[hoverSignalRef.current] =
+        getHoveredAgent();
+    }
+
+    return inputs;
+  }, []);
+
+  // Mudou foco/comparação: atualiza a view existente.
+  const signalValuesKey = JSON.stringify(
+    signalValues ?? {}
+  );
+
+  useEffect(() => {
+    const view = viewRef.current;
+    if (!view) return;
+
+    applySignals(view, currentInputs());
+  }, [signalValuesKey, currentInputs]);
+
+  // Mudou o agente sob o mouse (em qualquer gráfico).
+  useEffect(() => {
+    if (!hoverSignal) return;
+
+    return subscribeHoveredAgent((agent) => {
+      const view = viewRef.current;
+      if (!view) return;
+
+      applySignals(view, { [hoverSignal]: agent });
+    });
+  }, [hoverSignal]);
+
+  // Libera a referência ao desmontar.
+  useEffect(
+    () => () => {
+      viewRef.current = null;
+    },
+    []
+  );
+
+  // ====================================================
+  // 4.5. REGISTRO DOS EVENTOS
   // ====================================================
 
   const handleNewView = useCallback(
     (result: any) => {
 
-      const view = result?.view;
+      const view = result?.view as View | undefined;
 
       if (!view) {
+        viewRef.current = null;
+
         setEmbedError(
           "O Vega não retornou uma visualização válida."
         );
         return;
       }
 
+      viewRef.current = view;
+
       setEmbedError(null);
+
+      // Uma view nova nasce com os valores do spec.
+      // Reaplica o estado atual (foco, comparação, hover).
+      applySignals(view, currentInputs());
 
       // ----------------------------------------------
       // CLIQUE
@@ -182,7 +303,7 @@ export default function VegaChart({
       );
 
       // ----------------------------------------------
-      // SINAIS DO VEGA
+      // SINAIS DE SAÍDA (Vega -> React)
       // ----------------------------------------------
 
       Object.keys(signalsRef.current ?? {}).forEach(
@@ -202,11 +323,11 @@ export default function VegaChart({
         }
       );
     },
-    []
+    [currentInputs]
   );
 
   // ====================================================
-  // 3.5. SAÍDA DO MOUSE DO GRÁFICO
+  // 4.6. SAÍDA DO MOUSE DO GRÁFICO
   // ====================================================
 
   const handleMouseLeave = useCallback(() => {
@@ -214,7 +335,7 @@ export default function VegaChart({
   }, []);
 
   // ====================================================
-  // 3.6. TRATAMENTO DE ERROS
+  // 4.7. TRATAMENTO DE ERROS
   // ====================================================
 
   const handleError = useCallback(
@@ -234,7 +355,7 @@ export default function VegaChart({
   );
 
   // ====================================================
-  // 4. RENDERIZAÇÃO
+  // 5. RENDERIZAÇÃO
   // ====================================================
 
   return (

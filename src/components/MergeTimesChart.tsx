@@ -8,11 +8,13 @@ import type { MergeTimesData } from "../lib/types";
 import { agentColorScale } from "../lib/colors";
 
 import {
+  AGENT_FOCUS_PARAMS,
   agentFromClick,
   agentOpacity,
 } from "../lib/vegaHelpers";
 
 import { useFilters } from "../context/FilterContext";
+import { setHoveredAgent } from "../context/hoverStore";
 
 // ======================================================
 // 1. COMPONENTE
@@ -26,14 +28,9 @@ export default function MergeTimesChart({
   data,
 }: Props) {
   const {
-    filters,
+    focusAgents,
     toggleAgent,
-    compareAgents,
-    hovered,
-    setHovered,
   } = useFilters();
-
-  const { agents } = filters;
 
   // ====================================================
   // 2. ESPECIFICAÇÃO VEGA-LITE
@@ -47,6 +44,8 @@ export default function MergeTimesChart({
       data: {
         values: data.ecdf,
       },
+
+      params: [...AGENT_FOCUS_PARAMS],
 
       mark: {
         type: "line",
@@ -88,12 +87,7 @@ export default function MergeTimesChart({
           scale: agentColorScale,
         },
 
-        opacity: agentOpacity(
-          agents,
-          "agent",
-          compareAgents,
-          hovered
-        ),
+        opacity: agentOpacity(),
 
         tooltip: [
           {
@@ -113,28 +107,14 @@ export default function MergeTimesChart({
         ],
       },
     };
-  }, [
-    data.ecdf,
-    agents,
-    compareAgents,
-    hovered,
-  ]);
+  }, [data.ecdf]);
 
   // ====================================================
   // 3. EVENTOS
   // ====================================================
 
-  function handleAgentHover(datum: any, item: any) {
-    const agent = agentFromClick(datum, item);
-
-    setHovered(
-      agent
-        ? {
-            kind: "agent",
-            value: agent,
-          }
-        : null
-    );
+  function handleAgentHover(datum: unknown, item: unknown) {
+    setHoveredAgent(agentFromClick(datum, item));
   }
 
   // ====================================================
@@ -144,6 +124,8 @@ export default function MergeTimesChart({
   return (
     <VegaChart
       spec={spec}
+      signalValues={{ focusAgents }}
+      hoverSignal="hoverAgent"
       onClick={(datum, item) => {
         const agent = agentFromClick(datum, item);
 

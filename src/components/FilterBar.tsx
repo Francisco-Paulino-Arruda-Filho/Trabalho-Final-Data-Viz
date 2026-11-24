@@ -5,19 +5,41 @@ import {
   DOMINANT_MIN_PRS,
   useFilters,
 } from "../context/FilterContext";
+import type { CompareAgents } from "../context/FilterContext";
 
 interface Chip {
   key: string;
   label: string;
   color?: string;
   onClear: () => void;
+  /** Filtro guardado, mas sem efeito no momento. */
+  muted?: boolean;
+  title?: string;
 }
+
+const SLOT_LABEL = ["A", "B"] as const;
 
 export default function FilterBar() {
   const f = useFilters();
   const { filters } = f;
 
   const chips: Chip[] = [];
+
+  // Agentes da comparação (têm prioridade sobre o filtro de agentes)
+  f.compareAgents.forEach((agent, slot) => {
+    if (!agent) return;
+
+    chips.push({
+      key: `compare-${slot}`,
+      label: `Comparação ${SLOT_LABEL[slot]}: ${agent}`,
+      color: AGENT_COLORS[agent],
+      onClear: () => {
+        const next: CompareAgents = [...f.compareAgents];
+        next[slot] = null;
+        f.setCompareAgents(next);
+      },
+    });
+  });
 
   // Agentes selecionados
   filters.agents.forEach((agent) =>
@@ -26,6 +48,10 @@ export default function FilterBar() {
       label: agent,
       color: AGENT_COLORS[agent],
       onClear: () => f.toggleAgent(agent),
+      muted: f.hasComparison,
+      title: f.hasComparison
+        ? "Em segundo plano: a comparação tem prioridade. Clique para remover."
+        : undefined,
     })
   );
 
@@ -92,8 +118,9 @@ export default function FilterBar() {
             <button
               key={chip.key}
               className="chip"
+              style={chip.muted ? { opacity: 0.5 } : undefined}
               onClick={chip.onClear}
-              title={`Remover filtro: ${chip.label}`}
+              title={chip.title ?? `Remover filtro: ${chip.label}`}
               aria-label={`Remover filtro ${chip.label}`}
             >
               {chip.color && (

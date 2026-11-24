@@ -1,10 +1,5 @@
 import { AGENTS } from "./colors";
 import type { Repo } from "./types";
-import type {
-  HoverTarget,
-  CompareAgents,
-} from "../context/FilterContext";
-
 const AGENT_LIST = AGENTS as readonly string[];
 
 /** Taxa de merge entre PRs já resolvidos (merged / (merged + closed)). */
@@ -13,51 +8,40 @@ export function mergeRate(r: Repo): number | null {
   return resolved > 0 ? r.n_merged / resolved : null;
 }
 
-export function agentOpacity(
-  selected: string[],
-  field = "agent",
-  comparison: CompareAgents = [null, null],
-  hovered: HoverTarget = null
-) {
-  const compared = comparison.filter(
-    (agent): agent is string => Boolean(agent)
-  );
+/**
+ * Parâmetros do Vega-Lite que controlam o destaque de agentes.
+ *
+ * Coloque em `params` no nível raiz do spec. Os valores NÃO fazem parte
+ * do spec: o VegaChart os atualiza com view.signal(...), então mudar
+ * hover, filtro ou comparação não recria o gráfico (e preserva brushes).
+ *
+ * - focusAgents: agentes em foco (comparação ou filtro). Vazio = todos.
+ * - hoverAgent: agente sob o mouse em qualquer gráfico. null = nenhum.
+ */
+export const AGENT_FOCUS_PARAMS = [
+  { name: "focusAgents", value: [] as string[] },
+  { name: "hoverAgent", value: null as string | null },
+];
 
-  // A comparação com dois agentes tem prioridade
-  // sobre o filtro convencional de agentes.
-  const focus =
-    compared.length === 2
-      ? compared
-      : selected;
-
-  const hoveredAgent =
-    hovered?.kind === "agent"
-      ? hovered.value
-      : null;
+/**
+ * Codificação de opacidade por agente, dirigida pelos parâmetros acima.
+ * O spec resultante é sempre o mesmo, independente do estado.
+ */
+export function agentOpacity(field = "agent") {
+  const agent = `datum["${field}"]`;
 
   return {
-    field,
-    type: "nominal",
-    legend: null,
-
-    scale: {
-      domain: [...AGENTS],
-
-      range: AGENTS.map((agent) => {
-        const matchesSelection =
-          focus.length === 0 ||
-          focus.includes(agent);
-
-        const matchesHover =
-          hoveredAgent === null ||
-          hoveredAgent === agent;
-
-        if (!matchesSelection) return 0.12;
-        if (!matchesHover) return 0.25;
-
-        return 1;
-      }),
-    },
+    condition: [
+      {
+        test: `length(focusAgents) > 0 && indexof(focusAgents, ${agent}) < 0`,
+        value: 0.12,
+      },
+      {
+        test: `hoverAgent != null && ${agent} != hoverAgent`,
+        value: 0.25,
+      },
+    ],
+    value: 1,
   };
 }
 
@@ -85,24 +69,3 @@ export function fmtHours(h: number): string {
 
 export const fmtDate = (iso: string) => iso.split("-").reverse().join("/");
 export const fmtInt = (n: number) => n.toLocaleString("pt-BR");
-
-export function hoverOpacity(
-  hovered: {
-    kind: string;
-    value: string;
-  } | null,
-  kind: string,
-  field: string
-) {
-  if (!hovered || hovered.kind !== kind) {
-    return { value: 1 };
-  }
-
-  return {
-    condition: {
-      test: `datum.${field} === ${JSON.stringify(hovered.value)}`,
-      value: 1,
-    },
-    value: 0.15,
-  };
-}

@@ -1,4 +1,3 @@
-
 import {
   createContext,
   useCallback,
@@ -9,6 +8,7 @@ import {
 
 import type { ReactNode } from "react";
 import type { Repo } from "../lib/types";
+import { setHoveredAgent } from "./hoverStore";
 
 // ======================================================
 // 1. CONFIGURAÇÕES
@@ -45,19 +45,10 @@ export const EMPTY_FILTERS: Filters = {
 };
 
 // ======================================================
-// 3. HOVER GLOBAL
+// 3. COMPARAÇÃO ENTRE AGENTES
 // ======================================================
-
-export type HoverTarget =
-  | {
-      kind: "agent" | "language" | "repo";
-      value: string;
-    }
-  | null;
-
-// ======================================================
-// 4. COMPARAÇÃO ENTRE AGENTES
-// ======================================================
+//
+// O hover global NÃO fica aqui. Veja hoverStore.ts.
 
 export type CompareAgents = [
   string | null,
@@ -65,7 +56,7 @@ export type CompareAgents = [
 ];
 
 // ======================================================
-// 5. INTERFACE DO CONTEXTO
+// 4. INTERFACE DO CONTEXTO
 // ======================================================
 
 interface FilterApi {
@@ -73,6 +64,20 @@ interface FilterApi {
   filters: Filters;
   resetToken: number;
   isFiltered: boolean;
+
+  /**
+   * Agentes que realmente guiam o destaque e a filtragem:
+   * os agentes da comparação, quando há comparação;
+   * senão, os agentes do filtro convencional.
+   */
+  focusAgents: string[];
+
+  /**
+   * Cópia de `filters` em que `agents` é `focusAgents`.
+   * Use esta versão nos gráficos e em matchRepo para que
+   * todas as visões respondam à comparação.
+   */
+  focusFilters: Filters;
 
   // Ações dos filtros
   toggleAgent: (agent: string) => void;
@@ -85,24 +90,23 @@ interface FilterApi {
   setHideDominant: (value: boolean) => void;
   reset: () => void;
 
-  // Hover global
-  hovered: HoverTarget;
-  setHovered: (target: HoverTarget) => void;
-
   // Comparação entre agentes
   compareAgents: CompareAgents;
   setCompareAgents: (agents: CompareAgents) => void;
+  clearComparison: () => void;
+
+  /** Verdadeiro se pelo menos um agente foi escolhido na comparação. */
   hasComparison: boolean;
 }
 
 // ======================================================
-// 6. CRIAÇÃO DO CONTEXTO
+// 5. CRIAÇÃO DO CONTEXTO
 // ======================================================
 
 const Ctx = createContext<FilterApi | null>(null);
 
 // ======================================================
-// 7. FUNÇÕES AUXILIARES
+// 6. FUNÇÕES AUXILIARES
 // ======================================================
 
 /**
@@ -124,7 +128,7 @@ function sameTuple<T>(
 }
 
 // ======================================================
-// 8. PROVIDER
+// 7. PROVIDER
 // ======================================================
 
 export function FilterProvider({
@@ -134,7 +138,7 @@ export function FilterProvider({
 }) {
 
   // ====================================================
-  // 8.1. ESTADOS DOS FILTROS
+  // 7.1. ESTADOS DOS FILTROS
   // ====================================================
 
   const [filters, setFilters] = useState<Filters>({
@@ -148,13 +152,7 @@ export function FilterProvider({
   const [resetToken, setResetToken] = useState(0);
 
   // ====================================================
-  // 8.2. ESTADO DE HOVER
-  // ====================================================
-
-  const [hovered, setHovered] = useState<HoverTarget>(null);
-
-  // ====================================================
-  // 8.3. ESTADO DE COMPARAÇÃO
+  // 7.2. ESTADO DE COMPARAÇÃO
   // ====================================================
 
   const [compareAgents, setCompareAgentsState] =
@@ -179,17 +177,45 @@ export function FilterProvider({
     []
   );
 
+  const clearComparison = useCallback(() => {
+    setCompareAgentsState([null, null]);
+  }, []);
+
+  /** Agentes realmente escolhidos na comparação (0, 1 ou 2). */
+  const compared = useMemo(
+    () =>
+      compareAgents.filter(
+        (agent): agent is string => Boolean(agent)
+      ),
+    [compareAgents]
+  );
+
   /**
-   * Indica se existe alguma seleção no modo de comparação.
-   * A comparação efetiva acontece quando os dois agentes
-   * estão selecionados.
+   * Existe comparação assim que um agente é escolhido.
+   * Com um só agente, a visão destaca apenas ele.
    */
-  const hasComparison = Boolean(
-    compareAgents[0] || compareAgents[1]
+  const hasComparison = compared.length > 0;
+
+  /**
+   * A comparação tem prioridade sobre o filtro de agentes.
+   * Todas as visões usam esta única fonte para decidir
+   * quais agentes estão em foco.
+   */
+  const focusAgents = useMemo(
+    () => (hasComparison ? compared : filters.agents),
+    [hasComparison, compared, filters.agents]
+  );
+
+  const focusFilters = useMemo<Filters>(
+    () =>
+      focusAgents === filters.agents
+        ? filters
+        : { ...filters, agents: focusAgents },
+    [filters, focusAgents]
   );
 
   // ====================================================
-  // 9. FILTRO DE AGENTES
+  // 8. FILTRO DE AGENTES
   // ====================================================
 
   const toggleAgent = useCallback((agent: string) => {
@@ -209,7 +235,7 @@ export function FilterProvider({
   }, []);
 
   // ====================================================
-  // 10. FILTRO DE PERÍODO
+  // 9. FILTRO DE PERÍODO
   // ====================================================
 
   const setRange = useCallback(
@@ -227,7 +253,7 @@ export function FilterProvider({
   );
 
   // ====================================================
-  // 11. FILTRO DE LINGUAGEM
+  // 10. FILTRO DE LINGUAGEM
   // ====================================================
 
   const toggleLanguage = useCallback(
@@ -244,7 +270,7 @@ export function FilterProvider({
   );
 
   // ====================================================
-  // 12. FILTRO DE REPOSITÓRIO
+  // 11. FILTRO DE REPOSITÓRIO
   // ====================================================
 
   const toggleRepo = useCallback((repo: string) => {
@@ -257,7 +283,7 @@ export function FilterProvider({
   }, []);
 
   // ====================================================
-  // 13. FILTRO DE ESTRELAS
+  // 12. FILTRO DE ESTRELAS
   // ====================================================
 
   const setStarsRange = useCallback(
@@ -285,7 +311,7 @@ export function FilterProvider({
   }, []);
 
   // ====================================================
-  // 14. OCULTAR REPOSITÓRIOS DOMINANTES
+  // 13. OCULTAR REPOSITÓRIOS DOMINANTES
   // ====================================================
 
   const setHideDominant = useCallback(
@@ -299,7 +325,7 @@ export function FilterProvider({
   );
 
   // ====================================================
-  // 15. VERIFICAÇÃO DE FILTROS ATIVOS
+  // 14. VERIFICAÇÃO DE FILTROS ATIVOS
   // ====================================================
 
   const isFiltered =
@@ -308,10 +334,11 @@ export function FilterProvider({
     filters.language !== null ||
     filters.repo !== null ||
     filters.starsRange !== null ||
-    filters.hideDominant;
+    filters.hideDominant ||
+    hasComparison;
 
   // ====================================================
-  // 16. LIMPAR TUDO
+  // 15. LIMPAR TUDO
   // ====================================================
 
   const reset = useCallback(() => {
@@ -323,7 +350,7 @@ export function FilterProvider({
     });
 
     // Remove o destaque temporário.
-    setHovered(null);
+    setHoveredAgent(null);
 
     // Remove os agentes da comparação.
     setCompareAgentsState([null, null]);
@@ -334,7 +361,7 @@ export function FilterProvider({
   }, []);
 
   // ====================================================
-  // 17. DISPONIBILIZAÇÃO DA API
+  // 16. DISPONIBILIZAÇÃO DA API
   // ====================================================
 
   const api = useMemo<FilterApi>(
@@ -343,6 +370,8 @@ export function FilterProvider({
       filters,
       resetToken,
       isFiltered,
+      focusAgents,
+      focusFilters,
 
       // Ações dos filtros
       toggleAgent,
@@ -355,19 +384,18 @@ export function FilterProvider({
       setHideDominant,
       reset,
 
-      // Hover
-      hovered,
-      setHovered,
-
       // Comparação
       compareAgents,
       setCompareAgents,
+      clearComparison,
       hasComparison,
     }),
     [
       filters,
       resetToken,
       isFiltered,
+      focusAgents,
+      focusFilters,
 
       toggleAgent,
       clearAgents,
@@ -379,9 +407,9 @@ export function FilterProvider({
       setHideDominant,
       reset,
 
-      hovered,
       compareAgents,
       setCompareAgents,
+      clearComparison,
       hasComparison,
     ]
   );
@@ -394,7 +422,7 @@ export function FilterProvider({
 }
 
 // ======================================================
-// 18. HOOK DE ACESSO AO CONTEXTO
+// 17. HOOK DE ACESSO AO CONTEXTO
 // ======================================================
 
 export function useFilters(): FilterApi {
@@ -410,15 +438,19 @@ export function useFilters(): FilterApi {
 }
 
 // ======================================================
-// 19. FILTRO DE REPOSITÓRIOS
+// 18. FILTRO DE REPOSITÓRIOS
 // ======================================================
 
 /**
  * Verifica se um repositório passa pelos filtros globais.
  *
+ * Passe `focusFilters` (e não `filters`) para que a comparação
+ * entre agentes também filtre os repositórios.
+ *
  * Utilizado por:
  * - RepositoriesChart
  * - ScatterChart
+ * - ParetoChart
  * - NetworkChart
  */
 export function matchRepo(

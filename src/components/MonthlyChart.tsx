@@ -1,5 +1,5 @@
 
-import { useMemo, useState, useRef } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 
 import VegaChart from "./VegaChart";
 
@@ -8,11 +8,13 @@ import type { MonthlyRow } from "../lib/types";
 import { agentColorScale } from "../lib/colors";
 
 import {
+  AGENT_FOCUS_PARAMS,
   agentFromClick,
   agentOpacity,
 } from "../lib/vegaHelpers";
 
 import { useFilters } from "../context/FilterContext";
+import { setHoveredAgent } from "../context/hoverStore";
 
 // ======================================================
 // 1. MODOS DE VISUALIZAÇÃO
@@ -44,14 +46,13 @@ export default function MonthlyChart({
 }) {
   const {
     filters,
+    focusAgents,
     toggleAgent,
     setRange,
-    compareAgents,
-    hovered,
-    setHovered,
+    resetToken,
   } = useFilters();
 
-  const { agents, range } = filters;
+  const { range } = filters;
 
   const [mode, setMode] = useState<Mode>("volume");
 
@@ -102,13 +103,27 @@ export default function MonthlyChart({
     undefined
   );
 
-  function handleMonthBrush(value: any) {
-    const extent =
-      value?.date ??
-      value?.x ??
-      Object.values(value ?? {}).find(Array.isArray);
+  // Cancela um debounce pendente ao desmontar.
+  useEffect(
+    () => () => window.clearTimeout(brushTimer.current),
+    []
+  );
 
+  function handleMonthBrush(value: unknown) {
+    const brush = value as
+      | Record<string, unknown>
+      | null
+      | undefined;
+
+    const extent =
+      brush?.date ??
+      brush?.x ??
+      Object.values(brush ?? {}).find(Array.isArray);
+
+    // Brush limpo: descarta qualquer seleção que ainda
+    // estivesse esperando o debounce, senão ela ressurgiria.
     if (!Array.isArray(extent) || extent.length !== 2) {
+      window.clearTimeout(brushTimer.current);
       setRange(null);
       return;
     }
@@ -196,12 +211,9 @@ export default function MonthlyChart({
         scale: agentColorScale,
       },
 
-      opacity: agentOpacity(
-        agents,
-        "agent",
-        compareAgents,
-        hovered
-      ),
+      // Dirigida pelos params focusAgents / hoverAgent:
+      // muda sem recriar o gráfico.
+      opacity: agentOpacity(),
 
       tooltip: [
         { field: "agent", title: "Agente" },
@@ -222,6 +234,8 @@ export default function MonthlyChart({
       data: {
         values: rows,
       },
+
+      params: [...AGENT_FOCUS_PARAMS],
 
       layer: [
         // Período selecionado no calendário
@@ -318,24 +332,15 @@ export default function MonthlyChart({
     rows,
     ticks,
     mode,
-    agents,
     range,
-    compareAgents,
-    hovered,
   ]);
 
   // ====================================================
   // 7. EVENTOS
   // ====================================================
 
-  function handleAgentHover(datum: any, item: any) {
-    const agent = agentFromClick(datum, item);
-
-    setHovered(
-      agent
-        ? { kind: "agent", value: agent }
-        : null
-    );
+  function handleAgentHover(datum: unknown, item: unknown) {
+    setHoveredAgent(agentFromClick(datum, item));
   }
 
   // ====================================================
@@ -362,7 +367,11 @@ export default function MonthlyChart({
       </div>
 
       <VegaChart
+        // Remonta ao "Limpar tudo": zera o brush interno.
+        key={resetToken}
         spec={spec}
+        signalValues={{ focusAgents }}
+        hoverSignal="hoverAgent"
         signals={{
           monthlyPeriodBrush: handleMonthBrush,
         }}

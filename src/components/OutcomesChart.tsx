@@ -13,11 +13,13 @@ import {
 } from "../lib/colors";
 
 import {
+  AGENT_FOCUS_PARAMS,
   agentFromClick,
   agentOpacity,
 } from "../lib/vegaHelpers";
 
 import { useFilters } from "../context/FilterContext";
+import { setHoveredAgent } from "../context/hoverStore";
 
 type Mode = "percent" | "count";
 
@@ -27,14 +29,9 @@ export default function OutcomesChart({
   data: OutcomeRow[];
 }) {
   const {
-    filters,
+    focusAgents,
     toggleAgent,
-    compareAgents,
-    hovered,
-    setHovered,
   } = useFilters();
-
-  const { agents } = filters;
 
   const [mode, setMode] = useState<Mode>("percent");
 
@@ -88,21 +85,6 @@ export default function OutcomesChart({
   }, [data]);
 
   // ======================================================
-  // 2. OPACIDADE E INTERAÇÕES
-  // ======================================================
-
-  const opacity = useMemo(
-    () =>
-      agentOpacity(
-        agents,
-        "agent",
-        compareAgents,
-        hovered
-      ),
-    [agents, compareAgents, hovered]
-  );
-
-  // ======================================================
   // 3. ESPECIFICAÇÃO VEGA-LITE
   // ======================================================
 
@@ -119,6 +101,8 @@ export default function OutcomesChart({
       data: {
         values: rows,
       },
+
+      params: [...AGENT_FOCUS_PARAMS],
 
       encoding: {
         y: {
@@ -167,7 +151,8 @@ export default function OutcomesChart({
           type: "quantitative",
         },
 
-        opacity,
+        // Dirigida pelos params focusAgents / hoverAgent.
+        opacity: agentOpacity(),
 
       },
 
@@ -252,23 +237,14 @@ export default function OutcomesChart({
           : []),
       ],
     };
-  }, [rows, order, mode, opacity]);
+  }, [rows, order, mode]);
 
   // ======================================================
   // 4. EVENTOS
   // ======================================================
 
-  function handleAgentHover(datum: any, item: any) {
-    const agent = agentFromClick(datum, item);
-
-    setHovered(
-      agent
-        ? {
-            kind: "agent",
-            value: agent,
-          }
-        : null
-    );
+  function handleAgentHover(datum: unknown, item: unknown) {
+    setHoveredAgent(agentFromClick(datum, item));
   }
 
   // ======================================================
@@ -301,6 +277,8 @@ export default function OutcomesChart({
 
       <VegaChart
         spec={spec}
+        signalValues={{ focusAgents }}
+        hoverSignal="hoverAgent"
         onClick={(datum, item) => {
           const agent = agentFromClick(datum, item);
 
