@@ -1,5 +1,9 @@
 import { AGENTS } from "./colors";
 import type { Repo } from "./types";
+import type {
+  HoverTarget,
+  CompareAgents,
+} from "../context/FilterContext";
 
 const AGENT_LIST = AGENTS as readonly string[];
 
@@ -9,19 +13,50 @@ export function mergeRate(r: Repo): number | null {
   return resolved > 0 ? r.n_merged / resolved : null;
 }
 
-/**
- * Canal de opacidade por agente: agentes fora da seleção ficam esmaecidos.
- * Não altera os dados, só a escala — por isso é barato recalcular o spec.
- */
-export function agentOpacity(selected: string[], field = "agent") {
-  const dim = selected.length > 0;
+export function agentOpacity(
+  selected: string[],
+  field = "agent",
+  comparison: CompareAgents = [null, null],
+  hovered: HoverTarget = null
+) {
+  const compared = comparison.filter(
+    (agent): agent is string => Boolean(agent)
+  );
+
+  // A comparação com dois agentes tem prioridade
+  // sobre o filtro convencional de agentes.
+  const focus =
+    compared.length === 2
+      ? compared
+      : selected;
+
+  const hoveredAgent =
+    hovered?.kind === "agent"
+      ? hovered.value
+      : null;
+
   return {
     field,
     type: "nominal",
     legend: null,
+
     scale: {
       domain: [...AGENTS],
-      range: AGENTS.map((a) => (!dim || selected.includes(a) ? 1 : 0.15)),
+
+      range: AGENTS.map((agent) => {
+        const matchesSelection =
+          focus.length === 0 ||
+          focus.includes(agent);
+
+        const matchesHover =
+          hoveredAgent === null ||
+          hoveredAgent === agent;
+
+        if (!matchesSelection) return 0.12;
+        if (!matchesHover) return 0.25;
+
+        return 1;
+      }),
     },
   };
 }

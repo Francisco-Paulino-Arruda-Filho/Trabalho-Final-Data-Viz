@@ -46,6 +46,9 @@ export default function MonthlyChart({
     filters,
     toggleAgent,
     setRange,
+    compareAgents,
+    hovered,
+    setHovered,
   } = useFilters();
 
   const { agents, range } = filters;
@@ -76,18 +79,9 @@ export default function MonthlyChart({
     return {
       rows: data.map((d) => ({
         ...d,
-
-        // Primeiro dia de cada mês
         date: `${d.month}-01`,
-
-        // Participação do agente no volume mensal
-        share:
-          d.prs / (totals.get(d.month) || 1),
-
-        // Identifica os meses incompletos
-        partial:
-          d.month === first ||
-          d.month === last,
+        share: d.prs / (totals.get(d.month) || 1),
+        partial: d.month === first || d.month === last,
       })),
 
       ticks: months.map((m) =>
@@ -101,7 +95,7 @@ export default function MonthlyChart({
   }, [data]);
 
   // ====================================================
-  // 5. SELEÇÃO TEMPORAL (BRUSH)
+  // 5. SELEÇÃO TEMPORAL
   // ====================================================
 
   const brushTimer = useRef<number | undefined>(
@@ -112,15 +106,9 @@ export default function MonthlyChart({
     const extent =
       value?.date ??
       value?.x ??
-      Object.values(value ?? {}).find(
-        Array.isArray
-      );
+      Object.values(value ?? {}).find(Array.isArray);
 
-    // Seleção removida
-    if (
-      !Array.isArray(extent) ||
-      extent.length !== 2
-    ) {
+    if (!Array.isArray(extent) || extent.length !== 2) {
       setRange(null);
       return;
     }
@@ -135,7 +123,6 @@ export default function MonthlyChart({
       return;
     }
 
-    // Primeiro dia do mês inicial
     const start = new Date(
       Date.UTC(
         startDate.getUTCFullYear(),
@@ -144,7 +131,6 @@ export default function MonthlyChart({
       )
     );
 
-    // Último dia do mês final
     const end = new Date(
       Date.UTC(
         endDate.getUTCFullYear(),
@@ -153,15 +139,9 @@ export default function MonthlyChart({
       )
     );
 
-    const startISO = start
-      .toISOString()
-      .slice(0, 10);
+    const startISO = start.toISOString().slice(0, 10);
+    const endISO = end.toISOString().slice(0, 10);
 
-    const endISO = end
-      .toISOString()
-      .slice(0, 10);
-
-    // Evita atualizações excessivas durante o brush
     window.clearTimeout(brushTimer.current);
 
     brushTimer.current = window.setTimeout(() => {
@@ -174,20 +154,14 @@ export default function MonthlyChart({
   // ====================================================
 
   const spec = useMemo(() => {
-    const yField =
-      mode === "share" ? "share" : "prs";
+    const yField = mode === "share" ? "share" : "prs";
 
     const common = {
       x: {
         field: "date",
         type: "temporal",
-
-        scale: {
-          type: "utc",
-        },
-
+        scale: { type: "utc" },
         title: "Mês",
-
         axis: {
           values: ticks,
           labelExpr: MONTH_EXPR,
@@ -198,7 +172,6 @@ export default function MonthlyChart({
       y: {
         field: yField,
         type: "quantitative",
-
         title:
           mode === "share"
             ? "Participação no mês"
@@ -212,10 +185,7 @@ export default function MonthlyChart({
               : {},
 
         axis: {
-          format:
-            mode === "share"
-              ? "%"
-              : "~s",
+          format: mode === "share" ? "%" : "~s",
         },
       },
 
@@ -226,22 +196,17 @@ export default function MonthlyChart({
         scale: agentColorScale,
       },
 
-      opacity: agentOpacity(agents),
+      opacity: agentOpacity(
+        agents,
+        "agent",
+        compareAgents,
+        hovered
+      ),
 
       tooltip: [
-        {
-          field: "agent",
-          title: "Agente",
-        },
-        {
-          field: "month",
-          title: "Mês",
-        },
-        {
-          field: "prs",
-          title: "PRs",
-          format: ",",
-        },
+        { field: "agent", title: "Agente" },
+        { field: "month", title: "Mês" },
+        { field: "prs", title: "PRs", format: "," },
         {
           field: "share",
           title: "Participação",
@@ -259,10 +224,7 @@ export default function MonthlyChart({
       },
 
       layer: [
-        // ==============================================
-        // 1. PERÍODO SELECIONADO NO CALENDÁRIO
-        // ==============================================
-
+        // Período selecionado no calendário
         ...(range
           ? [
               {
@@ -285,9 +247,7 @@ export default function MonthlyChart({
                   x: {
                     field: "a",
                     type: "temporal",
-                    scale: {
-                      type: "utc",
-                    },
+                    scale: { type: "utc" },
                   },
 
                   x2: {
@@ -298,17 +258,11 @@ export default function MonthlyChart({
             ]
           : []),
 
-        // ==============================================
-        // 2. LINHA PRINCIPAL + BRUSH TEMPORAL
-        // ==============================================
-
+        // Linha principal com brush
         {
-          // Importante: seleção declarada somente
-          // nesta camada para evitar sinais duplicados.
           params: [
             {
               name: "monthlyPeriodBrush",
-
               select: {
                 type: "interval",
                 encodings: ["x"],
@@ -326,15 +280,10 @@ export default function MonthlyChart({
           encoding: common,
         },
 
-        // ==============================================
-        // 3. MESES COMPLETOS
-        // ==============================================
-
+        // Meses completos
         {
           transform: [
-            {
-              filter: "!datum.partial",
-            },
+            { filter: "!datum.partial" },
           ],
 
           mark: {
@@ -347,15 +296,10 @@ export default function MonthlyChart({
           encoding: common,
         },
 
-        // ==============================================
-        // 4. MESES INCOMPLETOS
-        // ==============================================
-
+        // Meses incompletos
         {
           transform: [
-            {
-              filter: "datum.partial",
-            },
+            { filter: "datum.partial" },
           ],
 
           mark: {
@@ -376,17 +320,30 @@ export default function MonthlyChart({
     mode,
     agents,
     range,
+    compareAgents,
+    hovered,
   ]);
 
   // ====================================================
-  // 7. RENDERIZAÇÃO
+  // 7. EVENTOS
+  // ====================================================
+
+  function handleAgentHover(datum: any, item: any) {
+    const agent = agentFromClick(datum, item);
+
+    setHovered(
+      agent
+        ? { kind: "agent", value: agent }
+        : null
+    );
+  }
+
+  // ====================================================
+  // 8. RENDERIZAÇÃO
   // ====================================================
 
   return (
     <div>
-
-      {/* Alternância dos modos */}
-
       <div
         className="seg"
         role="group"
@@ -404,26 +361,17 @@ export default function MonthlyChart({
         ))}
       </div>
 
-      {/* Gráfico Vega-Lite */}
-
       <VegaChart
         spec={spec}
-
-        // Seleção temporal coordenada
         signals={{
           monthlyPeriodBrush: handleMonthBrush,
         }}
-
-        // Cross-filtering por agente
-        onClick={(d, item) => {
-          const agent = agentFromClick(d, item);
-
-          if (agent) {
-            toggleAgent(agent);
-          }
+        onClick={(datum, item) => {
+          const agent = agentFromClick(datum, item);
+          if (agent) toggleAgent(agent);
         }}
+        onHover={handleAgentHover}
       />
-
     </div>
   );
 }

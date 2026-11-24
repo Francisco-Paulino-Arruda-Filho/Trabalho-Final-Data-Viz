@@ -14,15 +14,33 @@ import {
 
 import { useFilters } from "../context/FilterContext";
 
+// ======================================================
+// 1. COMPONENTE
+// ======================================================
+
 interface Props {
   data: MergeTimesData;
 }
 
-export default function MergeTimesChart({ data }: Props) {
-  const { filters, toggleAgent } = useFilters();
+export default function MergeTimesChart({
+  data,
+}: Props) {
+  const {
+    filters,
+    toggleAgent,
+    compareAgents,
+    hovered,
+    setHovered,
+  } = useFilters();
 
-  const spec = useMemo(
-    () => ({
+  const { agents } = filters;
+
+  // ====================================================
+  // 2. ESPECIFICAÇÃO VEGA-LITE
+  // ====================================================
+
+  const spec = useMemo(() => {
+    return {
       width: "container",
       height: 300,
 
@@ -33,13 +51,16 @@ export default function MergeTimesChart({ data }: Props) {
       mark: {
         type: "line",
         strokeWidth: 2,
+        cursor: "pointer",
       },
 
       encoding: {
         x: {
           field: "ttm_hours",
           type: "quantitative",
+
           title: "Tempo até merge (horas)",
+
           scale: {
             type: "log",
           },
@@ -48,10 +69,13 @@ export default function MergeTimesChart({ data }: Props) {
         y: {
           field: "probability",
           type: "quantitative",
+
           title: "Proporção acumulada",
+
           scale: {
             domain: [0, 1],
           },
+
           axis: {
             format: "%",
           },
@@ -64,7 +88,12 @@ export default function MergeTimesChart({ data }: Props) {
           scale: agentColorScale,
         },
 
-        opacity: agentOpacity(filters.agents),
+        opacity: agentOpacity(
+          agents,
+          "agent",
+          compareAgents,
+          hovered
+        ),
 
         tooltip: [
           {
@@ -83,9 +112,34 @@ export default function MergeTimesChart({ data }: Props) {
           },
         ],
       },
-    }),
-    [data, filters.agents]
-  );
+    };
+  }, [
+    data.ecdf,
+    agents,
+    compareAgents,
+    hovered,
+  ]);
+
+  // ====================================================
+  // 3. EVENTOS
+  // ====================================================
+
+  function handleAgentHover(datum: any, item: any) {
+    const agent = agentFromClick(datum, item);
+
+    setHovered(
+      agent
+        ? {
+            kind: "agent",
+            value: agent,
+          }
+        : null
+    );
+  }
+
+  // ====================================================
+  // 4. RENDERIZAÇÃO
+  // ====================================================
 
   return (
     <VegaChart
@@ -97,6 +151,7 @@ export default function MergeTimesChart({ data }: Props) {
           toggleAgent(agent);
         }
       }}
+      onHover={handleAgentHover}
     />
   );
 }

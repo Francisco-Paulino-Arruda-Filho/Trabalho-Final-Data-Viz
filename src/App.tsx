@@ -37,6 +37,7 @@ import type {
 import { fmtInt } from "./lib/vegaHelpers";
 
 import "./App.css";
+import ComparisonBar from "./components/ComparisonBar";
 
 // Os arquivos JSON ficam em public/data/
 const BASE = `${import.meta.env.BASE_URL}data/`;
@@ -124,6 +125,7 @@ export default function App() {
 
         {/* Filtros globais */}
         <FilterBar />
+        <ComparisonBar />
 
 
         {/* ================================================== */}
