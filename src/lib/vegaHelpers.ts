@@ -50,3 +50,24 @@ export function fmtHours(h: number): string {
 
 export const fmtDate = (iso: string) => iso.split("-").reverse().join("/");
 export const fmtInt = (n: number) => n.toLocaleString("pt-BR");
+
+export function hoverOpacity(
+  hovered: {
+    kind: string;
+    value: string;
+  } | null,
+  kind: string,
+  field: string
+) {
+  if (!hovered || hovered.kind !== kind) {
+    return { value: 1 };
+  }
+
+  return {
+    condition: {
+      test: `datum.${field} === ${JSON.stringify(hovered.value)}`,
+      value: 1,
+    },
+    value: 0.15,
+  };
+}
