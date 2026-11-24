@@ -1,33 +1,99 @@
+
 import { useMemo, useState } from "react";
+
 import VegaChart from "./VegaChart";
+
 import type { ReviewTypeRow } from "../lib/types";
-import { AGENTS } from "../lib/colors";
-import { agentFromClick, agentOpacity } from "../lib/vegaHelpers";
+
+import {
+  AGENTS,
+  REVIEW_TYPES,
+  reviewTypeColorScale,
+  REVIEW_TYPE_LABEL_EXPR,
+} from "../lib/colors";
+
+import {
+  agentFromClick,
+  agentOpacity,
+} from "../lib/vegaHelpers";
+
 import { useFilters } from "../context/FilterContext";
+
+// ======================================================
+// 1. MODOS DE VISUALIZAÇÃO
+// ======================================================
 
 type Mode = "percent" | "count";
 
-const REVIEW_TYPES = ["none", "bot_only", "human", "human_changes", "unknown"];
-const REVIEW_COLORS = ["#d9e2ec", "#64748b", "#168b78", "#d97706", "#9ca3af"];
-const REVIEW_LABEL_EXPR =
-  "{'none':'Sem revisão','bot_only':'Somente bot','human':'Revisão humana','human_changes':'Revisão com alterações','unknown':'Não classificado'}[datum.label]";
+// ======================================================
+// 2. COMPONENTE
+// ======================================================
 
-export default function ReviewTypesChart({ data }: { data: ReviewTypeRow[] }) {
-  const { filters, toggleAgent } = useFilters();
+export default function ReviewTypesChart({
+  data,
+}: {
+  data: ReviewTypeRow[];
+}) {
+  const {
+    filters,
+    toggleAgent,
+    compareAgents,
+    hovered,
+    setHovered,
+  } = useFilters();
+
   const { agents } = filters;
+
   const [mode, setMode] = useState<Mode>("percent");
 
+  // ====================================================
+  // 3. PREPARAÇÃO DOS DADOS
+  // ====================================================
+
   const rows = useMemo(
-    () => data.map((row) => ({ ...row, reviewOrder: REVIEW_TYPES.indexOf(row.review_type) })),
+    () =>
+      data.map((row) => ({
+        ...row,
+        reviewOrder: REVIEW_TYPES.indexOf(
+          row.review_type as (typeof REVIEW_TYPES)[number]
+        ),
+      })),
     [data]
   );
 
+  // ====================================================
+  // 4. OPACIDADE
+  // ====================================================
+
+  const opacity = useMemo(
+    () =>
+      agentOpacity(
+        agents,
+        "agent",
+        compareAgents,
+        hovered
+      ),
+    [agents, compareAgents, hovered]
+  );
+
+  // ====================================================
+  // 5. ESPECIFICAÇÃO VEGA-LITE
+  // ====================================================
+
   const spec = useMemo(() => {
     const percentage = mode === "percent";
+
     return {
       width: "container",
-      height: { step: 36 },
-      data: { values: rows },
+
+      height: {
+        step: 36,
+      },
+
+      data: {
+        values: rows,
+      },
+
       encoding: {
         y: {
           field: "agent",
@@ -35,59 +101,148 @@ export default function ReviewTypesChart({ data }: { data: ReviewTypeRow[] }) {
           sort: [...AGENTS],
           title: null,
         },
+
         x: {
           field: "count",
           type: "quantitative",
-          stack: percentage ? "normalize" : "zero",
-          title: percentage ? "Proporção dos PRs do agente" : "Quantidade de PRs",
-          axis: { format: percentage ? "%" : "~s" },
+
+          stack: percentage
+            ? "normalize"
+            : "zero",
+
+          title: percentage
+            ? "Proporção dos PRs do agente"
+            : "Quantidade de PRs",
+
+          axis: {
+            format: percentage ? "%" : "~s",
+          },
         },
+
         color: {
           field: "review_type",
           type: "nominal",
           title: "Tipo de revisão",
-          scale: { domain: REVIEW_TYPES, range: REVIEW_COLORS },
-          legend: { labelExpr: REVIEW_LABEL_EXPR },
+
+          scale: reviewTypeColorScale,
+
+          legend: {
+            labelExpr: REVIEW_TYPE_LABEL_EXPR,
+          },
         },
-        order: { field: "reviewOrder", type: "quantitative" },
-        opacity: agentOpacity(agents),
+
+        order: {
+          field: "reviewOrder",
+          type: "quantitative",
+        },
+
+        opacity,
       },
+
       layer: [
         {
-          mark: { type: "bar", cursor: "pointer", stroke: "#fff", strokeWidth: 1 },
+          mark: {
+            type: "bar",
+            cursor: "pointer",
+            stroke: "#fff",
+            strokeWidth: 1,
+          },
+
           encoding: {
             tooltip: [
-              { field: "agent", title: "Agente" },
-              { field: "review_type", title: "Tipo de revisão" },
-              { field: "count", title: "PRs", format: "," },
-              { field: "percentage", title: "% do agente", format: ".1f" },
+              {
+                field: "agent",
+                title: "Agente",
+              },
+              {
+                field: "review_type",
+                title: "Tipo de revisão",
+                type: "nominal",
+              },
+              {
+                field: "count",
+                title: "PRs",
+                format: ",",
+              },
+              {
+                field: "percentage",
+                title: "% do agente",
+                format: ".1f",
+              },
+              {
+                field: "total_agent",
+                title: "Total de PRs do agente",
+                format: ",",
+              },
             ],
           },
         },
       ],
     };
-  }, [rows, mode, agents]);
+  }, [rows, mode, opacity]);
+
+  // ====================================================
+  // 6. EVENTOS
+  // ====================================================
+
+  function handleAgentHover(datum: any, item: any) {
+    const agent = agentFromClick(datum, item);
+
+    setHovered(
+      agent
+        ? {
+            kind: "agent",
+            value: agent,
+          }
+        : null
+    );
+  }
+
+  // ====================================================
+  // 7. RENDERIZAÇÃO
+  // ====================================================
 
   return (
     <div>
-      <div className="seg" role="group" aria-label="Escala dos tipos de revisão">
-        <button className={mode === "percent" ? "on" : ""} onClick={() => setMode("percent")}>
+      <div
+        className="seg"
+        role="group"
+        aria-label="Escala dos tipos de revisão"
+      >
+        <button
+          className={mode === "percent" ? "on" : ""}
+          aria-pressed={mode === "percent"}
+          onClick={() => setMode("percent")}
+        >
           Proporção
         </button>
-        <button className={mode === "count" ? "on" : ""} onClick={() => setMode("count")}>
+
+        <button
+          className={mode === "count" ? "on" : ""}
+          aria-pressed={mode === "count"}
+          onClick={() => setMode("count")}
+        >
           Quantidade
         </button>
       </div>
+
       <VegaChart
         spec={spec}
         onClick={(datum, item) => {
           const agent = agentFromClick(datum, item);
-          if (agent) toggleAgent(agent);
+
+          if (agent) {
+            toggleAgent(agent);
+          }
         }}
+        onHover={handleAgentHover}
       />
+
       <p className="note">
-        As categorias representam a classificação de revisão fornecida no dataset. Clique em uma barra
-        para filtrar o agente nas demais perspectivas.
+        As categorias representam a classificação de revisão
+        fornecida no dataset. Passe o mouse sobre um agente
+        para destacá-lo nas demais perspectivas ou clique
+        para filtrar o agente.
       </p>
     </div>
   );
