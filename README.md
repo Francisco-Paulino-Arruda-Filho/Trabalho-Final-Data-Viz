@@ -71,3 +71,26 @@ export default defineConfig([
   },
 ])
 ```
+
+## Inspeção visual com Playwright
+
+Instale as dependências com `bun install` e o Chromium com `bun run visual:install` (em Linux, o Playwright pode exigir dependências de sistema). Execute `bun run visual -- --help` para listar as opções. Sem `--url`, o comando inicia e encerra o Vite automaticamente em uma porta local livre.
+
+```sh
+# Página inteira em três tamanhos, com e sem comparação e filtro de dominantes
+bun run visual:matrix
+
+# Capturas individuais
+bun run visual -- --preset mobile --output visual-results/celular.png
+bun run visual -- --width 1280 --height 800 --viewport-only --output visual-results/viewport.png
+bun run visual -- --compare-a 'Claude Code' --compare-b Codex --hide-dominant
+
+# Reutilizar servidor existente (inclua o caminho base da aplicação)
+bun run visual -- --url http://127.0.0.1:5173/Trabalho-Final-Data-Viz/
+
+# Interagir com elementos e gráficos antes de capturar
+bun run visual -- --click 'summary' --wait 2000
+bun run visual -- --drag '100,300,300,300' --viewport-only
+```
+
+Os presets são `mobile` (390×844), `tablet` (768×1024) e `desktop` (1440×900). `--width` e `--height` sobrescrevem as dimensões do preset. A matriz salva seis PNGs em `visual-results/`, pasta ignorada pelo Git. `--click` aceita seletores Playwright e pode ser repetido; `--drag` recebe coordenadas do viewport em pixels (`x1,y1,x2,y2`). As ações ocorrem na ordem informada, após os filtros nomeados; seletores devem identificar um único elemento. Para gráficos abaixo da dobra, use um seletor que os alcance antes de usar coordenadas, ou um viewport adequado. Capturas aguardam os dados e os gráficos, e retornam erro se interações, carregamento ou renderização falharem. A espera adicional é ajustável com `--wait` em milissegundos.
