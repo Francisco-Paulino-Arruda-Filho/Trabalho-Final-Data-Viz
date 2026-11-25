@@ -63,11 +63,16 @@ Canonical specs live in `specs/` (one file per feature area; `specs/dashboard.md
 
 ## Skills
 
-| Category   | When to use                                                  | Skill             | Path                                      |
-| ---------- | ------------------------------------------------------------ | ----------------- | ----------------------------------------- |
-| Generation | Create or change a chart, spec Vega-Lite/D3, ChartCard text  | `chart-authoring` | `.agents/skills/chart-authoring/SKILL.md` |
-| Validation | Write Vitest tests; run the Definition of Done before "done" | `test-and-verify` | `.agents/skills/test-and-verify/SKILL.md` |
-| Reference  | General React 19 / hooks patterns (vendored, MIT)            | `react-expert`    | `.agents/skills/react-expert/SKILL.md`    |
+| Category   | When to use                                                        | Skill               | Path                                        |
+| ---------- | ------------------------------------------------------------------ | ------------------- | ------------------------------------------- |
+| Theory     | Route mixed requests about visualization design or review          | `dataviz-router`    | `.agents/skills/dataviz-router/SKILL.md`    |
+| Evaluation | Assess charts and tables against data, task and perception         | `dataviz-evaluate`  | `.agents/skills/dataviz-evaluate/SKILL.md`  |
+| Critique   | Prioritize visual problems and explain their consequences          | `dataviz-critique`  | `.agents/skills/dataviz-critique/SKILL.md`  |
+| Design     | Compare and recommend visual representations                       | `dataviz-suggest`   | `.agents/skills/dataviz-suggest/SKILL.md`   |
+| Execution  | Implement theory-grounded charts and tables with project workflows | `dataviz-implement` | `.agents/skills/dataviz-implement/SKILL.md` |
+| Generation | Create or change a chart, spec Vega-Lite/D3, ChartCard text        | `chart-authoring`   | `.agents/skills/chart-authoring/SKILL.md`   |
+| Validation | Write Vitest tests; run the Definition of Done before "done"       | `test-and-verify`   | `.agents/skills/test-and-verify/SKILL.md`   |
+| Reference  | General React 19 / hooks patterns (vendored, MIT)                  | `react-expert`      | `.agents/skills/react-expert/SKILL.md`      |
 
 ## MCP Servers
 
