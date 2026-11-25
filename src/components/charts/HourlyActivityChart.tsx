@@ -2,6 +2,7 @@ import { useMemo } from "react"
 import VegaChart from "@/components/VegaChart"
 import type { HourlyActivityRow } from "@/lib/types"
 import { useFilters } from "@/context/FilterContext"
+import { HOURLY_TIMEZONE_NOTE } from "@/lib/chartNotes"
 
 const WEEKDAYS = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
 const HOURS = Array.from({ length: 24 }, (_, hour) => hour)
@@ -81,7 +82,7 @@ export default function HourlyActivityChart({ data }: { data: HourlyActivityRow[
       <VegaChart spec={spec} />
       <p className="note">
         Cada célula soma os PRs registrados naquele dia da semana e hora. A visualização responde
-        aos filtros globais de agente e período.
+        aos filtros globais de agente e período. {HOURLY_TIMEZONE_NOTE}
       </p>
     </div>
   )

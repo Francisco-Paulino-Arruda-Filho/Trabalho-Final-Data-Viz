@@ -10,6 +10,8 @@ import { AGENT_FOCUS_PARAMS, agentFromClick, agentOpacity } from "@/lib/vegaHelp
 
 import { useFilters } from "@/context/FilterContext"
 import { setHoveredAgent } from "@/context/hoverStore"
+import { MONTHLY_PARTIAL_NOTE } from "@/lib/chartNotes"
+import { prepareMonthlyRows } from "@/lib/monthlyChartData"
 
 // ======================================================
 // 1. MODOS DE VISUALIZAÇÃO
@@ -45,29 +47,7 @@ export default function MonthlyChart({ data }: { data: MonthlyRow[] }) {
   // 4. PREPARAÇÃO DOS DADOS
   // ====================================================
 
-  const { rows, ticks } = useMemo(() => {
-    const months = [...new Set(data.map((d) => d.month))].sort()
-
-    const first = months[0]
-    const last = months[months.length - 1]
-
-    const totals = new Map<string, number>()
-
-    data.forEach((d) => {
-      totals.set(d.month, (totals.get(d.month) ?? 0) + d.prs)
-    })
-
-    return {
-      rows: data.map((d) => ({
-        ...d,
-        date: `${d.month}-01`,
-        share: d.prs / (totals.get(d.month) || 1),
-        partial: d.month === first || d.month === last,
-      })),
-
-      ticks: months.map((m) => Date.UTC(Number(m.slice(0, 4)), Number(m.slice(5, 7)) - 1, 1)),
-    }
-  }, [data])
+  const { rows, ticks } = useMemo(() => prepareMonthlyRows(data), [data])
 
   // ====================================================
   // 5. SELEÇÃO TEMPORAL
@@ -308,6 +288,7 @@ export default function MonthlyChart({ data }: { data: MonthlyRow[] }) {
         }}
         onHover={handleAgentHover}
       />
+      <p className="note">{MONTHLY_PARTIAL_NOTE}</p>
     </div>
   )
 }

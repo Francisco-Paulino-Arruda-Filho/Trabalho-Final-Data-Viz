@@ -25,6 +25,7 @@ diretamente.
 - PIPE-005 (must): A rede agente–repositório inclui só os 100 repositórios com mais PRs (`NETWORK_TOP = 100` em `prepare_data.ipynb`). Verification: manual read-through.
 - PIPE-006 (should): Os dois notebooks devem ler de `data/` e gravar em `public/data/` a partir da raiz do projeto, qualquer que seja o diretório de execução. Hoje `prepare_data.ipynb` lê de `out/agg/`, e `prepare_extra_data.ipynb` grava em `<cwd>/public/data/`. Verification: rodar os dois notebooks a partir de `scripts/` e conferir `git status` em `public/data/`.
 - PIPE-007 (could): Os notebooks devem rodar de forma reprodutível por comando (por exemplo, `jupyter nbconvert --execute`), com as dependências Python declaradas. Verification: comando executa com saída 0.
+- PIPE-008 (must): `prepare_extra_data.ipynb` agrega `date`, `dow` e `hour` já existentes em `pr_slim.csv` e não converte esses campos entre fusos. A zona/fuso representada por eles não está documentada nem pode ser inferida do pipeline atual; manter essa incerteza explícita e não rotular os horários como UTC, horário local ou outro fuso até confirmar a proveniência na fonte. Verification: read-through do notebook e da documentação de origem, quando disponível.
 
 ## Contract
 

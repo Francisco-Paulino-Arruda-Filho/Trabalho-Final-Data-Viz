@@ -172,8 +172,8 @@ export default function App() {
           <ChartCard
             title="Desfecho dos PRs"
             question="Quais agentes têm mais PRs aceitos e quais têm mais fechados sem merge?"
-            encoding="Comprimento da barra = proporção; cor = desfecho."
-            why="Barras empilhadas normalizadas comparam proporções entre agentes de tamanhos muito diferentes. Isso facilita comparar as taxas de aceitação."
+            encoding="Comprimento = proporção dos PRs do agente (inclui abertos) ou contagem; cor = desfecho."
+            why="Barras empilhadas normalizadas comparam a distribuição dos desfechos entre agentes. A base percentual inclui todos os PRs, enquanto a taxa de merge considera só os resolvidos."
             reactsTo={["agente"]}
           >
             <OutcomesChart data={outcomes.data!} />
@@ -281,10 +281,10 @@ export default function App() {
 
           <ChartCard
             wide
-            title="Rede agente–repositório"
+            title="Matriz agente–repositório"
             question="Quais repositórios os agentes compartilham e quais são exclusivos de um agente?"
-            encoding="Nós grandes = agentes; nós pequenos = repositórios; aresta = PRs do agente no repositório; cor = agente."
-            why="Os dados representam relações entre agentes e repositórios. A rede mostra compartilhamentos e agrupamentos que uma tabela tradicional não revela."
+            encoding="Linhas = agentes; colunas = repositórios; célula e cor = PRs do agente no repositório; C/E e número = compartilhado/exclusivo e grau."
+            why="A matriz alinha os agentes por repositório para localizar relações compartilhadas e exclusivas; células vazias preservam a distinção entre ausência de relação e zero PRs."
             reactsTo={[
               "agente",
               "linguagem",

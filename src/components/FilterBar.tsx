@@ -98,8 +98,8 @@ export default function FilterBar() {
         <div className="chips">
           {!hasActiveFilters && (
             <span className="hint">
-              Clique em barras, legendas e nós da rede, ou arraste no calendário e nos gráficos,
-              para explorar as visões coordenadas.
+              Clique em barras, legendas e cabeçalhos da matriz agente–repositório, ou arraste no
+              calendário e nos gráficos, para explorar as visões coordenadas.
             </span>
           )}
 

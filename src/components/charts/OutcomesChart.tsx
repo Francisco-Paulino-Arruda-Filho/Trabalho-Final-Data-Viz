@@ -7,6 +7,7 @@ import type { OutcomeRow } from "@/lib/types"
 import { AGENTS, OUTCOMES, OUTCOME_COLORS, OUTCOME_LABEL_EXPR } from "@/lib/colors"
 
 import { AGENT_FOCUS_PARAMS, agentFromClick, agentOpacity } from "@/lib/vegaHelpers"
+import { prepareOutcomeRows } from "@/lib/outcomeChart"
 
 import { useFilters } from "@/context/FilterContext"
 import { setHoveredAgent } from "@/context/hoverStore"
@@ -23,43 +24,16 @@ export default function OutcomesChart({ data }: { data: OutcomeRow[] }) {
   // ======================================================
 
   const { rows, order, rates } = useMemo(() => {
-    const merged = new Map<string, number>()
-    const closed = new Map<string, number>()
-
-    data.forEach((r) => {
-      if (r.outcome === "merged") {
-        merged.set(r.agent, r.count)
-      }
-
-      if (r.outcome === "closed") {
-        closed.set(r.agent, r.count)
-      }
-    })
-
-    // Taxa de merge entre PRs resolvidos.
-    // PRs ainda abertos não entram no denominador.
+    const prepared = prepareOutcomeRows(data, AGENTS)
     const rates = new Map<string, number>()
-
-    AGENTS.forEach((agent) => {
-      const m = merged.get(agent) ?? 0
-      const c = closed.get(agent) ?? 0
-
-      if (m + c > 0) {
-        rates.set(agent, m / (m + c))
-      }
+    prepared.forEach((row) => {
+      if (row.resolvedMergeRate !== null) rates.set(row.agent, row.resolvedMergeRate)
     })
-
     const order = [...rates.keys()].sort((a, b) => (rates.get(b) ?? 0) - (rates.get(a) ?? 0))
-
     return {
       order,
       rates,
-
-      rows: data.map((r) => ({
-        ...r,
-        ord: OUTCOMES.indexOf(r.outcome),
-        resolved: rates.get(r.agent) ?? null,
-      })),
+      rows: prepared.map((row) => ({ ...row, ord: OUTCOMES.indexOf(row.outcome) })),
     }
   }, [data])
 
@@ -163,8 +137,18 @@ export default function OutcomesChart({ data }: { data: OutcomeRow[] }) {
                 format: ".1f",
               },
               {
-                field: "resolved",
-                title: "Taxa de merge (entre resolvidos)",
+                field: "total_agent",
+                title: "Base do percentual: todos os PRs",
+                format: ",",
+              },
+              {
+                field: "resolvedTotal",
+                title: "Base da taxa: PRs resolvidos",
+                format: ",",
+              },
+              {
+                field: "resolvedMergeRate",
+                title: "Taxa de merge (integrados ÷ resolvidos)",
                 format: ".1%",
               },
             ],
@@ -245,6 +229,11 @@ export default function OutcomesChart({ data }: { data: OutcomeRow[] }) {
           Quantidade
         </button>
       </div>
+
+      <p className="note">
+        Proporções usam todos os PRs do agente como base, incluindo os abertos. A taxa de merge usa
+        apenas PRs resolvidos (integrados + fechados sem merge); PRs abertos ficam fora dessa taxa.
+      </p>
 
       <VegaChart
         spec={spec}
