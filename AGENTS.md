@@ -50,12 +50,15 @@ Canonical specs live in `specs/` (one file per feature area; `specs/dashboard.md
   before further changes.
 - Tiny mechanical changes (typos, formatting, version bumps with no behavior
   change) skip the spec pipeline.
+- TDD with Vitest is mandatory for code changes: write a failing test first
+  (`tests/` mirrors `src/`), make it pass, then refactor. Every new behavior or
+  bug fix ships with tests; see the `test-and-verify` skill.
 
 ## Definition of Done
 
 - [ ] `bun run format:check` exits 0
 - [ ] `bun run lint` exits 0 — known baseline: 9 errors tracked in HIGH-007; a change must not add new ones
-- [ ] `bun run test` exits 0
+- [ ] `bun run test` exits 0 — com testes novos escritos antes da implementação (TDD) para todo comportamento novo ou bug corrigido
 - [ ] `bun run build` exits 0
 - [ ] Behavior changes have an approved spec in `specs/` updated in the same change
 - [ ] Inspeção visual: `bun run visual` (ou `make visual`) executada e as capturas em `visual-results/` conferidas por quem alterou — obrigatório para qualquer mudança em gráficos, layout ou estilos (detalhes em `specs/visual-inspection.md`)
