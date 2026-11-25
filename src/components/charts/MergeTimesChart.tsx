@@ -1,36 +1,26 @@
+import { useMemo } from "react"
 
-import { useMemo } from "react";
+import VegaChart from "@/components/VegaChart"
 
-import VegaChart from "./VegaChart";
+import type { MergeTimesData } from "@/lib/types"
 
-import type { MergeTimesData } from "../lib/types";
+import { agentColorScale } from "@/lib/colors"
 
-import { agentColorScale } from "../lib/colors";
+import { AGENT_FOCUS_PARAMS, agentFromClick, agentOpacity } from "@/lib/vegaHelpers"
 
-import {
-  AGENT_FOCUS_PARAMS,
-  agentFromClick,
-  agentOpacity,
-} from "../lib/vegaHelpers";
-
-import { useFilters } from "../context/FilterContext";
-import { setHoveredAgent } from "../context/hoverStore";
+import { useFilters } from "@/context/FilterContext"
+import { setHoveredAgent } from "@/context/hoverStore"
 
 // ======================================================
 // 1. COMPONENTE
 // ======================================================
 
 interface Props {
-  data: MergeTimesData;
+  data: MergeTimesData
 }
 
-export default function MergeTimesChart({
-  data,
-}: Props) {
-  const {
-    focusAgents,
-    toggleAgent,
-  } = useFilters();
+export default function MergeTimesChart({ data }: Props) {
+  const { focusAgents, toggleAgent } = useFilters()
 
   // ====================================================
   // 2. ESPECIFICAÇÃO VEGA-LITE
@@ -106,15 +96,15 @@ export default function MergeTimesChart({
           },
         ],
       },
-    };
-  }, [data.ecdf]);
+    }
+  }, [data.ecdf])
 
   // ====================================================
   // 3. EVENTOS
   // ====================================================
 
   function handleAgentHover(datum: unknown, item: unknown) {
-    setHoveredAgent(agentFromClick(datum, item));
+    setHoveredAgent(agentFromClick(datum, item))
   }
 
   // ====================================================
@@ -127,13 +117,13 @@ export default function MergeTimesChart({
       signalValues={{ focusAgents }}
       hoverSignal="hoverAgent"
       onClick={(datum, item) => {
-        const agent = agentFromClick(datum, item);
+        const agent = agentFromClick(datum, item)
 
         if (agent) {
-          toggleAgent(agent);
+          toggleAgent(agent)
         }
       }}
       onHover={handleAgentHover}
     />
-  );
+  )
 }

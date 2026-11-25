@@ -10,28 +10,26 @@
 // Em vez disso, o VegaChart assina este store e empurra o valor
 // para dentro da view com view.signal(...), sem recriar nada.
 
-type Listener = (agent: string | null) => void;
+type Listener = (agent: string | null) => void
 
-let current: string | null = null;
-const listeners = new Set<Listener>();
+let current: string | null = null
+const listeners = new Set<Listener>()
 
 export function getHoveredAgent(): string | null {
-  return current;
+  return current
 }
 
 export function setHoveredAgent(agent: string | null): void {
-  if (agent === current) return;
+  if (agent === current) return
 
-  current = agent;
-  listeners.forEach((listener) => listener(agent));
+  current = agent
+  listeners.forEach((listener) => listener(agent))
 }
 
-export function subscribeHoveredAgent(
-  listener: Listener
-): () => void {
-  listeners.add(listener);
+export function subscribeHoveredAgent(listener: Listener): () => void {
+  listeners.add(listener)
 
   return () => {
-    listeners.delete(listener);
-  };
+    listeners.delete(listener)
+  }
 }

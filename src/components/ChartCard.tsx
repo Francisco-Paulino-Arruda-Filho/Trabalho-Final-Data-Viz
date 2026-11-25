@@ -1,19 +1,27 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from "react"
 
 interface Props {
-  title: string;
+  title: string
   /** Pergunta de partida que o gráfico ajuda a responder. */
-  question: string;
+  question: string
   /** Como os dados estão codificados (canais visuais). */
-  encoding: string;
+  encoding: string
   /** Por que esta visualização e não outra (efetividade e expressividade). */
-  why: string;
-  reactsTo: string[];
-  wide?: boolean;
-  children: ReactNode;
+  why: string
+  reactsTo: string[]
+  wide?: boolean
+  children: ReactNode
 }
 
-export default function ChartCard({ title, question, encoding, why, reactsTo, wide, children }: Props) {
+export default function ChartCard({
+  title,
+  question,
+  encoding,
+  why,
+  reactsTo,
+  wide,
+  children,
+}: Props) {
   return (
     <section className={`card${wide ? " card-wide" : ""}`}>
       <header>
@@ -32,9 +40,11 @@ export default function ChartCard({ title, question, encoding, why, reactsTo, wi
           </p>
         </details>
         <p className="reacts">
-          {reactsTo.length ? `Reage a: ${reactsTo.join(", ")}.` : "Não reage a filtros (dados já agregados)."}
+          {reactsTo.length
+            ? `Reage a: ${reactsTo.join(", ")}.`
+            : "Não reage a filtros (dados já agregados)."}
         </p>
       </footer>
     </section>
-  );
+  )
 }

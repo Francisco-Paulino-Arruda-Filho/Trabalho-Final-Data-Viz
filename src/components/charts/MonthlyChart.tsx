@@ -1,81 +1,61 @@
+import { useEffect, useMemo, useState, useRef } from "react"
 
-import { useEffect, useMemo, useState, useRef } from "react";
+import VegaChart from "@/components/VegaChart"
 
-import VegaChart from "./VegaChart";
+import type { MonthlyRow } from "@/lib/types"
 
-import type { MonthlyRow } from "../lib/types";
+import { agentColorScale } from "@/lib/colors"
 
-import { agentColorScale } from "../lib/colors";
+import { AGENT_FOCUS_PARAMS, agentFromClick, agentOpacity } from "@/lib/vegaHelpers"
 
-import {
-  AGENT_FOCUS_PARAMS,
-  agentFromClick,
-  agentOpacity,
-} from "../lib/vegaHelpers";
-
-import { useFilters } from "../context/FilterContext";
-import { setHoveredAgent } from "../context/hoverStore";
+import { useFilters } from "@/context/FilterContext"
+import { setHoveredAgent } from "@/context/hoverStore"
 
 // ======================================================
 // 1. MODOS DE VISUALIZAÇÃO
 // ======================================================
 
-type Mode = "volume" | "log" | "share";
+type Mode = "volume" | "log" | "share"
 
 const MODES: { id: Mode; label: string }[] = [
   { id: "volume", label: "Volume" },
   { id: "log", label: "Volume (log)" },
   { id: "share", label: "Participação (%)" },
-];
+]
 
 // ======================================================
 // 2. FORMATAÇÃO DOS MESES
 // ======================================================
 
 const MONTH_EXPR =
-  "['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'][utcmonth(datum.value)] + ' ' + utcFormat(datum.value,'%y')";
+  "['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'][utcmonth(datum.value)] + ' ' + utcFormat(datum.value,'%y')"
 
 // ======================================================
 // 3. COMPONENTE
 // ======================================================
 
-export default function MonthlyChart({
-  data,
-}: {
-  data: MonthlyRow[];
-}) {
-  const {
-    filters,
-    focusAgents,
-    toggleAgent,
-    setRange,
-    resetToken,
-  } = useFilters();
+export default function MonthlyChart({ data }: { data: MonthlyRow[] }) {
+  const { filters, focusAgents, toggleAgent, setRange, resetToken } = useFilters()
 
-  const { range } = filters;
+  const { range } = filters
 
-  const [mode, setMode] = useState<Mode>("volume");
+  const [mode, setMode] = useState<Mode>("volume")
 
   // ====================================================
   // 4. PREPARAÇÃO DOS DADOS
   // ====================================================
 
   const { rows, ticks } = useMemo(() => {
-    const months = [
-      ...new Set(data.map((d) => d.month)),
-    ].sort();
+    const months = [...new Set(data.map((d) => d.month))].sort()
 
-    const first = months[0];
-    const last = months[months.length - 1];
+    const first = months[0]
+    const last = months[months.length - 1]
 
-    const totals = new Map<string, number>();
+    const totals = new Map<string, number>()
 
     data.forEach((d) => {
-      totals.set(
-        d.month,
-        (totals.get(d.month) ?? 0) + d.prs
-      );
-    });
+      totals.set(d.month, (totals.get(d.month) ?? 0) + d.prs)
+    })
 
     return {
       rows: data.map((d) => ({
@@ -85,83 +65,51 @@ export default function MonthlyChart({
         partial: d.month === first || d.month === last,
       })),
 
-      ticks: months.map((m) =>
-        Date.UTC(
-          Number(m.slice(0, 4)),
-          Number(m.slice(5, 7)) - 1,
-          1
-        )
-      ),
-    };
-  }, [data]);
+      ticks: months.map((m) => Date.UTC(Number(m.slice(0, 4)), Number(m.slice(5, 7)) - 1, 1)),
+    }
+  }, [data])
 
   // ====================================================
   // 5. SELEÇÃO TEMPORAL
   // ====================================================
 
-  const brushTimer = useRef<number | undefined>(
-    undefined
-  );
+  const brushTimer = useRef<number | undefined>(undefined)
 
   // Cancela um debounce pendente ao desmontar.
-  useEffect(
-    () => () => window.clearTimeout(brushTimer.current),
-    []
-  );
+  useEffect(() => () => window.clearTimeout(brushTimer.current), [])
 
   function handleMonthBrush(value: unknown) {
-    const brush = value as
-      | Record<string, unknown>
-      | null
-      | undefined;
+    const brush = value as Record<string, unknown> | null | undefined
 
-    const extent =
-      brush?.date ??
-      brush?.x ??
-      Object.values(brush ?? {}).find(Array.isArray);
+    const extent = brush?.date ?? brush?.x ?? Object.values(brush ?? {}).find(Array.isArray)
 
     // Brush limpo: descarta qualquer seleção que ainda
     // estivesse esperando o debounce, senão ela ressurgiria.
     if (!Array.isArray(extent) || extent.length !== 2) {
-      window.clearTimeout(brushTimer.current);
-      setRange(null);
-      return;
+      window.clearTimeout(brushTimer.current)
+      setRange(null)
+      return
     }
 
-    const startDate = new Date(extent[0]);
-    const endDate = new Date(extent[1]);
+    const startDate = new Date(extent[0])
+    const endDate = new Date(extent[1])
 
-    if (
-      Number.isNaN(startDate.getTime()) ||
-      Number.isNaN(endDate.getTime())
-    ) {
-      return;
+    if (Number.isNaN(startDate.getTime()) || Number.isNaN(endDate.getTime())) {
+      return
     }
 
-    const start = new Date(
-      Date.UTC(
-        startDate.getUTCFullYear(),
-        startDate.getUTCMonth(),
-        1
-      )
-    );
+    const start = new Date(Date.UTC(startDate.getUTCFullYear(), startDate.getUTCMonth(), 1))
 
-    const end = new Date(
-      Date.UTC(
-        endDate.getUTCFullYear(),
-        endDate.getUTCMonth() + 1,
-        0
-      )
-    );
+    const end = new Date(Date.UTC(endDate.getUTCFullYear(), endDate.getUTCMonth() + 1, 0))
 
-    const startISO = start.toISOString().slice(0, 10);
-    const endISO = end.toISOString().slice(0, 10);
+    const startISO = start.toISOString().slice(0, 10)
+    const endISO = end.toISOString().slice(0, 10)
 
-    window.clearTimeout(brushTimer.current);
+    window.clearTimeout(brushTimer.current)
 
     brushTimer.current = window.setTimeout(() => {
-      setRange([startISO, endISO]);
-    }, 180);
+      setRange([startISO, endISO])
+    }, 180)
   }
 
   // ====================================================
@@ -169,7 +117,7 @@ export default function MonthlyChart({
   // ====================================================
 
   const spec = useMemo(() => {
-    const yField = mode === "share" ? "share" : "prs";
+    const yField = mode === "share" ? "share" : "prs"
 
     const common = {
       x: {
@@ -187,17 +135,9 @@ export default function MonthlyChart({
       y: {
         field: yField,
         type: "quantitative",
-        title:
-          mode === "share"
-            ? "Participação no mês"
-            : "PRs abertos no mês",
+        title: mode === "share" ? "Participação no mês" : "PRs abertos no mês",
 
-        scale:
-          mode === "log"
-            ? { type: "log" }
-            : mode === "share"
-              ? { domain: [0, 1] }
-              : {},
+        scale: mode === "log" ? { type: "log" } : mode === "share" ? { domain: [0, 1] } : {},
 
         axis: {
           format: mode === "share" ? "%" : "~s",
@@ -225,7 +165,7 @@ export default function MonthlyChart({
           format: ".1%",
         },
       ],
-    };
+    }
 
     return {
       width: "container",
@@ -296,9 +236,7 @@ export default function MonthlyChart({
 
         // Meses completos
         {
-          transform: [
-            { filter: "!datum.partial" },
-          ],
+          transform: [{ filter: "!datum.partial" }],
 
           mark: {
             type: "point",
@@ -312,9 +250,7 @@ export default function MonthlyChart({
 
         // Meses incompletos
         {
-          transform: [
-            { filter: "datum.partial" },
-          ],
+          transform: [{ filter: "datum.partial" }],
 
           mark: {
             type: "point",
@@ -327,20 +263,15 @@ export default function MonthlyChart({
           encoding: common,
         },
       ],
-    };
-  }, [
-    rows,
-    ticks,
-    mode,
-    range,
-  ]);
+    }
+  }, [rows, ticks, mode, range])
 
   // ====================================================
   // 7. EVENTOS
   // ====================================================
 
   function handleAgentHover(datum: unknown, item: unknown) {
-    setHoveredAgent(agentFromClick(datum, item));
+    setHoveredAgent(agentFromClick(datum, item))
   }
 
   // ====================================================
@@ -349,11 +280,7 @@ export default function MonthlyChart({
 
   return (
     <div>
-      <div
-        className="seg"
-        role="group"
-        aria-label="Modo do eixo vertical"
-      >
+      <div className="seg" role="group" aria-label="Modo do eixo vertical">
         {MODES.map((m) => (
           <button
             key={m.id}
@@ -376,11 +303,11 @@ export default function MonthlyChart({
           monthlyPeriodBrush: handleMonthBrush,
         }}
         onClick={(datum, item) => {
-          const agent = agentFromClick(datum, item);
-          if (agent) toggleAgent(agent);
+          const agent = agentFromClick(datum, item)
+          if (agent) toggleAgent(agent)
         }}
         onHover={handleAgentHover}
       />
     </div>
-  );
+  )
 }

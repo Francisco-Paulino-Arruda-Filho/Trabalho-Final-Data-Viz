@@ -1,52 +1,44 @@
+import { useMemo } from "react"
 
-import { useMemo } from "react";
+import VegaChart from "@/components/VegaChart"
 
-import VegaChart from "./VegaChart";
+import type { LanguageRow } from "@/lib/types"
 
-import type { LanguageRow } from "../lib/types";
+import { AGENTS, SEQUENTIAL_RANGE } from "@/lib/colors"
 
-import {
-  AGENTS,
-  SEQUENTIAL_RANGE,
-} from "../lib/colors";
+import { useFilters } from "@/context/FilterContext"
 
-import { useFilters } from "../context/FilterContext";
+const MIN_RESOLVED = 30
 
-const MIN_RESOLVED = 30;
-
-const LAST = ["Outras", "Desconhecida"];
+const LAST = ["Outras", "Desconhecida"]
 
 interface Cell {
-  language: string;
-  agent: string;
-  merged: number;
-  closed: number;
-  open: number;
-  resolved: number;
-  rate: number;
-  small: boolean;
+  language: string
+  agent: string
+  merged: number
+  closed: number
+  open: number
+  resolved: number
+  rate: number
+  small: boolean
 }
 
-export default function LanguagesChart({
-  data,
-}: {
-  data: LanguageRow[];
-}) {
-  const { filters, toggleLanguage } = useFilters();
+export default function LanguagesChart({ data }: { data: LanguageRow[] }) {
+  const { filters, toggleLanguage } = useFilters()
 
-  const { agents, language } = filters;
+  const { agents, language } = filters
 
   // ======================================================
   // 1. AGREGAÇÃO DOS DADOS
   // ======================================================
 
   const { cells, langOrder } = useMemo(() => {
-    const map = new Map<string, Cell>();
+    const map = new Map<string, Cell>()
 
     data.forEach((r) => {
-      const key = `${r.language}|${r.agent}`;
+      const key = `${r.language}|${r.agent}`
 
-      let cell = map.get(key);
+      let cell = map.get(key)
 
       if (!cell) {
         cell = {
@@ -58,65 +50,54 @@ export default function LanguagesChart({
           resolved: 0,
           rate: 0,
           small: false,
-        };
+        }
 
-        map.set(key, cell);
+        map.set(key, cell)
       }
 
-      const count = Number(r.count) || 0;
+      const count = Number(r.count) || 0
 
       if (r.outcome === "merged") {
-        cell.merged += count;
+        cell.merged += count
       } else if (r.outcome === "closed") {
-        cell.closed += count;
+        cell.closed += count
       } else if (r.outcome === "open") {
-        cell.open += count;
+        cell.open += count
       }
-    });
+    })
 
-    const totals = new Map<string, number>();
+    const totals = new Map<string, number>()
 
-    const cells: Cell[] = [];
+    const cells: Cell[] = []
 
     map.forEach((cell) => {
-      cell.resolved = cell.merged + cell.closed;
+      cell.resolved = cell.merged + cell.closed
 
       totals.set(
         cell.language,
-        (totals.get(cell.language) ?? 0) +
-          cell.merged +
-          cell.closed +
-          cell.open
-      );
+        (totals.get(cell.language) ?? 0) + cell.merged + cell.closed + cell.open,
+      )
 
       // Sem PR resolvido, não existe taxa de merge calculável.
-      if (cell.resolved === 0) return;
+      if (cell.resolved === 0) return
 
-      cell.rate = cell.merged / cell.resolved;
+      cell.rate = cell.merged / cell.resolved
 
-      cell.small = cell.resolved < MIN_RESOLVED;
+      cell.small = cell.resolved < MIN_RESOLVED
 
-      cells.push(cell);
-    });
+      cells.push(cell)
+    })
 
     // Ordena as linguagens pelo volume total.
-    const real = [...totals.keys()]
-      .filter((item) => !LAST.includes(item));
+    const real = [...totals.keys()].filter((item) => !LAST.includes(item))
 
-    real.sort(
-      (a, b) =>
-        (totals.get(b) ?? 0) -
-        (totals.get(a) ?? 0)
-    );
+    real.sort((a, b) => (totals.get(b) ?? 0) - (totals.get(a) ?? 0))
 
     return {
       cells,
-      langOrder: [
-        ...real,
-        ...LAST.filter((item) => totals.has(item)),
-      ],
-    };
-  }, [data]);
+      langOrder: [...real, ...LAST.filter((item) => totals.has(item))],
+    }
+  }, [data])
 
   // ======================================================
   // 2. APLICAÇÃO DOS FILTROS
@@ -125,43 +106,30 @@ export default function LanguagesChart({
   const rows = useMemo(
     () =>
       cells.map((cell) => {
-        let opacity = cell.small ? 0.55 : 1;
+        let opacity = cell.small ? 0.55 : 1
 
-        if (
-          agents.length > 0 &&
-          !agents.includes(cell.agent)
-        ) {
-          opacity *= 0.25;
+        if (agents.length > 0 && !agents.includes(cell.agent)) {
+          opacity *= 0.25
         }
 
-        if (
-          language &&
-          cell.language !== language
-        ) {
-          opacity *= 0.4;
+        if (language && cell.language !== language) {
+          opacity *= 0.4
         }
 
-        const percentage = Math.round(
-          cell.rate * 100
-        );
+        const percentage = Math.round(cell.rate * 100)
 
         return {
           ...cell,
 
           op: opacity,
 
-          selw:
-            language === cell.language
-              ? 2.5
-              : 0,
+          selw: language === cell.language ? 2.5 : 0,
 
-          label: cell.small
-            ? `${percentage}*`
-            : `${percentage}`,
-        };
+          label: cell.small ? `${percentage}*` : `${percentage}`,
+        }
       }),
-    [cells, agents, language]
-  );
+    [cells, agents, language],
+  )
 
   // ======================================================
   // 3. ESPECIFICAÇÃO VEGA-LITE
@@ -322,8 +290,8 @@ export default function LanguagesChart({
         },
       ],
     }),
-    [rows, langOrder]
-  );
+    [rows, langOrder],
+  )
 
   // ======================================================
   // 4. RENDERIZAÇÃO E INTERAÇÃO
@@ -335,17 +303,15 @@ export default function LanguagesChart({
         spec={spec}
         onClick={(datum) => {
           if (datum?.language) {
-            toggleLanguage(datum.language);
+            toggleLanguage(datum.language)
           }
         }}
       />
 
       <p className="note">
-        Cada célula é a taxa de merge (%) entre PRs resolvidos.
-        {" "}* = menos de {MIN_RESOLVED} PRs resolvidos:
-        leia com cautela.
-        Clique numa célula para filtrar por linguagem.
+        Cada célula é a taxa de merge (%) entre PRs resolvidos. * = menos de {MIN_RESOLVED} PRs
+        resolvidos: leia com cautela. Clique numa célula para filtrar por linguagem.
       </p>
     </div>
-  );
+  )
 }

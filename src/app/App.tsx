@@ -1,25 +1,24 @@
+import { useEffect, useState } from "react"
 
-import { useEffect, useState } from "react";
+import { FilterProvider } from "@/context/FilterContext"
 
-import { FilterProvider } from "./context/FilterContext";
+import ChartCard from "@/components/ChartCard"
+import FilterBar from "@/components/FilterBar"
 
-import ChartCard from "./components/ChartCard";
-import FilterBar from "./components/FilterBar";
-
-import CalendarChart from "./components/CalendarChart";
-import MonthlyChart from "./components/MonthlyChart";
-import OutcomesChart from "./components/OutcomesChart";
-import MergeTimesChart from "./components/MergeTimesChart";
-import LanguagesChart from "./components/LanguagesChart";
-import RepositoriesChart from "./components/RepositoriesChart";
-import ScatterChart from "./components/ScatterChart";
-import NetworkChart from "./components/NetworkChart";
+import CalendarChart from "@/components/charts/CalendarChart"
+import MonthlyChart from "@/components/charts/MonthlyChart"
+import OutcomesChart from "@/components/charts/OutcomesChart"
+import MergeTimesChart from "@/components/charts/MergeTimesChart"
+import LanguagesChart from "@/components/charts/LanguagesChart"
+import RepositoriesChart from "@/components/charts/RepositoriesChart"
+import ScatterChart from "@/components/charts/ScatterChart"
+import NetworkChart from "@/components/charts/NetworkChart"
 
 // Novas visualizações
-import ReviewTypesChart from "./components/ReviewTypesChart";
-import HourlyActivityChart from "./components/HourlyActivityChart";
-import ParetoChart from "./components/ParetoChart";
-import MergeBoxplotChart from "./components/MergeBoxplotChart";
+import ReviewTypesChart from "@/components/charts/ReviewTypesChart"
+import HourlyActivityChart from "@/components/charts/HourlyActivityChart"
+import ParetoChart from "@/components/charts/ParetoChart"
+import MergeBoxplotChart from "@/components/charts/MergeBoxplotChart"
 
 import type {
   DayData,
@@ -32,50 +31,50 @@ import type {
   Repo,
   ReviewTypeRow,
   HourlyActivityRow,
-} from "./lib/types";
+} from "@/lib/types"
 
-import { fmtInt } from "./lib/vegaHelpers";
+import { fmtInt } from "@/lib/vegaHelpers"
 
-import "./App.css";
-import ComparisonBar from "./components/ComparisonBar";
+import "@/styles/App.css"
+import ComparisonBar from "@/components/ComparisonBar"
 
 // Os arquivos JSON ficam em public/data/
-const BASE = `${import.meta.env.BASE_URL}data/`;
+const BASE = `${import.meta.env.BASE_URL}data/`
 
 function useJson<T>(file: string) {
-  const [data, setData] = useState<T | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [data, setData] = useState<T | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     fetch(`${BASE}${file}`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error(`${file}: HTTP ${response.status}`);
+          throw new Error(`${file}: HTTP ${response.status}`)
         }
 
-        return response.json();
+        return response.json()
       })
       .then(setData)
-      .catch((error) => setError(String(error)));
-  }, [file]);
+      .catch((error) => setError(String(error)))
+  }, [file])
 
-  return { data, error };
+  return { data, error }
 }
 
 export default function App() {
   // Dados originais
-  const meta = useJson<Meta>("meta.json");
-  const calendar = useJson<DayData[]>("calendar.json");
-  const monthly = useJson<MonthlyRow[]>("monthly_agents.json");
-  const outcomes = useJson<OutcomeRow[]>("outcomes.json");
-  const mergeTimes = useJson<MergeTimesData>("merge_times.json");
-  const languages = useJson<LanguageRow[]>("languages.json");
-  const repos = useJson<Repo[]>("repositories.json");
-  const network = useJson<NetworkData>("agent_repository_network.json");
+  const meta = useJson<Meta>("meta.json")
+  const calendar = useJson<DayData[]>("calendar.json")
+  const monthly = useJson<MonthlyRow[]>("monthly_agents.json")
+  const outcomes = useJson<OutcomeRow[]>("outcomes.json")
+  const mergeTimes = useJson<MergeTimesData>("merge_times.json")
+  const languages = useJson<LanguageRow[]>("languages.json")
+  const repos = useJson<Repo[]>("repositories.json")
+  const network = useJson<NetworkData>("agent_repository_network.json")
 
   // Novos dados
-  const reviewTypes = useJson<ReviewTypeRow[]>("review_types.json");
-  const hourlyActivity = useJson<HourlyActivityRow[]>("hourly_activity.json");
+  const reviewTypes = useJson<ReviewTypeRow[]>("review_types.json")
+  const hourlyActivity = useJson<HourlyActivityRow[]>("hourly_activity.json")
 
   // Todos os carregamentos são acompanhados
   const all = [
@@ -89,44 +88,36 @@ export default function App() {
     network,
     reviewTypes,
     hourlyActivity,
-  ];
+  ]
 
-  const error = all.find((item) => item.error)?.error;
+  const error = all.find((item) => item.error)?.error
 
   if (error) {
-    return (
-      <p className="status">
-        Erro ao carregar dados: {error}
-      </p>
-    );
+    return <p className="status">Erro ao carregar dados: {error}</p>
   }
 
   if (all.some((item) => !item.data)) {
-    return <p className="status">Carregando dados...</p>;
+    return <p className="status">Carregando dados...</p>
   }
 
   return (
     <FilterProvider>
       <main className="page">
-
         {/* Cabeçalho */}
         <header className="hero">
           <h1>Agentes de IA no código aberto</h1>
 
           <p>
-            {fmtInt(meta.data!.total_prs)} pull requests abertos por seis
-            agentes em {fmtInt(meta.data!.total_repositories)} repositórios
-            do GitHub com mais de 100 estrelas.
-
-            {" "}Explore atividade, resultados, colaboração e concentração
-            usando os filtros compartilhados.
+            {fmtInt(meta.data!.total_prs)} pull requests abertos por seis agentes em{" "}
+            {fmtInt(meta.data!.total_repositories)} repositórios do GitHub com mais de 100 estrelas.
+            Explore atividade, resultados, colaboração e concentração usando os filtros
+            compartilhados.
           </p>
         </header>
 
         {/* Filtros globais */}
         <FilterBar />
         <ComparisonBar />
-
 
         {/* ================================================== */}
         {/* 1. ATIVIDADE E ADOÇÃO                               */}
@@ -135,7 +126,6 @@ export default function App() {
         <h2>Quando cada agente entrou em cena</h2>
 
         <div className="grid">
-
           <ChartCard
             wide
             title="Atividade diária"
@@ -147,7 +137,6 @@ export default function App() {
             <CalendarChart data={calendar.data!} />
           </ChartCard>
 
-
           <ChartCard
             wide
             title="Volume mensal por agente"
@@ -158,7 +147,6 @@ export default function App() {
           >
             <MonthlyChart data={monthly.data!} />
           </ChartCard>
-
 
           {/* NOVA VISUALIZAÇÃO: DIA DA SEMANA X HORA */}
 
@@ -172,9 +160,7 @@ export default function App() {
           >
             <HourlyActivityChart data={hourlyActivity.data!} />
           </ChartCard>
-
         </div>
-
 
         {/* ================================================== */}
         {/* 2. RESULTADOS E EFETIVIDADE                         */}
@@ -183,7 +169,6 @@ export default function App() {
         <h2>O que acontece com os PRs</h2>
 
         <div className="grid">
-
           <ChartCard
             title="Desfecho dos PRs"
             question="Quais agentes têm mais PRs aceitos e quais têm mais fechados sem merge?"
@@ -194,7 +179,6 @@ export default function App() {
             <OutcomesChart data={outcomes.data!} />
           </ChartCard>
 
-
           <ChartCard
             title="Tempo até o merge"
             question="Quanto tempo leva para um PR ser aceito e isso varia entre agentes?"
@@ -204,7 +188,6 @@ export default function App() {
           >
             <MergeTimesChart data={mergeTimes.data!} />
           </ChartCard>
-
 
           {/* NOVA VISUALIZAÇÃO: TIPOS DE REVISÃO */}
 
@@ -219,7 +202,6 @@ export default function App() {
             <ReviewTypesChart data={reviewTypes.data!} />
           </ChartCard>
 
-
           {/* NOVA VISUALIZAÇÃO: BOXPLOT */}
 
           <ChartCard
@@ -233,7 +215,6 @@ export default function App() {
             <MergeBoxplotChart data={mergeTimes.data!} />
           </ChartCard>
 
-
           <ChartCard
             wide
             title="Aceitação por linguagem"
@@ -244,9 +225,7 @@ export default function App() {
           >
             <LanguagesChart data={languages.data!} />
           </ChartCard>
-
         </div>
-
 
         {/* ================================================== */}
         {/* 3. REPOSITÓRIOS E ECOSSISTEMA                       */}
@@ -255,7 +234,6 @@ export default function App() {
         <h2>Onde a atividade se concentra</h2>
 
         <div className="grid">
-
           <ChartCard
             title="Repositórios com mais PRs"
             question="A atividade está distribuída entre muitos repositórios ou concentrada em poucos?"
@@ -271,7 +249,6 @@ export default function App() {
           >
             <RepositoriesChart data={repos.data!} />
           </ChartCard>
-
 
           <ChartCard
             title="Popularidade x aceitação"
@@ -289,7 +266,6 @@ export default function App() {
             <ScatterChart data={repos.data!} />
           </ChartCard>
 
-
           {/* NOVA VISUALIZAÇÃO: PARETO */}
 
           <ChartCard
@@ -298,17 +274,10 @@ export default function App() {
             question="Qual parcela dos PRs está concentrada nos repositórios mais ativos?"
             encoding="Barras = PRs por repositório; linha = participação acumulada no total filtrado."
             why="O Pareto combina volume e concentração acumulada, mostrando quanto os principais repositórios representam do conjunto."
-            reactsTo={[
-              "agente",
-              "linguagem",
-              "estrelas",
-              "ocultar dominantes",
-              "repositório",
-            ]}
+            reactsTo={["agente", "linguagem", "estrelas", "ocultar dominantes", "repositório"]}
           >
             <ParetoChart data={repos.data!} />
           </ChartCard>
-
 
           <ChartCard
             wide
@@ -324,28 +293,19 @@ export default function App() {
               "(define) agente e repositório",
             ]}
           >
-            <NetworkChart
-              data={network.data!}
-              repos={repos.data!}
-            />
+            <NetworkChart data={network.data!} repos={repos.data!} />
           </ChartCard>
-
         </div>
-
 
         {/* Rodapé */}
         <footer className="page-foot">
-          Fonte: AIDev (Li, Zhang e Hassan, 2026), subconjunto AIDev-pop.
-          Dados de 24/12/2024 a 24/10/2025; os meses de borda estão incompletos.
-
+          Fonte: AIDev (Li, Zhang e Hassan, 2026), subconjunto AIDev-pop. Dados de 24/12/2024 a
+          24/10/2025; os meses de borda estão incompletos.
           <br />
-
-          As visualizações de atividade temporal utilizam os filtros de período.
-          Os agregados por repositório representam o intervalo completo dos dados
-          e não são recalculados por período.
+          As visualizações de atividade temporal utilizam os filtros de período. Os agregados por
+          repositório representam o intervalo completo dos dados e não são recalculados por período.
         </footer>
-
       </main>
     </FilterProvider>
-  );
+  )
 }

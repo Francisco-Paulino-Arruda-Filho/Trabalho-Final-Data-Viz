@@ -1,76 +1,55 @@
+import { useMemo, useState } from "react"
 
-import { useMemo, useState } from "react";
+import VegaChart from "@/components/VegaChart"
 
-import VegaChart from "./VegaChart";
+import type { OutcomeRow } from "@/lib/types"
 
-import type { OutcomeRow } from "../lib/types";
+import { AGENTS, OUTCOMES, OUTCOME_COLORS, OUTCOME_LABEL_EXPR } from "@/lib/colors"
 
-import {
-  AGENTS,
-  OUTCOMES,
-  OUTCOME_COLORS,
-  OUTCOME_LABEL_EXPR,
-} from "../lib/colors";
+import { AGENT_FOCUS_PARAMS, agentFromClick, agentOpacity } from "@/lib/vegaHelpers"
 
-import {
-  AGENT_FOCUS_PARAMS,
-  agentFromClick,
-  agentOpacity,
-} from "../lib/vegaHelpers";
+import { useFilters } from "@/context/FilterContext"
+import { setHoveredAgent } from "@/context/hoverStore"
 
-import { useFilters } from "../context/FilterContext";
-import { setHoveredAgent } from "../context/hoverStore";
+type Mode = "percent" | "count"
 
-type Mode = "percent" | "count";
+export default function OutcomesChart({ data }: { data: OutcomeRow[] }) {
+  const { focusAgents, toggleAgent } = useFilters()
 
-export default function OutcomesChart({
-  data,
-}: {
-  data: OutcomeRow[];
-}) {
-  const {
-    focusAgents,
-    toggleAgent,
-  } = useFilters();
-
-  const [mode, setMode] = useState<Mode>("percent");
+  const [mode, setMode] = useState<Mode>("percent")
 
   // ======================================================
   // 1. PREPARAÇÃO DOS DADOS
   // ======================================================
 
   const { rows, order, rates } = useMemo(() => {
-    const merged = new Map<string, number>();
-    const closed = new Map<string, number>();
+    const merged = new Map<string, number>()
+    const closed = new Map<string, number>()
 
     data.forEach((r) => {
       if (r.outcome === "merged") {
-        merged.set(r.agent, r.count);
+        merged.set(r.agent, r.count)
       }
 
       if (r.outcome === "closed") {
-        closed.set(r.agent, r.count);
+        closed.set(r.agent, r.count)
       }
-    });
+    })
 
     // Taxa de merge entre PRs resolvidos.
     // PRs ainda abertos não entram no denominador.
-    const rates = new Map<string, number>();
+    const rates = new Map<string, number>()
 
     AGENTS.forEach((agent) => {
-      const m = merged.get(agent) ?? 0;
-      const c = closed.get(agent) ?? 0;
+      const m = merged.get(agent) ?? 0
+      const c = closed.get(agent) ?? 0
 
       if (m + c > 0) {
-        rates.set(agent, m / (m + c));
+        rates.set(agent, m / (m + c))
       }
-    });
+    })
 
-    const order = [...rates.keys()].sort(
-      (a, b) =>
-        (rates.get(b) ?? 0) -
-        (rates.get(a) ?? 0)
-    );
+    const order = [...rates.keys()].sort((a, b) => (rates.get(b) ?? 0) - (rates.get(a) ?? 0))
 
     return {
       order,
@@ -81,15 +60,15 @@ export default function OutcomesChart({
         ord: OUTCOMES.indexOf(r.outcome),
         resolved: rates.get(r.agent) ?? null,
       })),
-    };
-  }, [data]);
+    }
+  }, [data])
 
   // ======================================================
   // 3. ESPECIFICAÇÃO VEGA-LITE
   // ======================================================
 
   const spec = useMemo(() => {
-    const pct = mode === "percent";
+    const pct = mode === "percent"
 
     return {
       width: "container",
@@ -122,9 +101,7 @@ export default function OutcomesChart({
 
           stack: pct ? "normalize" : "zero",
 
-          title: pct
-            ? "Proporção dos PRs do agente"
-            : "Quantidade de PRs",
+          title: pct ? "Proporção dos PRs do agente" : "Quantidade de PRs",
 
           axis: {
             format: pct ? "%" : "~s",
@@ -153,7 +130,6 @@ export default function OutcomesChart({
 
         // Dirigida pelos params focusAgents / hoverAgent.
         opacity: agentOpacity(),
-
       },
 
       layer: [
@@ -204,8 +180,7 @@ export default function OutcomesChart({
                     filter: "datum.percentage > 7",
                   },
                   {
-                    calculate:
-                      "format(datum.percentage, '.0f') + '%'",
+                    calculate: "format(datum.percentage, '.0f') + '%'",
                     as: "label",
                   },
                 ],
@@ -236,15 +211,15 @@ export default function OutcomesChart({
             ]
           : []),
       ],
-    };
-  }, [rows, order, mode]);
+    }
+  }, [rows, order, mode])
 
   // ======================================================
   // 4. EVENTOS
   // ======================================================
 
   function handleAgentHover(datum: unknown, item: unknown) {
-    setHoveredAgent(agentFromClick(datum, item));
+    setHoveredAgent(agentFromClick(datum, item))
   }
 
   // ======================================================
@@ -253,11 +228,7 @@ export default function OutcomesChart({
 
   return (
     <div>
-      <div
-        className="seg"
-        role="group"
-        aria-label="Escala das barras"
-      >
+      <div className="seg" role="group" aria-label="Escala das barras">
         <button
           className={mode === "percent" ? "on" : ""}
           aria-pressed={mode === "percent"}
@@ -280,10 +251,10 @@ export default function OutcomesChart({
         signalValues={{ focusAgents }}
         hoverSignal="hoverAgent"
         onClick={(datum, item) => {
-          const agent = agentFromClick(datum, item);
+          const agent = agentFromClick(datum, item)
 
           if (agent) {
-            toggleAgent(agent);
+            toggleAgent(agent)
           }
         }}
         onHover={handleAgentHover}
@@ -292,14 +263,10 @@ export default function OutcomesChart({
       <p className="note">
         Ordenado pela taxa de merge entre PRs resolvidos:{" "}
         {order
-          .map(
-            (agent) =>
-              `${agent} ${(
-                (rates.get(agent) ?? 0) * 100
-              ).toFixed(0)}%`
-          )
-          .join(" · ")}.
+          .map((agent) => `${agent} ${((rates.get(agent) ?? 0) * 100).toFixed(0)}%`)
+          .join(" · ")}
+        .
       </p>
     </div>
-  );
+  )
 }

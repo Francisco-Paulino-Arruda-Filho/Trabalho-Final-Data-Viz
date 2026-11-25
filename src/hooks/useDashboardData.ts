@@ -1,28 +1,27 @@
-
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
 export interface DashboardData {
-  meta: any;
-  monthlyAgents: any[];
-  outcomes: any[];
+  meta: any
+  monthlyAgents: any[]
+  outcomes: any[]
   mergeTimes: {
-    summary: any[];
-    ecdf: any[];
-  };
-  calendar: any[];
-  languages: any[];
-  repositories: any[];
+    summary: any[]
+    ecdf: any[]
+  }
+  calendar: any[]
+  languages: any[]
+  repositories: any[]
   network: {
-    nodes: any[];
-    edges: any[];
-    config: any;
-  };
+    nodes: any[]
+    edges: any[]
+    config: any
+  }
 }
 
 export function useDashboardData() {
-  const [data, setData] = useState<DashboardData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [data, setData] = useState<DashboardData | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     async function loadData() {
@@ -35,18 +34,14 @@ export function useDashboardData() {
           "calendar.json",
           "languages.json",
           "repositories.json",
-          "agent_repository_network.json"
-        ];
+          "agent_repository_network.json",
+        ]
 
-        const base = import.meta.env.BASE_URL; // "/Trabalho-Final-Data-Viz/" em produção, "/" no dev
-        const responses = await Promise.all(
-          files.map(file =>
-            fetch(`${base}data/${file}`)
-          )
-        );
+        const base = import.meta.env.BASE_URL // "/Trabalho-Final-Data-Viz/" em produção, "/" no dev
+        const responses = await Promise.all(files.map((file) => fetch(`${base}data/${file}`)))
 
-        if (responses.some(response => !response.ok)) {
-          throw new Error("Não foi possível carregar os arquivos JSON.");
+        if (responses.some((response) => !response.ok)) {
+          throw new Error("Não foi possível carregar os arquivos JSON.")
         }
 
         const [
@@ -57,10 +52,8 @@ export function useDashboardData() {
           calendar,
           languages,
           repositories,
-          network
-        ] = await Promise.all(
-          responses.map(response => response.json())
-        );
+          network,
+        ] = await Promise.all(responses.map((response) => response.json()))
 
         setData({
           meta,
@@ -70,19 +63,17 @@ export function useDashboardData() {
           calendar,
           languages,
           repositories,
-          network
-        });
+          network,
+        })
       } catch (err) {
-        setError(
-          err instanceof Error ? err.message : "Erro desconhecido"
-        );
+        setError(err instanceof Error ? err.message : "Erro desconhecido")
       } finally {
-        setLoading(false);
+        setLoading(false)
       }
     }
 
-    loadData();
-  }, []);
+    loadData()
+  }, [])
 
-  return { data, loading, error };
+  return { data, loading, error }
 }

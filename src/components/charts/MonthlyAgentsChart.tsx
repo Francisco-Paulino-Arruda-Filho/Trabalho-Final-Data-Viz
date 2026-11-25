@@ -1,11 +1,11 @@
-import { VegaEmbed } from "react-vega";
+import { VegaEmbed } from "react-vega"
 
 interface Props {
   data: {
-    month: string;
-    agent: string;
-    prs: number;
-  }[];
+    month: string
+    agent: string
+    prs: number
+  }[]
 }
 
 export default function MonthlyAgentsChart({ data }: Props) {
@@ -17,41 +17,41 @@ export default function MonthlyAgentsChart({ data }: Props) {
     mark: {
       type: "line",
       point: true,
-      strokeWidth: 2
+      strokeWidth: 2,
     },
     encoding: {
       x: {
         field: "month",
         type: "ordinal",
         title: "Mês",
-        sort: "ascending"
+        sort: "ascending",
       },
       y: {
         field: "prs",
         type: "quantitative",
-        title: "Quantidade de PRs"
+        title: "Quantidade de PRs",
       },
       color: {
         field: "agent",
         type: "nominal",
-        title: "Agente"
+        title: "Agente",
       },
       tooltip: [
         { field: "month", title: "Mês" },
         { field: "agent", title: "Agente" },
-        { field: "prs", title: "Pull Requests" }
-      ]
-    }
-  };
+        { field: "prs", title: "Pull Requests" },
+      ],
+    },
+  }
 
   return (
     <VegaEmbed
-        spec={spec as any}
-        options={{
+      spec={spec as any}
+      options={{
         actions: false,
         renderer: "svg",
-        mode: "vega-lite"
-        }}
+        mode: "vega-lite",
+      }}
     />
-    );
+  )
 }

@@ -1,47 +1,30 @@
+import { useMemo, useState } from "react"
 
-import { useMemo, useState } from "react";
+import VegaChart from "@/components/VegaChart"
 
-import VegaChart from "./VegaChart";
+import type { ReviewTypeRow } from "@/lib/types"
 
-import type { ReviewTypeRow } from "../lib/types";
+import { AGENTS, REVIEW_TYPES, reviewTypeColorScale, REVIEW_TYPE_LABEL_EXPR } from "@/lib/colors"
 
-import {
-  AGENTS,
-  REVIEW_TYPES,
-  reviewTypeColorScale,
-  REVIEW_TYPE_LABEL_EXPR,
-} from "../lib/colors";
+import { AGENT_FOCUS_PARAMS, agentFromClick, agentOpacity } from "@/lib/vegaHelpers"
 
-import {
-  AGENT_FOCUS_PARAMS,
-  agentFromClick,
-  agentOpacity,
-} from "../lib/vegaHelpers";
-
-import { useFilters } from "../context/FilterContext";
-import { setHoveredAgent } from "../context/hoverStore";
+import { useFilters } from "@/context/FilterContext"
+import { setHoveredAgent } from "@/context/hoverStore"
 
 // ======================================================
 // 1. MODOS DE VISUALIZAÇÃO
 // ======================================================
 
-type Mode = "percent" | "count";
+type Mode = "percent" | "count"
 
 // ======================================================
 // 2. COMPONENTE
 // ======================================================
 
-export default function ReviewTypesChart({
-  data,
-}: {
-  data: ReviewTypeRow[];
-}) {
-  const {
-    focusAgents,
-    toggleAgent,
-  } = useFilters();
+export default function ReviewTypesChart({ data }: { data: ReviewTypeRow[] }) {
+  const { focusAgents, toggleAgent } = useFilters()
 
-  const [mode, setMode] = useState<Mode>("percent");
+  const [mode, setMode] = useState<Mode>("percent")
 
   // ====================================================
   // 3. PREPARAÇÃO DOS DADOS
@@ -51,19 +34,17 @@ export default function ReviewTypesChart({
     () =>
       data.map((row) => ({
         ...row,
-        reviewOrder: REVIEW_TYPES.indexOf(
-          row.review_type as (typeof REVIEW_TYPES)[number]
-        ),
+        reviewOrder: REVIEW_TYPES.indexOf(row.review_type as (typeof REVIEW_TYPES)[number]),
       })),
-    [data]
-  );
+    [data],
+  )
 
   // ====================================================
   // 5. ESPECIFICAÇÃO VEGA-LITE
   // ====================================================
 
   const spec = useMemo(() => {
-    const percentage = mode === "percent";
+    const percentage = mode === "percent"
 
     return {
       width: "container",
@@ -90,13 +71,9 @@ export default function ReviewTypesChart({
           field: "count",
           type: "quantitative",
 
-          stack: percentage
-            ? "normalize"
-            : "zero",
+          stack: percentage ? "normalize" : "zero",
 
-          title: percentage
-            ? "Proporção dos PRs do agente"
-            : "Quantidade de PRs",
+          title: percentage ? "Proporção dos PRs do agente" : "Quantidade de PRs",
 
           axis: {
             format: percentage ? "%" : "~s",
@@ -163,15 +140,15 @@ export default function ReviewTypesChart({
           },
         },
       ],
-    };
-  }, [rows, mode]);
+    }
+  }, [rows, mode])
 
   // ====================================================
   // 6. EVENTOS
   // ====================================================
 
   function handleAgentHover(datum: unknown, item: unknown) {
-    setHoveredAgent(agentFromClick(datum, item));
+    setHoveredAgent(agentFromClick(datum, item))
   }
 
   // ====================================================
@@ -180,11 +157,7 @@ export default function ReviewTypesChart({
 
   return (
     <div>
-      <div
-        className="seg"
-        role="group"
-        aria-label="Escala dos tipos de revisão"
-      >
+      <div className="seg" role="group" aria-label="Escala dos tipos de revisão">
         <button
           className={mode === "percent" ? "on" : ""}
           aria-pressed={mode === "percent"}
@@ -207,21 +180,19 @@ export default function ReviewTypesChart({
         signalValues={{ focusAgents }}
         hoverSignal="hoverAgent"
         onClick={(datum, item) => {
-          const agent = agentFromClick(datum, item);
+          const agent = agentFromClick(datum, item)
 
           if (agent) {
-            toggleAgent(agent);
+            toggleAgent(agent)
           }
         }}
         onHover={handleAgentHover}
       />
 
       <p className="note">
-        As categorias representam a classificação de revisão
-        fornecida no dataset. Passe o mouse sobre um agente
-        para destacá-lo nas demais perspectivas ou clique
-        para filtrar o agente.
+        As categorias representam a classificação de revisão fornecida no dataset. Passe o mouse
+        sobre um agente para destacá-lo nas demais perspectivas ou clique para filtrar o agente.
       </p>
     </div>
-  );
+  )
 }
