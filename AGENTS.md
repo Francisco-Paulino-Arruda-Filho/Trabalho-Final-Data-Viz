@@ -7,6 +7,8 @@ repeat detail the agent can read from the code. Keep it under ~150 lines.
 ## Commands
 
 Bun is the only runtime (no Node): use `bun run` / `bunx`, never npm/npx.
+A root `Makefile` wraps the same scripts: `make help` lists targets, `make check`
+runs format-check + lint + test + build (non-mutating).
 
 | Task               | Command                                                          |
 | ------------------ | ---------------------------------------------------------------- |
@@ -19,7 +21,12 @@ Bun is the only runtime (no Node): use `bun run` / `bunx`, never npm/npx.
 
 ## Structure
 
-<!-- Only what is NOT self-evident from the file tree: real vs. generated/vendored, conventions. -->
+- `data/` — input CSVs (AIDev-pop, produced outside the repo); never read by the app.
+- `scripts/` — notebooks that turn `data/` into `public/data/*.json`, plus `visual.ts` (Playwright).
+- `public/data/` — **generated** JSONs the app fetches; do not hand-edit or format (oxfmt ignores them).
+- `dist/`, `visual-results/` — generated and git-ignored.
+- `src/components/charts/` — one file per chart; `tests/` mirrors `src/`; `@` aliases `src`.
+- `specs/` — canonical specs (see Workflow); `.agents/` is the real dir, `.claude` and `CLAUDE.md` are symlinks.
 
 ## Hard rules
 
@@ -51,7 +58,7 @@ Canonical specs live in `specs/` (one file per feature area; `specs/dashboard.md
 - [ ] `bun run test` exits 0
 - [ ] `bun run build` exits 0
 - [ ] Behavior changes have an approved spec in `specs/` updated in the same change
-- [ ] Visual changes checked in the browser (`bun run dev`) or via visual captures
+- [ ] Inspeção visual: `bun run visual` (ou `make visual`) executada e as capturas em `visual-results/` conferidas por quem alterou — obrigatório para qualquer mudança em gráficos, layout ou estilos (detalhes em `specs/visual-inspection.md`)
 - [ ] Changes committed with Conventional Commits; human review before merge
 
 ## Skills
